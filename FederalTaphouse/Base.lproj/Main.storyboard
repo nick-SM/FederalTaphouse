@@ -57,7 +57,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Get Directions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HVn-FW-qMi">
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="View on Map" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HVn-FW-qMi">
                                                     <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="-24" y="-276"/>
         </scene>
-        <!--Get Directions-->
+        <!--View On Map-->
         <scene sceneID="aHs-gT-99R">
             <objects>
-                <viewController id="Qlg-3Q-15X" customClass="SMGetDirections" sceneMemberID="viewController">
+                <viewController id="Qlg-3Q-15X" customClass="SMViewOnMap" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v98-Ge-ocq"/>
                         <viewControllerLayoutGuide type="bottom" id="KV7-T8-Huw"/>
@@ -103,7 +103,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="f2U-Cv-9Gu"/>
+                    <navigationItem key="navigationItem" id="f2U-Cv-9Gu">
+                        <barButtonItem key="rightBarButtonItem" title="Get Directions" id="Omf-AZ-Vp6">
+                            <connections>
+                                <segue destination="YKU-F5-leg" kind="push" id="CIK-mQ-Lqv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mvMap" destination="uIr-9q-d8X" id="utY-Tr-VrY"/>
                     </connections>
@@ -111,6 +117,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8M-WG-E4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="-600"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="frN-LR-u2u">
+            <objects>
+                <viewController id="YKU-F5-leg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uuR-Fj-gSE"/>
+                        <viewControllerLayoutGuide type="bottom" id="HVT-sv-N3s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HTg-vm-2xn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mSc-2s-ibd">
+                                <rect key="frame" x="0.0" y="66" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GJc-tW-u1d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lDU-Bz-mJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928" y="-600"/>
         </scene>
         <!--Master View Controller - Master-->
         <scene sceneID="VgW-fR-Quf">

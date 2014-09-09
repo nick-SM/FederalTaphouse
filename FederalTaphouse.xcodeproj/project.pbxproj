@@ -29,7 +29,7 @@
 		344234DE19BCDD3D00BC8398 /* BEER.m in Sources */ = {isa = PBXBuildFile; fileRef = 344234DD19BCDD3D00BC8398 /* BEER.m */; };
 		344234E119BCDD3D00BC8398 /* CATEGORY.m in Sources */ = {isa = PBXBuildFile; fileRef = 344234E019BCDD3D00BC8398 /* CATEGORY.m */; };
 		34F5C69519BE3EB900BB9CCC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F5C69419BE3EB900BB9CCC /* MapKit.framework */; };
-		34F5C69819BE3F4500BB9CCC /* SMGetDirections.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F5C69719BE3F4500BB9CCC /* SMGetDirections.m */; };
+		34F5C69819BE3F4500BB9CCC /* SMViewOnMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F5C69719BE3F4500BB9CCC /* SMViewOnMap.m */; };
 		34F5C69A19BE410300BB9CCC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F5C69919BE410300BB9CCC /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,8 +73,8 @@
 		344234DF19BCDD3D00BC8398 /* CATEGORY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATEGORY.h; sourceTree = "<group>"; };
 		344234E019BCDD3D00BC8398 /* CATEGORY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATEGORY.m; sourceTree = "<group>"; };
 		34F5C69419BE3EB900BB9CCC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		34F5C69619BE3F4500BB9CCC /* SMGetDirections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMGetDirections.h; path = ../SMGetDirections.h; sourceTree = "<group>"; };
-		34F5C69719BE3F4500BB9CCC /* SMGetDirections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMGetDirections.m; path = ../SMGetDirections.m; sourceTree = "<group>"; };
+		34F5C69619BE3F4500BB9CCC /* SMViewOnMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMViewOnMap.h; path = ../SMViewOnMap.h; sourceTree = "<group>"; };
+		34F5C69719BE3F4500BB9CCC /* SMViewOnMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMViewOnMap.m; path = ../SMViewOnMap.m; sourceTree = "<group>"; };
 		34F5C69919BE410300BB9CCC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -142,8 +142,8 @@
 		344234A419BCCD2F00BC8398 /* FederalTaphouse */ = {
 			isa = PBXGroup;
 			children = (
-				34F5C69619BE3F4500BB9CCC /* SMGetDirections.h */,
-				34F5C69719BE3F4500BB9CCC /* SMGetDirections.m */,
+				34F5C69619BE3F4500BB9CCC /* SMViewOnMap.h */,
+				34F5C69719BE3F4500BB9CCC /* SMViewOnMap.m */,
 				344234AD19BCCD2F00BC8398 /* SMAppDelegate.h */,
 				344234AE19BCCD2F00BC8398 /* SMAppDelegate.m */,
 				344234B019BCCD2F00BC8398 /* Main.storyboard */,
@@ -297,7 +297,7 @@
 				344234E119BCDD3D00BC8398 /* CATEGORY.m in Sources */,
 				344234BB19BCCD2F00BC8398 /* SMDetailViewController.m in Sources */,
 				344234AB19BCCD2F00BC8398 /* main.m in Sources */,
-				34F5C69819BE3F4500BB9CCC /* SMGetDirections.m in Sources */,
+				34F5C69819BE3F4500BB9CCC /* SMViewOnMap.m in Sources */,
 				344234DE19BCDD3D00BC8398 /* BEER.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

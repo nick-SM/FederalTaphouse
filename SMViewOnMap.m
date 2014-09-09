@@ -9,13 +9,13 @@
 #define FTlat 40.041403
 #define FTlong -76.305794
 
-#import "SMGetDirections.h"
+#import "SMViewOnMap.h"
 
-@interface SMGetDirections ()
+@interface SMViewOnMap ()
 
 @end
 
-@implementation SMGetDirections{
+@implementation SMViewOnMap{
     MKUserLocation *userloc;
     BOOL directionsDrawn;
     NSArray *arrRoutes;
@@ -32,13 +32,16 @@
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
+    
     directionsDrawn = NO;
+
+    userloc = userLocation;
     for(id obj in arrRoutes){
         MKRoute *route = obj;
         [self.mvMap removeOverlay:route.polyline];
     }
-    userloc = userLocation;
     [self drawMap];
+
 }
 
 - (void) drawMap{

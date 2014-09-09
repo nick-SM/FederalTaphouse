@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface SMGetDirections : UIViewController
+@interface SMViewOnMap : UIViewController
 @property (weak, nonatomic) IBOutlet MKMapView *mvMap;
 
 @end
