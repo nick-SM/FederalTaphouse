@@ -1,0 +1,1339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IPA</key>
+	<dict>
+		<key>Two Brothers Cane &amp; Ebel</key>
+		<dict>
+			<key>Location</key>
+			<string>Warrenville, IL</string>
+			<key>ABV</key>
+			<string>ABV 7.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>Dry, but with a creamy touch of Thai Palm sugar and the spicy tang of rye, all balanced with loads of hops.</string>
+		</dict>
+		<key>Great Lakes Burning River</key>
+		<dict>
+			<key>Location</key>
+			<string>Cleveland,OH</string>
+			<key>ABV</key>
+			<string>ABV 6.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>Assertively hopped traditional pale ale with a good helping of Cascade hops for a citrus hop flavor and light dry balance.</string>
+		</dict>
+		<key>Victory Hop Ticket Session IPA</key>
+		<dict>
+			<key>Location</key>
+			<string>Downingtown, PA</string>
+			<key>ABV</key>
+			<string>ABV 4.5%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>Celebrating the flavors of the freshest hop flowers, this session IPA is full flavored and reminds us of a baby Dirt Wolf IPA.</string>
+		</dict>
+		<key>Deschutes Fresh Squeezed IPA</key>
+		<dict>
+			<key>Location</key>
+			<string>Bend, OR</string>
+			<key>ABV</key>
+			<string>ABV 6.4%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>This mouthwateringly delicious IPA gets its flavor from a heavy helping of citra and mosaic hops. No fruit was harmed in the making of this beer.</string>
+		</dict>
+		<key>Troegs Perpetual IPA</key>
+		<dict>
+			<key>Location</key>
+			<string>Hershey, PA</string>
+			<key>ABV</key>
+			<string>ABV 7.5%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>Imperial Pale Ale brewed with both dry hopping and hop back methods, a truly crisp Pale ale with a strong hop finish.</string>
+		</dict>
+		<key>Sixpoint Spice of Life</key>
+		<dict>
+			<key>Location</key>
+			<string>Brooklyn, NY</string>
+			<key>ABV</key>
+			<string>ABV 6.5%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>The next in their single hop series, this IPA features only centennial hops and exemplifies ta slightly fruity resinous hop with light citrus hints.</string>
+		</dict>
+		<key>Ithaca Flower Power</key>
+		<dict>
+			<key>Location</key>
+			<string>Ithaca, NY</string>
+			<key>ABV</key>
+			<string>ABV 7.5%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>One of the most floral IPAs on the market, a smooth, well balanced brew that will really impress your nose and taste buds.</string>
+		</dict>
+		<key>Founder’s All Day IPA</key>
+		<dict>
+			<key>Location</key>
+			<string>Grand Rapids, MI</string>
+			<key>ABV</key>
+			<string>ABV 4.7%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>A light session IPA that still packs full hop flavor, Great all day, and day</string>
+		</dict>
+		<key>Stone Sublimely Self Righteous</key>
+		<dict>
+			<key>Location</key>
+			<string>Escondido, CA</string>
+			<key>ABV</key>
+			<string>ABV 8.7%</string>
+			<key>Size</key>
+			<string>14oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>This black IPA was originally brewed as their 11th anniversary beer, hoppy and dark, they liked it so much... they kept making it.</string>
+		</dict>
+		<key>Weyerbacher Verboten</key>
+		<dict>
+			<key>Location</key>
+			<string>Easton, PA</string>
+			<key>ABV</key>
+			<string>ABV 6.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>Belgian-style Pale Ale with an American twist. Brewed with pale, caramel, and wheat malts, and hopped to give it a distinctly American character</string>
+		</dict>
+		<key>Bell’s Two Hearted</key>
+		<dict>
+			<key>Location</key>
+			<string>Kalamazoo, MI</string>
+			<key>ABV</key>
+			<string>ABV 7.1%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>Quintessential India Pale Ale with American malts and enormous hop addi- tions to give this beer a crisp finish and incredible floral hop aroma.</string>
+		</dict>
+	</dict>
+	<key>Imperial IPA</key>
+	<dict>
+		<key>Green Flash Road Warrior</key>
+		<dict>
+			<key>Location</key>
+			<string>San Diego, CA</string>
+			<key>ABV</key>
+			<string>ABV 9.5%</string>
+			<key>Size</key>
+			<string>12oz</string>
+			<key>Price</key>
+			<string>$8</string>
+			<key>Description</key>
+			<string>This Imperial Double Rye IPA is about as much rye as you can fit into one beer, exceptionally dry with a red color and strong rye finish.</string>
+		</dict>
+		<key>Evolution Lot 6</key>
+		<dict>
+			<key>Location</key>
+			<string>Salisbury, MD</string>
+			<key>ABV</key>
+			<string>ABV 9.3%</string>
+			<key>Size</key>
+			<string>12oz</string>
+			<key>Price</key>
+			<string>$8</string>
+			<key>Description</key>
+			<string>Loaded with tropical fruit and citrus notes, deep gold in color, with tons of American hops for assertive bitterness and big hop flavor and aroma</string>
+		</dict>
+		<key>Founders Double Trouble</key>
+		<dict>
+			<key>Location</key>
+			<string>Grand Rapids, MI</string>
+			<key>ABV</key>
+			<string>ABV 9.4%</string>
+			<key>Size</key>
+			<string>14oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>Pungent aromatics up front with a balanced backbone and a bitter finish. The first beer ever tapped at the Federal Taphouse Lancaster.</string>
+		</dict>
+		<key>Goose Island’s The Illinois</key>
+		<dict>
+			<key>Location</key>
+			<string>Chicago, IL</string>
+			<key>ABV</key>
+			<string>ABV 9.0%</string>
+			<key>Size</key>
+			<string>12oz</string>
+			<key>Price</key>
+			<string>$9</string>
+			<key>Description</key>
+			<string>Recently made more available due to its overwhelming popularity, this heavily hopped IPA has a piney aroma with a strong hop finish.</string>
+		</dict>
+		<key>Free Will Chasing the Dragon</key>
+		<dict>
+			<key>Location</key>
+			<string>Perkasie, PA</string>
+			<key>ABV</key>
+			<string>ABV 9.9%</string>
+			<key>Size</key>
+			<string>12oz</string>
+			<key>Price</key>
+			<string>$8</string>
+			<key>Description</key>
+			<string>Incredibly limited, this high octane Imperial IPA is an explosion of hops with a sweet malt balancing out the dry hop character.</string>
+		</dict>
+		<key>Firestone Walker Double Jack</key>
+		<dict>
+			<key>Location</key>
+			<string>Paso Robies, CA</string>
+			<key>ABV</key>
+			<string>ABV 9.5%</string>
+			<key>Size</key>
+			<string>14oz</string>
+			<key>Price</key>
+			<string>$8</string>
+			<key>Description</key>
+			<string>Everything you love about the Union Jack, doubled. More malt, more hops, more alcohol...just more...and more is good.</string>
+		</dict>
+		<key>Springhouse Citra Must be Destroyed</key>
+		<dict>
+			<key>Location</key>
+			<string>Conestoga, PA</string>
+			<key>ABV</key>
+			<string>ABV 10.5%</string>
+			<key>Size</key>
+			<string>12oz</string>
+			<key>Price</key>
+			<string>$8</string>
+			<key>Description</key>
+			<string>A stunning replacement for their Beyond the Gates, this Imperial IPA is almost entirely citra hops for a potent citrus blast of hop power.</string>
+		</dict>
+		<key>Ballast Point Dorado</key>
+		<dict>
+			<key>Location</key>
+			<string>San Diego, CA</string>
+			<key>ABV</key>
+			<string>ABV 10.0%</string>
+			<key>Size</key>
+			<string>12oz</string>
+			<key>Price</key>
+			<string>$8</string>
+			<key>Description</key>
+			<string>4 stages of hopping create an award winning beer that embodies San Diego’s reputation for making world class IPAs.</string>
+		</dict>
+		<key>Six Point Resin</key>
+		<dict>
+			<key>Location</key>
+			<string>Brooklyn, NY</string>
+			<key>ABV</key>
+			<string>ABV 9.1%</string>
+			<key>Size</key>
+			<string>12oz</string>
+			<key>Price</key>
+			<string>$8</string>
+			<key>Description</key>
+			<string>Celebrating the bittering resin secreted from the lupulin glands of the hop cone, this beer is a strong ale with an abundance of American hop flavor.</string>
+		</dict>
+	</dict>
+	<key>Miscellaneous</key>
+	<dict>
+		<key>Yards Brawler</key>
+		<dict>
+			<key>Location</key>
+			<string>Philadelphia, PA</string>
+			<key>ABV</key>
+			<string>ABV 4.2%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>Traditional style English mild, light and smooth, with a creamy finish just a hint of alcohol, for when you want to go a few more rounds.</string>
+		</dict>
+		<key>Sprecher Bootlegger’s Hard Root Beer</key>
+		<dict>
+			<key>Location</key>
+			<string>Glendale, WI</string>
+			<key>ABV</key>
+			<string>ABV 5.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string> A traditionally brewed and fermented root beer with a hint of bourbon and oak... it’s root beer, all grown up.</string>
+		</dict>
+		<key>Orkney Skull Splitter</key>
+		<dict>
+			<key>Location</key>
+			<string>Orkney, Scotland</string>
+			<key>ABV</key>
+			<string>ABV 8.5%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>Complex and light with a nice bite, this traditional scotch wee heavy is brewed as a testament to the strength and drinkability of the style.</string>
+		</dict>
+		<key>Ringwood Old Thumper</key>
+		<dict>
+			<key>Location</key>
+			<string>Hampshire, England</string>
+			<key>ABV</key>
+			<string>ABV 5.6%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>Brewed in America through Shipyard Brewing, this flagship ESB is incredi- bly drinkable with a touch of sweetness and a gentle malt finish.</string>
+		</dict>
+		<key> Southern Tier PumKing</key>
+		<dict>
+			<key>Location</key>
+			<string>Lakewood, NY</string>
+			<key>ABV</key>
+			<string>ABV 8.4%</string>
+			<key>Size</key>
+			<string>14oz</string>
+			<key>Price</key>
+			<string>$8</string>
+			<key>Description</key>
+			<string>Deep copper in color with alluring notes of spice and pumpkin, this is the one you’ve been waiting for, the King of Pumpkin Beers.</string>
+		</dict>
+		<key>Flying Fish NJ350</key>
+		<dict>
+			<key>Location</key>
+			<string>Somerdale, NJ</string>
+			<key>ABV</key>
+			<string>ABV 7.5%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>This traditional English Stock Ale, brewed with blackstrap molasses and a decent amount of Simcoe pine hops, this celebratory ale has a deep flavor profile and rich traditional heritage.</string>
+		</dict>
+		<key>Two Brothers Domain DuPage</key>
+		<dict>
+			<key>Location</key>
+			<string>Warrenville, IL</string>
+			<key>ABV</key>
+			<string>ABV 5.9%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>This traditional French Biere De Garde style is deep amber in color with a toasty, sweet caramel start, it finishes with just enough hops to clean off the palate.</string>
+		</dict>
+		<key>Anderson Valley The Kimmie, the Yink, and the Holy Gose</key>
+		<dict>
+			<key>Location</key>
+			<string>Boonville, CA</string>
+			<key>ABV</key>
+			<string>ABV 4.8%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>Similar to a Berliner Weisse this traditional Gose beer is light, tart, and a bit sour with hints of lemon and peach.</string>
+		</dict>
+		<key>Kona Big Wave</key>
+		<dict>
+			<key>Location</key>
+			<string>Kailua-Kona, HI</string>
+			<key>ABV</key>
+			<string>ABV 4.4%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>This golden blonde ale is a light and lightly spiced ale that’s helping us say goodbye to summer.</string>
+		</dict>
+		<key>The Curious Traveler</key>
+		<dict>
+			<key>Location</key>
+			<string>Burlington, VT</string>
+			<key>ABV</key>
+			<string>ABV 4.4%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>A true to form lemon shandy, brewed with real lemonade for the perfect, refresh-ing balance of lemon and beer.</string>
+		</dict>
+	</dict>
+	<key>Brown Ale / Porter</key>
+	<dict>
+		<key>Bell’s Porter</key>
+		<dict>
+			<key>Location</key>
+			<string>Kalamazoo, MI</string>
+			<key>ABV</key>
+			<string>ABV 5.6%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>Brewed with chocolate and dark roasty flavor, this full bodied beer is one of the best standard porters currently on the market.</string>
+		</dict>
+		<key>Sixpoint Mad Scientist #20: Kelpie</key>
+		<dict>
+			<key>Location</key>
+			<string>Brooklyn, NY</string>
+			<key>ABV</key>
+			<string>ABV 6.2%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>Traditional Scottish porter, jet black and brewed with seaweed adding just a hint of salt to the roasted coffee flavor.</string>
+		</dict>
+		<key>Great Lakes Edmund Fitzgerald</key>
+		<dict>
+			<key>Location</key>
+			<string>Cleveland, OH</string>
+			<key>ABV</key>
+			<string>ABV 5.8%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>Complex, roasted aroma with a bittersweet, chocolate- coffee taste and a bold hop presence.</string>
+		</dict>
+		<key>DC Brau Penn Quarter Porter</key>
+		<dict>
+			<key>Location</key>
+			<string>Washington, DC</string>
+			<key>ABV</key>
+			<string>ABV 5.5%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>Part Porter, part Stout, this limited release, draft only beer is a chocolaty blend of both worlds with a smooth creamy finish.</string>
+		</dict>
+		<key>Deschutes Black Butte Porter</key>
+		<dict>
+			<key>Location</key>
+			<string>Bend, OR</string>
+			<key>ABV</key>
+			<string>ABV 5.2%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>Part Porter, part Stout, this limited release, draft only beer is a chocolaty blend of both worlds with a smooth creamy finish.</string>
+		</dict>
+		<key>Avery 21st Anniversary</key>
+		<dict>
+			<key>Location</key>
+			<string>Boulder, CO</string>
+			<key>ABV</key>
+			<string>ABV 8.5%</string>
+			<key>Size</key>
+			<string>14oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>Built on a foundation of dark specialty malts, framed by sturdy IBUs and crowned with a monumental dry hopping of Simcoe and Amarillo.</string>
+		</dict>
+		<key>Yards George Washington Porter</key>
+		<dict>
+			<key>Location</key>
+			<string>Phila. PA</string>
+			<key>ABV</key>
+			<string>ABV 7.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>A slightly potent, deliciously malted porter with hints of chocolate and coffee, perfect for planning the freedom of a nation</string>
+		</dict>
+		<key>Duck Rabbit Porter</key>
+		<dict>
+			<key>Location</key>
+			<string>Farmville, NC</string>
+			<key>ABV</key>
+			<string>ABV 5.7%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>Very dark in color, this robust porter features a pronounced flavor of roasted grains reminiscent of dark chocolate and silkiness.</string>
+		</dict>
+		<key>Terrapin Guano Loco</key>
+		<dict>
+			<key>Location</key>
+			<string>Athens, GA</string>
+			<key>ABV</key>
+			<string>ABV 8.6%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>This chili pepper brown ale is an experiment in spice with a light brown ale body and slight chocolate and chili pepper tangle of flavors.</string>
+		</dict>
+		<key>Atwater Vanilla Java Porter</key>
+		<dict>
+			<key>Location</key>
+			<string>Detroit, MI</string>
+			<key>ABV</key>
+			<string>ABV 6.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>A huge helping of vanilla and coffee beans help this porter gain its smooth texture and rich, creamy mouth feel.</string>
+		</dict>
+	</dict>
+	<key>Pilsner / Lager</key>
+	<dict>
+		<key>Kona Longboard Lager</key>
+		<dict>
+			<key>Location</key>
+			<string>Kailua Kona, HI</string>
+			<key>ABV</key>
+			<string>ABV 4.6%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5.5</string>
+			<key>Description</key>
+			<string>A smooth refreshing lager fermented and aged for five weeks at cold temperatures to yield its exceptionally smooth flavor</string>
+		</dict>
+		<key>Warsteiner Pilsner</key>
+		<dict>
+			<key>Location</key>
+			<string>Warstein, Germany</string>
+			<key>ABV</key>
+			<string>ABV 4.8%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>A world class, slightly pale German style pilsner with a clean, crisp refreshing import taste.</string>
+		</dict>
+		<key>Primus Haacht</key>
+		<dict>
+			<key>Location</key>
+			<string>Boortmeerbeek, Belgium</string>
+			<key>ABV</key>
+			<string>ABV 5.2%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>A genuine pilsner, every sip releases its characteristic lightly bitter taste on your palate. For the Stella aficionado, this is your choice.</string>
+		</dict>
+		<key>Victory Prima Pils</key>
+		<dict>
+			<key>Location</key>
+			<string>Downingtown, PA</string>
+			<key>ABV</key>
+			<string>ABV 5.3%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>Heaps of hops give this pale lager a bracing, herbal bite over layers of soft and smooth malt flavor.</string>
+		</dict>
+		<key>Free Will Community Kolsch</key>
+		<dict>
+			<key>Location</key>
+			<string>Perkasie, PA</string>
+			<key>ABV</key>
+			<string>ABV 5.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>Traditional Kolsch style, this incredibly light lager is crisp and re- freshing with just a slightest hint of of lightly sweet malt.</string>
+		</dict>
+		<key>LBC Kolsch</key>
+		<dict>
+			<key>Location</key>
+			<string>Lancaster, PA</string>
+			<key>ABV</key>
+			<string>ABV 4.8%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>Pale straw colored and delivering floral hop notes and smooth malt character from extended cold aging, crisp, flavorful and refreshing.</string>
+		</dict>
+		<key>Weihenstephan Pilsner</key>
+		<dict>
+			<key>Location</key>
+			<string>Freising Germany</string>
+			<key>ABV</key>
+			<string>ABV 5.1%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>From the world’s oldest brewery, this slightly bitter, mild pilsner with a fragrance of hops, is the quintessential german pilsner.</string>
+		</dict>
+		<key>Stoudts M.P.D</key>
+		<dict>
+			<key>Location</key>
+			<string>Adamstown, PA</string>
+			<key>ABV</key>
+			<string>ABV 6.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>This confused IPA is actually a golden lager with a heavy hop profile and smooth bready lager finish.</string>
+		</dict>
+		<key>Southern Tier Eurotrash Pilz</key>
+		<dict>
+			<key>Location</key>
+			<string>Lakewood, NY</string>
+			<key>ABV</key>
+			<string>ABV 5.3%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>This new age twist on a classic pils is light and refreshing with a slight euro pilsner linger and bright hops flavor.</string>
+		</dict>
+		<key>Breckenridge Regal Pils,</key>
+		<dict>
+			<key>Location</key>
+			<string>Denver, CO</string>
+			<key>ABV</key>
+			<string>ABV 7.0%</string>
+			<key>Size</key>
+			<string>14oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>An Imperial Pilsner, this crisp, refreshing beer gives just a little more of everything you love about the style.</string>
+		</dict>
+		<key>Rivertowne Hala-Kahiki</key>
+		<dict>
+			<key>Location</key>
+			<string>Export, PA</string>
+			<key>ABV</key>
+			<string>ABV 4.8%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>Meaning Pineapple in Hawaiian, this fruity light lager tastes like alcoholic pineapple soda... a dangerously good summer beer.</string>
+		</dict>
+		<key>Warsteiner Dunkel</key>
+		<dict>
+			<key>Location</key>
+			<string>Warstein, Germany</string>
+			<key>ABV</key>
+			<string>ABV 4.9%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>Exceptionally smooth dark lager has a deep chestnut brown hue, with a medium-bodied palate and subtle hop bitterness on the finish</string>
+		</dict>
+		<key>Great Lakes Eliot Ness</key>
+		<dict>
+			<key>Location</key>
+			<string>Cleveland, OH</string>
+			<key>ABV</key>
+			<string>ABV 6.2%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>Deep amber red color. Rich caramelized malt and noble hop flavors harmonize on the palate, leading to a crisp, clean finish</string>
+		</dict>
+		<key>Great Lakes / Cigar City Wandering Pelican</key>
+		<dict>
+			<key>Location</key>
+			<string>Cleveland, OH</string>
+			<key>ABV</key>
+			<string>ABV 8.5%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$8</string>
+			<key>Description</key>
+			<string>In honor of a Pelican that made its way from Florida to Lake Erie, this Schwarzbier collaboration is stronger than most with a dark smoky flavor and slightly sweet malt.</string>
+		</dict>
+		<key>Great Lakes Oktoberfest</key>
+		<dict>
+			<key>Location</key>
+			<string>Cleveland, OH</string>
+			<key>ABV</key>
+			<string>ABV 6.5%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>The perfect American Oktoberfest, a smooth amber lager with a full flavor and refreshing drinkability, a fantastic fall beer.</string>
+		</dict>
+		<key>Hacker Pschorr Oktoberfest</key>
+		<dict>
+			<key>Location</key>
+			<string>Munchen, Germany</string>
+			<key>ABV</key>
+			<string>ABV 5.8%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>Bavarian barley slow roasted, caramelized to a rich, red amber color combined with exclusive yeast and the finest hops.</string>
+		</dict>
+		<key>Miller Lite</key>
+		<dict>
+			<key>Location</key>
+			<string>Milwaukee, WI</string>
+			<key>ABV</key>
+			<string>ABV 4.1%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$3</string>
+			<key>Description</key>
+			<string>The best selling beer on the market currently, this Light Adjunct Lager isn’t quite craft... but it is beer.</string>
+		</dict>
+		<key>Yuengling Lager</key>
+		<dict>
+			<key>Location</key>
+			<string>Pottsville, PA</string>
+			<key>ABV</key>
+			<string>ABV 4.4%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$4</string>
+			<key>Description</key>
+			<string>Embraced as the only Lager you’ll ever need, this local favorite is lighter than most but still deeply flavored with a great amber color.</string>
+		</dict>
+		<key>Labatt Blue</key>
+		<dict>
+			<key>Location</key>
+			<string>Ontario, Canada</string>
+			<key>ABV</key>
+			<string>ABV 5.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$4</string>
+			<key>Description</key>
+			<string>Nicknamed “Blue” because of its label this refreshing pilsner has a distinctive hoppy aroma, and a slightly sweet after-taste.</string>
+		</dict>
+		<key>Coors Light</key>
+		<dict>
+			<key>Location</key>
+			<string>Golden, CO</string>
+			<key>ABV</key>
+			<string>ABV 4.2%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$3</string>
+			<key>Description</key>
+			<string>Extremely light colored, light in body, and high in carbonation, with a crisp cold flavor... tastes like the Rockies?</string>
+		</dict>
+	</dict>
+	<key>Wheat Beer / Hefeweizen</key>
+	<dict>
+		<key>Dogfish Head Festina Peche</key>
+		<dict>
+			<key>Location</key>
+			<string>Milton, DE</string>
+			<key>ABV</key>
+			<string>ABV 4.5%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>A summer release, this high energy Berliner Weisse packs a whole lot of peach into a very little punch</string>
+		</dict>
+		<key>RJ Rockers Son of a Peach</key>
+		<dict>
+			<key>Location</key>
+			<string>Spartanburg, SC</string>
+			<key>ABV</key>
+			<string>ABV 5.8%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>An unfiltered American wheat ale made with real mean peaches. The only thing missing is the fuzz. Savor the anger.</string>
+		</dict>
+		<key>Shocktop Spiced Banana Wheat</key>
+		<dict>
+			<key>Location</key>
+			<string>Spartanburg, SC</string>
+			<key>ABV</key>
+			<string>ABV 5.8%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>An unfiltered American wheat ale made with real mean peaches. The only thing missing is the fuzz. Savor the anger.</string>
+		</dict>
+		<key>Ithaca Apricot Wheat</key>
+		<dict>
+			<key>Location</key>
+			<string>Ithaca, NY</string>
+			<key>ABV</key>
+			<string>ABV 4.5%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>A gentle wheat beer with just a hint of apricot flavor in the finish. A very drinkable, mildly fruity ale.</string>
+		</dict>
+		<key>Stegmaier High Dive Wheat</key>
+		<dict>
+			<key>Location</key>
+			<string>Wilkes-Barre, PA</string>
+			<key>ABV</key>
+			<string>ABV 5.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>A refreshingly sessionable summer seasonal brewed with both sweet and curacao bitter orange peel, topped with coriander.</string>
+		</dict>
+		<key>Konig Ludwig Weisse</key>
+		<dict>
+			<key>Location</key>
+			<string>Furstenfeldbruck, Germany</string>
+			<key>ABV</key>
+			<string>ABV 5.5%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>A well balanced royal Bavarian Hefeweizen from the family brewery that owned the rights to the style for over 200 years.</string>
+		</dict>
+		<key>Troegs Dreamweaver</key>
+		<dict>
+			<key>Location</key>
+			<string>Furstenfeldbruck, Germany</string>
+			<key>ABV</key>
+			<string>ABV 4.8%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>Spicy, peppery, clove taste and slight hint of bananas. This wheat is an unfiltered blast of spicy, mouthwatering joy.</string>
+		</dict>
+		<key>Long Trail Mostly Cloudy</key>
+		<dict>
+			<key>Location</key>
+			<string>Bridgewater Corners, VT</string>
+			<key>ABV</key>
+			<string>ABV 4.7%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>Brewed as a traditional Belgian Witbier, this unfiltered summer beer is slightly spiced and incredibly drinkable and refreshing.</string>
+		</dict>
+		<key>Starr Hill’s Whiter Shade of Pale</key>
+		<dict>
+			<key>Location</key>
+			<string>Crozet, VA</string>
+			<key>ABV</key>
+			<string>ABV 7.5%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>The perfect marriage of a Belgian Wheat and an IPA, the strong hop profile blends with intense citrus and spice for wonderful flavor and drinkability.</string>
+		</dict>
+		<key>Victory Whirlwind Wit</key>
+		<dict>
+			<key>Location</key>
+			<string>Downingtown, PA</string>
+			<key>ABV</key>
+			<string>ABV 5.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>Offering a tamed tempest of flavors both spicy and sublime, this softly fermented traditional witbier greets the nose and tingles the tongue.</string>
+		</dict>
+	</dict>
+	<key>Belgian / Dubbel / Tripel / Quadrupel</key>
+	<dict>
+		<key>Chimay Tripel</key>
+		<dict>
+			<key>Location</key>
+			<string>Baileux, Belgium</string>
+			<key>ABV</key>
+			<string>ABV 9.0%</string>
+			<key>Size</key>
+			<string>12oz</string>
+			<key>Price</key>
+			<string>$10</string>
+			<key>Description</key>
+			<string>Often called Chimay “White” because of the label, a Belgian Tripel that provides a subtle hint of fruit and tart with a clean finish.</string>
+		</dict>
+		<key>Allagash Dubbel</key>
+		<dict>
+			<key>Location</key>
+			<string>Portland, ME</string>
+			<key>ABV</key>
+			<string>ABV 7.0%</string>
+			<key>Size</key>
+			<string>14oz</string>
+			<key>Price</key>
+			<string>$8</string>
+			<key>Description</key>
+			<string>With slight hints of port and sherry, this malty Abbey Dubbel has subtle notes of chocolate with a mild nutty finish.</string>
+		</dict>
+		<key>Haandbryggeriet Nissefar</key>
+		<dict>
+			<key>Location</key>
+			<string>Dramen, Norway</string>
+			<key>ABV</key>
+			<string>ABV 7%</string>
+			<key>Size</key>
+			<string>12oz</string>
+			<key>Price</key>
+			<string>$8</string>
+			<key>Description</key>
+			<string>This limited release ale is usually a Christmas beer, but aged for sum- mer drinking its light body and chocolaty spiced flavor is both decadent and drinkable,</string>
+		</dict>
+		<key>Dieu Du Ciel Rigor Mortis</key>
+		<dict>
+			<key>Location</key>
+			<string>Montreal, Canada</string>
+			<key>ABV</key>
+			<string>ABV 10.5%</string>
+			<key>Size</key>
+			<string>12oz</string>
+			<key>Price</key>
+			<string>$10</string>
+			<key>Description</key>
+			<string>Trappist inspired Belgian Strong Brown ale, this potent dark beer is aged for six months with hints of red fruit and spice.</string>
+		</dict>
+		<key>Weyerbacher Tarte Nouveau</key>
+		<dict>
+			<key>Location</key>
+			<string>Easton, PA</string>
+			<key>ABV</key>
+			<string>ABV 3.9%</string>
+			<key>Size</key>
+			<string>14oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>This incredibly light wild ale drinks like a sour with the tartness of a lambic, golden in color and highly sessionable.</string>
+		</dict>
+		<key>B.O.M. Tripoteur Wild &amp; Funky</key>
+		<dict>
+			<key>Location</key>
+			<string>Bree, Belgium</string>
+			<key>ABV</key>
+			<string>ABV 5.4%</string>
+			<key>Size</key>
+			<string>12oz</string>
+			<key>Price</key>
+			<string>$8</string>
+			<key>Description</key>
+			<string>Brewed on a dare, this traditional Belgian sour gets its tartness from fresh fermented apples and pears along with sour yeast</string>
+		</dict>
+		<key>Iron Fist Martial Law</key>
+		<dict>
+			<key>Location</key>
+			<string>Vista, CA</string>
+			<key>ABV</key>
+			<string>ABV 8.3%</string>
+			<key>Size</key>
+			<string>14oz</string>
+			<key>Price</key>
+			<string>$8</string>
+			<key>Description</key>
+			<string>Belgian Strong Dark with a beautiful caramel color and massive amounts of malt, and subtle hints of cherry, caramel, and vanilla.</string>
+		</dict>
+		<key>Roy Pitz Lay Down Stay Down</key>
+		<dict>
+			<key>Location</key>
+			<string>Chambersburg, PA</string>
+			<key>ABV</key>
+			<string>ABV 9.0%</string>
+			<key>Size</key>
+			<string>14oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>Deliberately aged until mildly sour, this Belgian Strong Ale with Belgian candy sugar has a sour hint of plum and dark fruit.</string>
+		</dict>
+		<key>Brooklyn Cuvee La Boite</key>
+		<dict>
+			<key>Location</key>
+			<string>Brooklyn, NY</string>
+			<key>ABV</key>
+			<string>ABV 8.2%</string>
+			<key>Size</key>
+			<string>14oz</string>
+			<key>Price</key>
+			<string>$8</string>
+			<key>Description</key>
+			<string>A Belgian-inspired beer in the “Grand Cru” style, subtly infused with lem- on, saffron, crystalized honey, fresh kaffir lime leaves, and rare peppers</string>
+		</dict>
+		<key>Neshaminy Creek Tribute Tripel</key>
+		<dict>
+			<key>Location</key>
+			<string>Brooklyn, NY</string>
+			<key>ABV</key>
+			<string>ABV 9.3%</string>
+			<key>Size</key>
+			<string>14oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>Their first ever beer, this traiditional Belgian Tripel is brewed with corian- der and orange for a sweet deceivingly strong American Belgian.</string>
+		</dict>
+	</dict>
+	<key>Cider / Lambic</key>
+	<dict>
+		<key>Angry Orchard Crisp Apple</key>
+		<dict>
+			<key>Location</key>
+			<string>Cincinnati, OH</string>
+			<key>ABV</key>
+			<string>ABV 5.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>This crisp and refreshing cider mixes the sweetness of the apples with a subtle dryness for a balanced cider taste.</string>
+		</dict>
+		<key>Mckenzie’s Lemon Hard Cider</key>
+		<dict>
+			<key>Location</key>
+			<string>West Seneca, NY</string>
+			<key>ABV</key>
+			<string>ABV 5.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>An inspiration to hard cider – incredibly light and tart with a mild lemon flavor and refreshing summery finish.</string>
+		</dict>
+		<key>Lindemans Framboise</key>
+		<dict>
+			<key>Location</key>
+			<string>Vlezenbeek, Belgium</string>
+			<key>ABV</key>
+			<string>ABV 2.5%</string>
+			<key>Size</key>
+			<string>12oz</string>
+			<key>Price</key>
+			<string>$7.5</string>
+			<key>Description</key>
+			<string>This world famous raspberry lambic is brewed with tons of fresh fruit and with a deep red color is surprisingly light and refreshing.</string>
+		</dict>
+		<key>Jack’s Original Dry Hard Cider</key>
+		<dict>
+			<key>Location</key>
+			<string>Gettysburg, PA</string>
+			<key>ABV</key>
+			<string>ABV 5.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>This traditional dry cider drinks almost like a sparkling white wine, gluten free and brewed with real apples.</string>
+		</dict>
+		<key>Two Brother&apos;s Prairie Path</key>
+		<dict>
+			<key>Location</key>
+			<string>Warrenville, IL</string>
+			<key>ABV</key>
+			<string>ABV 5.1%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>A Gluten Free Belgian style golden ale, full flavored, mildly bitter, clean and refreshing one of the best true gluten free beers on the market.</string>
+		</dict>
+	</dict>
+	<key>Seasonal</key>
+	<dict>
+		<key>Troegs Scratch 139</key>
+		<dict>
+			<key>Location</key>
+			<string>Hershey, PA</string>
+			<key>ABV</key>
+			<string>ABV 6.5%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>This French style Saison has a dry champagne like finish with sutble hints of citrus and fruit and a slightly cloudy Belgian texture.</string>
+		</dict>
+		<key>Lavery Death or Glory</key>
+		<dict>
+			<key>Location</key>
+			<string>Erie, PA</string>
+			<key>ABV</key>
+			<string>ABV 6.7%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>This black saison is one of the most unique beers on tap, a dark twist of tart and bitter it drinks almost like a summery stout.</string>
+		</dict>
+		<key>Anderson Valley Summer Solstice</key>
+		<dict>
+			<key>Location</key>
+			<string>California</string>
+			<key>ABV</key>
+			<string>ABV 5.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>A malty summer session beer with a crisp mouthful and a sweet finish. Blended with a touch of caramel. Its practically cream soda for grown-ups.</string>
+		</dict>
+		<key>Redd’s Apple Ale</key>
+		<dict>
+			<key>Location</key>
+			<string>Milwaukee, WI</string>
+			<key>ABV</key>
+			<string>ABV 5.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>This apple flavored golden ale is light and fruity with a slightly bready char- acter and clean golden ale finish.</string>
+		</dict>
+		<key>Well’s Banana Bread</key>
+		<dict>
+			<key>Location</key>
+			<string>Bedford, UK</string>
+			<key>ABV</key>
+			<string>ABV 5.2%</string>
+			<key>Size</key>
+			<string>14oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>A brown English ale that gets its bready taste from the traditional style, and its ripe banana flavor from...you guessed it... bananas </string>
+		</dict>
+	</dict>
+	<key>Stout</key>
+	<dict>
+		<key>LBC Vintage Milk Stout</key>
+		<dict>
+			<key>Location</key>
+			<string>Lancaster, PA</string>
+			<key>ABV</key>
+			<string>ABV 5.3%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>Aged for 8 months, this vintage barrel is refined with a smoother, lighter finish and subtle hints of coffee and a drinkable dark body.</string>
+		</dict>
+		<key>Troegs Java Head Stout</key>
+		<dict>
+			<key>Location</key>
+			<string>Hershey, PA</string>
+			<key>ABV</key>
+			<string>ABV 7.5%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>Oatmeal stout brewed with a healthy dose of coffee, pours dark and smooth for a true java head’s delight.</string>
+		</dict>
+		<key>Starr Hill / Terrapin Gava Joe</key>
+		<dict>
+			<key>Location</key>
+			<string>Hershey, PA</string>
+			<key>ABV</key>
+			<string>ABV 6.9%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>Using Belgian yeast to hide a slight tart bitternes under tons of coffee, this stout is a cele- bration of both breweries love for dark beer and collaboration.</string>
+		</dict>
+		<key>Southern Tier Choklat</key>
+		<dict>
+			<key>Location</key>
+			<string>Lakewood, NY</string>
+			<key>ABV</key>
+			<string>ABV 11.0%</string>
+			<key>Size</key>
+			<string>12oz</string>
+			<key>Price</key>
+			<string>$8</string>
+			<key>Description</key>
+			<string>Combining fresh chocolate with heavy dark malts into a supremely rich imperial stout, makes this incredibly close to alcoholic brownie batter.</string>
+		</dict>
+		<key>Springhouse Satan’s Bake Sale</key>
+		<dict>
+			<key>Location</key>
+			<string>Conestoga, PA</string>
+			<key>ABV</key>
+			<string>ABV 8.0%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>This full bodied chocolate stout is brewed with real peppermint for a truly minty addition to their line of ground breaking dark beers.</string>
+		</dict>
+		<key>Boston Beer Co. Merry Maker</key>
+		<dict>
+			<key>Location</key>
+			<string>Boston, MA</string>
+			<key>ABV</key>
+			<string>ABV 9.0%</string>
+			<key>Size</key>
+			<string>12oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>Spiked with cinnamon, clove, ginger, and nutmeg, this Gingerbread Stout has huge flavor and a smooth full body.</string>
+		</dict>
+		<key>Nogne-Ø Imperial Stout</key>
+		<dict>
+			<key>Location</key>
+			<string>Grimstad, Norway</string>
+			<key>ABV</key>
+			<string>ABV 9.0%</string>
+			<key>Size</key>
+			<string>12oz</string>
+			<key>Price</key>
+			<string>$8</string>
+			<key>Description</key>
+			<string>Near the top of the Russian Imperial market, this beer is a dark, rich ale with generous sweetness with roasted malt bitterness to hide the alcohol.</string>
+		</dict>
+		<key>Founders Imperial Stout</key>
+		<dict>
+			<key>Location</key>
+			<string>Grand Rapids, MI</string>
+			<key>ABV</key>
+			<string>ABV 10.5%</string>
+			<key>Size</key>
+			<string>12oz</string>
+			<key>Price</key>
+			<string>$7</string>
+			<key>Description</key>
+			<string>With ten varieties of malted barley this imperial stout is impossibly dark with a huge bite and creamy notes of chocolate and coffee.</string>
+		</dict>
+	</dict>
+	<key>Nitro Taps</key>
+	<dict>
+		<key>Founders Nitro Oatmeal Stout</key>
+		<dict>
+			<key>Location</key>
+			<string>Grand Rapids, MI</string>
+			<key>ABV</key>
+			<string>ABV 4.5%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$5</string>
+			<key>Description</key>
+			<string>One of the best nitro oatmeal stouts on the market, its smooth creamy texture and light chocolaty flavor with a subtle hint of oat is incredibly deli- cious and makes great car bombs!</string>
+		</dict>
+		<key>Deschutes Armory Nitro XPA</key>
+		<dict>
+			<key>Location</key>
+			<string>Bend, OR</string>
+			<key>ABV</key>
+			<string>ABV 5.9%</string>
+			<key>Size</key>
+			<string>16oz</string>
+			<key>Price</key>
+			<string>$6</string>
+			<key>Description</key>
+			<string>With just the right amount of northwest hops. This creamy nitro pale ale has an unbelievable body and a mouthwatering linger of pine and citrus.</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3442349D19BCCD2F00BC8398 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3442349C19BCCD2F00BC8398 /* Foundation.framework */; };
+		3442349F19BCCD2F00BC8398 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3442349E19BCCD2F00BC8398 /* CoreGraphics.framework */; };
+		344234A119BCCD2F00BC8398 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344234A019BCCD2F00BC8398 /* UIKit.framework */; };
+		344234A319BCCD2F00BC8398 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344234A219BCCD2F00BC8398 /* CoreData.framework */; };
+		344234A919BCCD2F00BC8398 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 344234A719BCCD2F00BC8398 /* InfoPlist.strings */; };
+		344234AB19BCCD2F00BC8398 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 344234AA19BCCD2F00BC8398 /* main.m */; };
+		344234AF19BCCD2F00BC8398 /* SMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 344234AE19BCCD2F00BC8398 /* SMAppDelegate.m */; };
+		344234B219BCCD2F00BC8398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344234B019BCCD2F00BC8398 /* Main.storyboard */; };
+		344234B519BCCD2F00BC8398 /* FederalTaphouse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 344234B319BCCD2F00BC8398 /* FederalTaphouse.xcdatamodeld */; };
+		344234B819BCCD2F00BC8398 /* SMMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 344234B719BCCD2F00BC8398 /* SMMasterViewController.m */; };
+		344234BB19BCCD2F00BC8398 /* SMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 344234BA19BCCD2F00BC8398 /* SMDetailViewController.m */; };
+		344234BD19BCCD2F00BC8398 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344234BC19BCCD2F00BC8398 /* Images.xcassets */; };
+		344234C419BCCD2F00BC8398 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344234C319BCCD2F00BC8398 /* XCTest.framework */; };
+		344234C519BCCD2F00BC8398 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3442349C19BCCD2F00BC8398 /* Foundation.framework */; };
+		344234C619BCCD2F00BC8398 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344234A019BCCD2F00BC8398 /* UIKit.framework */; };
+		344234C719BCCD2F00BC8398 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344234A219BCCD2F00BC8398 /* CoreData.framework */; };
+		344234CF19BCCD2F00BC8398 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 344234CD19BCCD2F00BC8398 /* InfoPlist.strings */; };
+		344234D119BCCD2F00BC8398 /* FederalTaphouseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 344234D019BCCD2F00BC8398 /* FederalTaphouseTests.m */; };
+		344234DB19BCCF7F00BC8398 /* Beers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 344234DA19BCCF7F00BC8398 /* Beers.plist */; };
+		344234DE19BCDD3D00BC8398 /* BEER.m in Sources */ = {isa = PBXBuildFile; fileRef = 344234DD19BCDD3D00BC8398 /* BEER.m */; };
+		344234E119BCDD3D00BC8398 /* CATEGORY.m in Sources */ = {isa = PBXBuildFile; fileRef = 344234E019BCDD3D00BC8398 /* CATEGORY.m */; };
+		34F5C69519BE3EB900BB9CCC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F5C69419BE3EB900BB9CCC /* MapKit.framework */; };
+		34F5C69819BE3F4500BB9CCC /* SMLiveMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F5C69719BE3F4500BB9CCC /* SMLiveMusicViewController.m */; };
+		34F5C69A19BE410300BB9CCC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F5C69919BE410300BB9CCC /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		344234C819BCCD2F00BC8398 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3442349119BCCD2F00BC8398 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3442349819BCCD2F00BC8398;
+			remoteInfo = FederalTaphouse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3442349919BCCD2F00BC8398 /* FederalTaphouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FederalTaphouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3442349C19BCCD2F00BC8398 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3442349E19BCCD2F00BC8398 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		344234A019BCCD2F00BC8398 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		344234A219BCCD2F00BC8398 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		344234A619BCCD2F00BC8398 /* FederalTaphouse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FederalTaphouse-Info.plist"; sourceTree = "<group>"; };
+		344234A819BCCD2F00BC8398 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		344234AA19BCCD2F00BC8398 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		344234AC19BCCD2F00BC8398 /* FederalTaphouse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FederalTaphouse-Prefix.pch"; sourceTree = "<group>"; };
+		344234AD19BCCD2F00BC8398 /* SMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAppDelegate.h; sourceTree = "<group>"; };
+		344234AE19BCCD2F00BC8398 /* SMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAppDelegate.m; sourceTree = "<group>"; };
+		344234B119BCCD2F00BC8398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		344234B419BCCD2F00BC8398 /* FederalTaphouse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FederalTaphouse.xcdatamodel; sourceTree = "<group>"; };
+		344234B619BCCD2F00BC8398 /* SMMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMMasterViewController.h; sourceTree = "<group>"; };
+		344234B719BCCD2F00BC8398 /* SMMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMMasterViewController.m; sourceTree = "<group>"; };
+		344234B919BCCD2F00BC8398 /* SMDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMDetailViewController.h; sourceTree = "<group>"; };
+		344234BA19BCCD2F00BC8398 /* SMDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMDetailViewController.m; sourceTree = "<group>"; };
+		344234BC19BCCD2F00BC8398 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		344234C219BCCD2F00BC8398 /* FederalTaphouseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FederalTaphouseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		344234C319BCCD2F00BC8398 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		344234CC19BCCD2F00BC8398 /* FederalTaphouseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FederalTaphouseTests-Info.plist"; sourceTree = "<group>"; };
+		344234CE19BCCD2F00BC8398 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		344234D019BCCD2F00BC8398 /* FederalTaphouseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FederalTaphouseTests.m; sourceTree = "<group>"; };
+		344234DA19BCCF7F00BC8398 /* Beers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Beers.plist; sourceTree = SOURCE_ROOT; };
+		344234DC19BCDD3D00BC8398 /* BEER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEER.h; sourceTree = "<group>"; };
+		344234DD19BCDD3D00BC8398 /* BEER.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEER.m; sourceTree = "<group>"; };
+		344234DF19BCDD3D00BC8398 /* CATEGORY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATEGORY.h; sourceTree = "<group>"; };
+		344234E019BCDD3D00BC8398 /* CATEGORY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATEGORY.m; sourceTree = "<group>"; };
+		34F5C69419BE3EB900BB9CCC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		34F5C69619BE3F4500BB9CCC /* SMLiveMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMLiveMusicViewController.h; path = ../SMLiveMusicViewController.h; sourceTree = "<group>"; };
+		34F5C69719BE3F4500BB9CCC /* SMLiveMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMLiveMusicViewController.m; path = ../SMLiveMusicViewController.m; sourceTree = "<group>"; };
+		34F5C69919BE410300BB9CCC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3442349619BCCD2F00BC8398 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F5C69A19BE410300BB9CCC /* CoreLocation.framework in Frameworks */,
+				34F5C69519BE3EB900BB9CCC /* MapKit.framework in Frameworks */,
+				3442349F19BCCD2F00BC8398 /* CoreGraphics.framework in Frameworks */,
+				344234A319BCCD2F00BC8398 /* CoreData.framework in Frameworks */,
+				344234A119BCCD2F00BC8398 /* UIKit.framework in Frameworks */,
+				3442349D19BCCD2F00BC8398 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344234BF19BCCD2F00BC8398 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344234C419BCCD2F00BC8398 /* XCTest.framework in Frameworks */,
+				344234C719BCCD2F00BC8398 /* CoreData.framework in Frameworks */,
+				344234C619BCCD2F00BC8398 /* UIKit.framework in Frameworks */,
+				344234C519BCCD2F00BC8398 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3442349019BCCD2F00BC8398 = {
+			isa = PBXGroup;
+			children = (
+				344234A419BCCD2F00BC8398 /* FederalTaphouse */,
+				344234CA19BCCD2F00BC8398 /* FederalTaphouseTests */,
+				3442349B19BCCD2F00BC8398 /* Frameworks */,
+				3442349A19BCCD2F00BC8398 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3442349A19BCCD2F00BC8398 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3442349919BCCD2F00BC8398 /* FederalTaphouse.app */,
+				344234C219BCCD2F00BC8398 /* FederalTaphouseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3442349B19BCCD2F00BC8398 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34F5C69919BE410300BB9CCC /* CoreLocation.framework */,
+				34F5C69419BE3EB900BB9CCC /* MapKit.framework */,
+				3442349C19BCCD2F00BC8398 /* Foundation.framework */,
+				3442349E19BCCD2F00BC8398 /* CoreGraphics.framework */,
+				344234A019BCCD2F00BC8398 /* UIKit.framework */,
+				344234A219BCCD2F00BC8398 /* CoreData.framework */,
+				344234C319BCCD2F00BC8398 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		344234A419BCCD2F00BC8398 /* FederalTaphouse */ = {
+			isa = PBXGroup;
+			children = (
+				34F5C69619BE3F4500BB9CCC /* SMLiveMusicViewController.h */,
+				34F5C69719BE3F4500BB9CCC /* SMLiveMusicViewController.m */,
+				344234AD19BCCD2F00BC8398 /* SMAppDelegate.h */,
+				344234AE19BCCD2F00BC8398 /* SMAppDelegate.m */,
+				344234B019BCCD2F00BC8398 /* Main.storyboard */,
+				344234B619BCCD2F00BC8398 /* SMMasterViewController.h */,
+				344234B719BCCD2F00BC8398 /* SMMasterViewController.m */,
+				344234B919BCCD2F00BC8398 /* SMDetailViewController.h */,
+				344234BA19BCCD2F00BC8398 /* SMDetailViewController.m */,
+				344234BC19BCCD2F00BC8398 /* Images.xcassets */,
+				344234B319BCCD2F00BC8398 /* FederalTaphouse.xcdatamodeld */,
+				344234DF19BCDD3D00BC8398 /* CATEGORY.h */,
+				344234E019BCDD3D00BC8398 /* CATEGORY.m */,
+				344234DC19BCDD3D00BC8398 /* BEER.h */,
+				344234DD19BCDD3D00BC8398 /* BEER.m */,
+				344234DA19BCCF7F00BC8398 /* Beers.plist */,
+				344234A519BCCD2F00BC8398 /* Supporting Files */,
+			);
+			path = FederalTaphouse;
+			sourceTree = "<group>";
+		};
+		344234A519BCCD2F00BC8398 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				344234A619BCCD2F00BC8398 /* FederalTaphouse-Info.plist */,
+				344234A719BCCD2F00BC8398 /* InfoPlist.strings */,
+				344234AA19BCCD2F00BC8398 /* main.m */,
+				344234AC19BCCD2F00BC8398 /* FederalTaphouse-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		344234CA19BCCD2F00BC8398 /* FederalTaphouseTests */ = {
+			isa = PBXGroup;
+			children = (
+				344234D019BCCD2F00BC8398 /* FederalTaphouseTests.m */,
+				344234CB19BCCD2F00BC8398 /* Supporting Files */,
+			);
+			path = FederalTaphouseTests;
+			sourceTree = "<group>";
+		};
+		344234CB19BCCD2F00BC8398 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				344234CC19BCCD2F00BC8398 /* FederalTaphouseTests-Info.plist */,
+				344234CD19BCCD2F00BC8398 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3442349819BCCD2F00BC8398 /* FederalTaphouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344234D419BCCD2F00BC8398 /* Build configuration list for PBXNativeTarget "FederalTaphouse" */;
+			buildPhases = (
+				3442349519BCCD2F00BC8398 /* Sources */,
+				3442349619BCCD2F00BC8398 /* Frameworks */,
+				3442349719BCCD2F00BC8398 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FederalTaphouse;
+			productName = FederalTaphouse;
+			productReference = 3442349919BCCD2F00BC8398 /* FederalTaphouse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		344234C119BCCD2F00BC8398 /* FederalTaphouseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344234D719BCCD2F00BC8398 /* Build configuration list for PBXNativeTarget "FederalTaphouseTests" */;
+			buildPhases = (
+				344234BE19BCCD2F00BC8398 /* Sources */,
+				344234BF19BCCD2F00BC8398 /* Frameworks */,
+				344234C019BCCD2F00BC8398 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				344234C919BCCD2F00BC8398 /* PBXTargetDependency */,
+			);
+			name = FederalTaphouseTests;
+			productName = FederalTaphouseTests;
+			productReference = 344234C219BCCD2F00BC8398 /* FederalTaphouseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3442349119BCCD2F00BC8398 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = softwaremerchant;
+				TargetAttributes = {
+					344234C119BCCD2F00BC8398 = {
+						TestTargetID = 3442349819BCCD2F00BC8398;
+					};
+				};
+			};
+			buildConfigurationList = 3442349419BCCD2F00BC8398 /* Build configuration list for PBXProject "FederalTaphouse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3442349019BCCD2F00BC8398;
+			productRefGroup = 3442349A19BCCD2F00BC8398 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3442349819BCCD2F00BC8398 /* FederalTaphouse */,
+				344234C119BCCD2F00BC8398 /* FederalTaphouseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3442349719BCCD2F00BC8398 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344234BD19BCCD2F00BC8398 /* Images.xcassets in Resources */,
+				344234A919BCCD2F00BC8398 /* InfoPlist.strings in Resources */,
+				344234DB19BCCF7F00BC8398 /* Beers.plist in Resources */,
+				344234B219BCCD2F00BC8398 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344234C019BCCD2F00BC8398 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344234CF19BCCD2F00BC8398 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3442349519BCCD2F00BC8398 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344234AF19BCCD2F00BC8398 /* SMAppDelegate.m in Sources */,
+				344234B519BCCD2F00BC8398 /* FederalTaphouse.xcdatamodeld in Sources */,
+				344234B819BCCD2F00BC8398 /* SMMasterViewController.m in Sources */,
+				344234E119BCDD3D00BC8398 /* CATEGORY.m in Sources */,
+				344234BB19BCCD2F00BC8398 /* SMDetailViewController.m in Sources */,
+				344234AB19BCCD2F00BC8398 /* main.m in Sources */,
+				34F5C69819BE3F4500BB9CCC /* SMLiveMusicViewController.m in Sources */,
+				344234DE19BCDD3D00BC8398 /* BEER.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344234BE19BCCD2F00BC8398 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344234D119BCCD2F00BC8398 /* FederalTaphouseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		344234C919BCCD2F00BC8398 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3442349819BCCD2F00BC8398 /* FederalTaphouse */;
+			targetProxy = 344234C819BCCD2F00BC8398 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		344234A719BCCD2F00BC8398 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				344234A819BCCD2F00BC8398 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		344234B019BCCD2F00BC8398 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				344234B119BCCD2F00BC8398 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		344234CD19BCCD2F00BC8398 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				344234CE19BCCD2F00BC8398 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		344234D219BCCD2F00BC8398 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		344234D319BCCD2F00BC8398 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		344234D519BCCD2F00BC8398 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FederalTaphouse/FederalTaphouse-Prefix.pch";
+				INFOPLIST_FILE = "FederalTaphouse/FederalTaphouse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		344234D619BCCD2F00BC8398 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FederalTaphouse/FederalTaphouse-Prefix.pch";
+				INFOPLIST_FILE = "FederalTaphouse/FederalTaphouse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		344234D819BCCD2F00BC8398 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FederalTaphouse.app/FederalTaphouse";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FederalTaphouse/FederalTaphouse-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FederalTaphouseTests/FederalTaphouseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		344234D919BCCD2F00BC8398 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FederalTaphouse.app/FederalTaphouse";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FederalTaphouse/FederalTaphouse-Prefix.pch";
+				INFOPLIST_FILE = "FederalTaphouseTests/FederalTaphouseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3442349419BCCD2F00BC8398 /* Build configuration list for PBXProject "FederalTaphouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344234D219BCCD2F00BC8398 /* Debug */,
+				344234D319BCCD2F00BC8398 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344234D419BCCD2F00BC8398 /* Build configuration list for PBXNativeTarget "FederalTaphouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344234D519BCCD2F00BC8398 /* Debug */,
+				344234D619BCCD2F00BC8398 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344234D719BCCD2F00BC8398 /* Build configuration list for PBXNativeTarget "FederalTaphouseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344234D819BCCD2F00BC8398 /* Debug */,
+				344234D919BCCD2F00BC8398 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		344234B319BCCD2F00BC8398 /* FederalTaphouse.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				344234B419BCCD2F00BC8398 /* FederalTaphouse.xcdatamodel */,
+			);
+			currentVersion = 344234B419BCCD2F00BC8398 /* FederalTaphouse.xcdatamodel */;
+			path = FederalTaphouse.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3442349119BCCD2F00BC8398 /* Project object */;
+}

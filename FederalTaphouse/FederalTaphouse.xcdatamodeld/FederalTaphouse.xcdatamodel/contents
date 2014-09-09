@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="BEER" representedClassName="BEER" syncable="YES">
+        <attribute name="beerABV" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="beerDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="beerLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="beerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="beerPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="beerSize" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="beerCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CATEGORY" inverseName="categoryBeers" inverseEntity="CATEGORY" syncable="YES"/>
+    </entity>
+    <entity name="CATEGORY" representedClassName="CATEGORY">
+        <attribute name="categoryName" optional="YES" attributeType="String">
+            <userInfo/>
+        </attribute>
+        <relationship name="categoryBeers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BEER" inverseName="beerCategory" inverseEntity="BEER" syncable="YES"/>
+        <userInfo/>
+    </entity>
+    <elements>
+        <element name="CATEGORY" positionX="45" positionY="180" width="128" height="73"/>
+        <element name="BEER" positionX="261" positionY="198" width="128" height="148"/>
+    </elements>
+</model>
