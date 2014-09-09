@@ -57,7 +57,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Live Music" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HVn-FW-qMi">
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Get Directions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HVn-FW-qMi">
                                                     <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="-24" y="-276"/>
         </scene>
-        <!--Live Music View Controller-->
+        <!--Get Directions-->
         <scene sceneID="aHs-gT-99R">
             <objects>
-                <viewController id="Qlg-3Q-15X" customClass="SMLiveMusicViewController" sceneMemberID="viewController">
+                <viewController id="Qlg-3Q-15X" customClass="SMGetDirections" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v98-Ge-ocq"/>
                         <viewControllerLayoutGuide type="bottom" id="KV7-T8-Huw"/>

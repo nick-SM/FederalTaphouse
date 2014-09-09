@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface SMLiveMusicViewController : UIViewController
+@interface SMGetDirections : UIViewController
 @property (weak, nonatomic) IBOutlet MKMapView *mvMap;
 
 @end
