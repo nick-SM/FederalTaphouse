@@ -53,9 +53,11 @@
         region = MKCoordinateRegionMakeWithDistance(coord, 100, 100);
     }
     else{
+        //region = MKCoordinateRegionMakeWithDistance(coord, 100, 100);
+        //[self.mvMap setRegion:[self.mvMap regionThatFits:region] animated:YES];
         MKCoordinateSpan locationSpan;
-        locationSpan.latitudeDelta =1.1*abs(userloc.coordinate.latitude - FTlat);
-        locationSpan.longitudeDelta =1.1*abs(userloc.coordinate.longitude  -FTlong);
+        locationSpan.latitudeDelta =1.3*abs(userloc.coordinate.latitude - FTlat);
+        locationSpan.longitudeDelta =1.3*abs(userloc.coordinate.longitude  -FTlong);
         CLLocationCoordinate2D locationCenter;
         locationCenter.latitude = (FTlat + userloc.coordinate.latitude) / 2;
         locationCenter.longitude = (FTlong + userloc.coordinate.longitude) / 2;
