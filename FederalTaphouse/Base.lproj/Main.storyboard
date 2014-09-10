@@ -96,27 +96,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uIr-9q-d8X">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uIr-9q-d8X">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kHd-aG-LXL">
+                                <rect key="frame" x="43" y="517" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeLocationPresser:" destination="Qlg-3Q-15X" eventType="valueChanged" id="iDg-uZ-w82"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Display User Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9e-we-20J">
+                                <rect key="frame" x="109" y="522" width="168" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="f2U-Cv-9Gu">
                         <barButtonItem key="rightBarButtonItem" title="Get Directions" id="Omf-AZ-Vp6">
                             <connections>
-                                <segue destination="YKU-F5-leg" kind="push" identifier="toDirections" id="CIK-mQ-Lqv"/>
+                                <action selector="getDirections:" destination="Qlg-3Q-15X" id="aob-F4-8ES"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mvMap" destination="uIr-9q-d8X" id="utY-Tr-VrY"/>
+                        <outlet property="sLocationChanged" destination="kHd-aG-LXL" id="MwB-tb-hd2"/>
+                        <segue destination="YKU-F5-leg" kind="push" identifier="toDirections" id="SeD-AD-Lll"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8M-WG-E4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="-600"/>
+            <point key="canvasLocation" x="480" y="-600"/>
         </scene>
         <!--Directions View Controller - Directions-->
         <scene sceneID="frN-LR-u2u">

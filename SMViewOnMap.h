@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface SMViewOnMap : UIViewController
 @property (weak, nonatomic) IBOutlet MKMapView *mvMap;
+- (IBAction)changeLocationPresser:(UISwitch *)sender;
+@property (weak, nonatomic) IBOutlet UISwitch *sLocationChanged;
+- (IBAction)getDirections:(id)sender;
 
 @end

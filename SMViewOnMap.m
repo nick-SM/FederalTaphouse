@@ -36,12 +36,16 @@
     directionsDrawn = NO;
 
     userloc = userLocation;
+    [self clearLine];
+    [self drawMap];
+
+}
+
+-(void) clearLine{
     for(id obj in arrRoutes){
         MKRoute *route = obj;
         [self.mvMap removeOverlay:route.polyline];
     }
-    [self drawMap];
-
 }
 
 - (void) drawMap{
@@ -160,15 +164,41 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    
+    //[self clearLine];
+    //[self.sLocationChanged setOn:NO];
+    //self.mvMap.showsUserLocation = NO;
     if([segue.identifier isEqualToString: @"toDirections"]){
-        MKRoute *route;
-        route = arrRoutes[0];
-        
-        [[segue destinationViewController] setValue:route.steps forKey:@"steps"];
+        if(arrRoutes!=nil){
+            MKRoute *route;
+            route = arrRoutes[0];
+            
+            [[segue destinationViewController] setValue:route.steps forKey:@"steps"];
+        }
+        else{
+
+        }
     }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
 
-
+- (IBAction)changeLocationPresser:(UISwitch *)sender {
+    if(sender.isOn == NO){
+        self.mvMap.showsUserLocation = NO;
+        [self clearLine];
+    }
+    else{
+        self.mvMap.showsUserLocation = YES;
+    }
+}
+- (IBAction)getDirections:(id)sender {
+    if(arrRoutes!=nil){
+        [self performSegueWithIdentifier:@"toDirections" sender:nil];
+    }
+    else{
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Location not Found" message:@"Please enable location services and press 'Display User Location' switch to view directions" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }
+}
 @end
