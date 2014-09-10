@@ -22,6 +22,9 @@
     /*UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     SMMasterViewController *controller = (SMMasterViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;*/
+    
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    
     return YES;
 }
 
@@ -46,6 +49,21 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+}
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
+{
+    NSString *token = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
+    token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
+    //return deviceToken;
+	NSLog(@"My token is: %@", deviceToken);
+    NSLog(@"My token is: %@", token);
+    
+}
+
+- (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
+{
+	NSLog(@"Failed to get token, error: %@", error);
+    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
