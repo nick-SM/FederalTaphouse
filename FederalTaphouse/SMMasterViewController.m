@@ -32,7 +32,7 @@
     if(self.managedObjectContext == nil){
         [appDelegate initCoreData];
     }
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //self.navigationItem.rightBarButtonItem = self.editButtonItem;
     //SMAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
     
