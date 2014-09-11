@@ -29,14 +29,17 @@
 {
     [super viewDidLoad];
     SMAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
-    [appDelegate initCoreData];
+    if(self.managedObjectContext == nil){
+        [appDelegate initCoreData];
+    }
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
     //SMAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
     
     NSFetchRequest *fetchBeers = [[NSFetchRequest alloc]
                                    initWithEntityName:@"BEER"];
     
-    NSArray *objects = [context executeFetchRequest:fetchBeers error:nil];
+    NSArray *objects = [self.managedObjectContext executeFetchRequest:fetchBeers error:nil];
     
     if([objects count]== 0){
         
@@ -52,7 +55,7 @@
             
             moCategory = [NSEntityDescription
                             insertNewObjectForEntityForName:@"CATEGORY"
-                            inManagedObjectContext:context];
+                            inManagedObjectContext:self.managedObjectContext];
             
             moCategory.categoryName = categories[i];
             
@@ -63,7 +66,7 @@
                 BEER *moBeer;
                 moBeer = [NSEntityDescription
                                 insertNewObjectForEntityForName:@"BEER"
-                                inManagedObjectContext:context];
+                                inManagedObjectContext:self.managedObjectContext];
                 moBeer.beerCategory = moCategory;
                 moBeer.beerName = beers[j];
                 
@@ -123,6 +126,7 @@
     return [sectionInfo name];
 }
 
+
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
     //return [self.fetchedResultsController sectionIndexTitles];
     NSMutableArray *titles;
@@ -167,7 +171,7 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
         [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
-        
+        //self.fetchedResultsController obj
         NSError *error = nil;
         if (![context save:&error]) {
              // Replace this implementation with code to handle the error appropriately.
@@ -196,6 +200,34 @@
 #pragma mark - Fetched results controller
 
 - (IBAction)refresh:(id)sender {
+    //[context deleteObject:];
+    NSFetchRequest * allBeers = [[NSFetchRequest alloc] initWithEntityName:@"BEER"];
+    //[allBeers setEntity:[NSEntityDescription entityForName:@"BEER" inManagedObjectContext:self.managedObjectContext]];
+    //[allBeers setIncludesPropertyValues:NO]; //only fetch the managedObjectID
+    
+    //NSError * error = nil;
+    NSArray * beers = [self.managedObjectContext executeFetchRequest:allBeers error:nil];
+    //[allCars release];
+    //error handling goes here
+    for (NSManagedObject * beer in beers) {
+        [self.managedObjectContext deleteObject:beer];
+        NSError * error = nil;
+
+        [self.managedObjectContext save:&error];
+        //NSLog(@"%@",error);
+    }
+    beers = [self.managedObjectContext executeFetchRequest:allBeers error:nil];
+    //NSError * error = nil;
+
+    //BEER *testBEER;
+    //testBEER = [NSEntityDescription
+      //        insertNewObjectForEntityForName:@"BEER"
+        //      inManagedObjectContext:context];
+    //testBEER.beerName = @"Test";
+    //[context insertObject:testBEER];
+    //[appDelegate saveContext];
+    //more error handling here
+    
 }
 
 - (NSFetchedResultsController *)fetchedResultsController

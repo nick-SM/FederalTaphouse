@@ -17,7 +17,7 @@
         <userInfo/>
     </entity>
     <elements>
-        <element name="CATEGORY" positionX="45" positionY="180" width="128" height="73"/>
         <element name="BEER" positionX="261" positionY="198" width="128" height="148"/>
+        <element name="CATEGORY" positionX="45" positionY="180" width="128" height="73"/>
     </elements>
 </model>
