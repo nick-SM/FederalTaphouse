@@ -36,16 +36,12 @@
     directionsDrawn = NO;
 
     userloc = userLocation;
-    [self clearLine];
     [self drawMap];
 
 }
 
 -(void) clearLine{
-    for(id obj in arrRoutes){
-        MKRoute *route = obj;
-        [self.mvMap removeOverlay:route.polyline];
-    }
+    [self.mvMap removeOverlays:self.mvMap.overlays];
 }
 
 - (void) drawMap{
@@ -60,8 +56,12 @@
         //region = MKCoordinateRegionMakeWithDistance(coord, 100, 100);
         //[self.mvMap setRegion:[self.mvMap regionThatFits:region] animated:YES];
         MKCoordinateSpan locationSpan;
-        locationSpan.latitudeDelta =1.3*abs(userloc.coordinate.latitude - FTlat);
-        locationSpan.longitudeDelta =1.3*abs(userloc.coordinate.longitude  -FTlong);
+        locationSpan.latitudeDelta =1.3*fabs(userloc.coordinate.latitude - FTlat);
+        locationSpan.longitudeDelta =1.3*fabs(userloc.coordinate.longitude  -FTlong);
+        //NSLog(@"%f",userloc.coordinate.latitude);
+        //NSLog(@"%f",userloc.coordinate.latitude-FTlat);
+        //NSLog(@"%f",fabs(userloc.coordinate.latitude-FTlat));
+
         CLLocationCoordinate2D locationCenter;
         locationCenter.latitude = (FTlat + userloc.coordinate.latitude) / 2;
         locationCenter.longitude = (FTlong + userloc.coordinate.longitude) / 2;
@@ -104,8 +104,6 @@
                 
                 MKRoute *rout = obj;
                 
-                MKPolyline *line = [rout polyline];
-                [self.mvMap addOverlay:line];
                 NSLog(@"Rout Name : %@",rout.name);
                 NSLog(@"Total Distance (in Meters) :%f",rout.distance);
                 
@@ -126,9 +124,13 @@
 - (MKOverlayView *)mapView:(MKMapView *)mapView rendererForOverlay:(id)overlay{
     MKPolylineRenderer *renderer =
     [[MKPolylineRenderer alloc] initWithOverlay:overlay];
+    //MKPolylineView *view2;
+    //MKOverlayView *view;
     renderer.strokeColor = [UIColor blueColor];
     renderer.lineWidth = 5.0;
-    return renderer;
+    
+    //view
+    return (MKOverlayView *)renderer;
     
     
    /* if ([overlay isKindOfClass:[MKPolyline class]]) {
@@ -141,11 +143,13 @@
     return nil;*/
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
     self.mvMap.delegate = (id)self;
     directionsDrawn = NO;
+    [self.btnDrawRouteCollection[0] setHidden:YES];
+    [self.btnDrawRouteCollection[1] setHidden:YES];
+    //self.mvMap.autoresizingMask = self.view.autoresizingMask;
     [self drawMap];
 
 
@@ -155,7 +159,7 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  //   Dispose of any resources that can be recreated.
 }
 
 
@@ -185,11 +189,15 @@
 
 - (IBAction)changeLocationPresser:(UISwitch *)sender {
     if(sender.isOn == NO){
-        self.mvMap.showsUserLocation = NO;
         [self clearLine];
+        self.mvMap.showsUserLocation = NO;
+        [self.btnDrawRouteCollection[0] setHidden:YES];
+        [self.btnDrawRouteCollection[1] setHidden:YES];
     }
     else{
         self.mvMap.showsUserLocation = YES;
+        [self.btnDrawRouteCollection[0] setHidden:NO];
+        [self.btnDrawRouteCollection[1] setHidden:NO];
     }
 }
 - (IBAction)getDirections:(id)sender {
@@ -200,5 +208,20 @@
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Location not Found" message:@"Please enable location services and press 'Display User Location' switch to view directions" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
     }
+}
+
+- (IBAction)drawRoute:(id)sender {
+    if(arrRoutes!=nil){
+        [self clearLine];
+        MKPolyline *line =[arrRoutes[0] polyline];
+        [self.mvMap addOverlay:line];
+    }
+    else{
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Location not Found" message:@"Please enable location services and press 'Display User Location' switch to draw route" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }
+}
+- (IBAction)clearRoute:(id)sender {
+    [self clearLine];
 }
 @end

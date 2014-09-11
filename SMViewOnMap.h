@@ -15,5 +15,9 @@
 - (IBAction)changeLocationPresser:(UISwitch *)sender;
 @property (weak, nonatomic) IBOutlet UISwitch *sLocationChanged;
 - (IBAction)getDirections:(id)sender;
+- (IBAction)drawRoute:(id)sender;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *btnDrawRouteCollection;
+- (IBAction)clearRoute:(id)sender;
+
 
 @end

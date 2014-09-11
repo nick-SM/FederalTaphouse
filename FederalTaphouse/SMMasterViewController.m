@@ -114,7 +114,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    NSLog(@"%i",[[self.fetchedResultsController sections] count]);
+    //NSLog(@"%i",[[self.fetchedResultsController sections] count]);
     return [[self.fetchedResultsController sections] count];
 }
 
@@ -194,6 +194,9 @@
 }
 
 #pragma mark - Fetched results controller
+
+- (IBAction)refresh:(id)sender {
+}
 
 - (NSFetchedResultsController *)fetchedResultsController
 {

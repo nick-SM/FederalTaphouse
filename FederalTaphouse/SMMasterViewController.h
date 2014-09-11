@@ -11,6 +11,7 @@
 #import <CoreData/CoreData.h>
 
 @interface SMMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+- (IBAction)refresh:(id)sender;
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;

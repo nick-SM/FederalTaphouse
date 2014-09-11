@@ -116,12 +116,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qnm-zn-kG2">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qnm-zn-kG2">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qnm-zn-kG2" firstAttribute="top" secondItem="liB-3b-Swr" secondAttribute="top" id="Bfn-iA-E9z"/>
+                            <constraint firstAttribute="bottom" secondItem="Qnm-zn-kG2" secondAttribute="bottom" id="LvY-d5-ixJ"/>
+                            <constraint firstItem="Qnm-zn-kG2" firstAttribute="leading" secondItem="liB-3b-Swr" secondAttribute="leading" id="d3S-Bh-bf0"/>
+                            <constraint firstAttribute="trailing" secondItem="Qnm-zn-kG2" secondAttribute="trailing" id="dkB-0K-8N8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kBV-E0-PhC"/>
                     <connections>
@@ -144,25 +150,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uIr-9q-d8X">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uIr-9q-d8X">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kHd-aG-LXL">
-                                <rect key="frame" x="43" y="517" width="51" height="31"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kHd-aG-LXL">
+                                <rect key="frame" x="76" y="512" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="changeLocationPresser:" destination="Qlg-3Q-15X" eventType="valueChanged" id="iDg-uZ-w82"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Display User Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9e-we-20J">
-                                <rect key="frame" x="109" y="522" width="168" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Display User Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9e-we-20J">
+                                <rect key="frame" x="142" y="517" width="168" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izx-oj-Oau">
+                                <rect key="frame" x="20" y="69" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Draw Route">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="drawRoute:" destination="Qlg-3Q-15X" eventType="touchUpInside" id="aVr-Qj-bD9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfT-S1-JcR">
+                                <rect key="frame" x="218" y="69" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Clear Route">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearRoute:" destination="Qlg-3Q-15X" eventType="touchUpInside" id="rRd-44-Dbl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1w-i7-qMJ">
+                                <rect key="frame" x="275" y="258" width="18" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gfT-S1-JcR" secondAttribute="trailing" constant="20" id="CFa-3U-Yca"/>
+                            <constraint firstItem="e1w-i7-qMJ" firstAttribute="leading" secondItem="kHd-aG-LXL" secondAttribute="trailing" constant="54" id="DkF-CK-DCv"/>
+                            <constraint firstAttribute="centerX" secondItem="e1w-i7-qMJ" secondAttribute="centerX" id="Hsn-Ke-pNR"/>
+                            <constraint firstItem="uIr-9q-d8X" firstAttribute="leading" secondItem="09V-LJ-UPM" secondAttribute="leading" id="KjI-Jo-84Y"/>
+                            <constraint firstItem="KV7-T8-Huw" firstAttribute="top" secondItem="kHd-aG-LXL" secondAttribute="bottom" constant="20" id="L6d-S1-I6F"/>
+                            <constraint firstItem="d9e-we-20J" firstAttribute="leading" secondItem="kHd-aG-LXL" secondAttribute="trailing" constant="8" id="RBC-bO-Itr"/>
+                            <constraint firstAttribute="trailing" secondItem="uIr-9q-d8X" secondAttribute="trailing" id="Uxz-od-iA7"/>
+                            <constraint firstAttribute="bottom" secondItem="d9e-we-20J" secondAttribute="bottom" constant="25" id="hD8-oP-q8D"/>
+                            <constraint firstAttribute="bottom" secondItem="uIr-9q-d8X" secondAttribute="bottom" id="hU0-vD-unM"/>
+                            <constraint firstItem="uIr-9q-d8X" firstAttribute="top" secondItem="09V-LJ-UPM" secondAttribute="top" id="kg8-cO-jEi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="f2U-Cv-9Gu">
                         <barButtonItem key="rightBarButtonItem" title="Get Directions" id="Omf-AZ-Vp6">
@@ -174,12 +221,14 @@
                     <connections>
                         <outlet property="mvMap" destination="uIr-9q-d8X" id="utY-Tr-VrY"/>
                         <outlet property="sLocationChanged" destination="kHd-aG-LXL" id="MwB-tb-hd2"/>
+                        <outletCollection property="btnDrawRouteCollection" destination="gfT-S1-JcR" id="6uR-fX-qZ2"/>
+                        <outletCollection property="btnDrawRouteCollection" destination="izx-oj-Oau" id="Zi0-AG-FOh"/>
                         <segue destination="YKU-F5-leg" kind="push" identifier="toDirections" id="SeD-AD-Lll"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8M-WG-E4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="480" y="-600"/>
+            <point key="canvasLocation" x="432" y="-650"/>
         </scene>
         <!--Directions View Controller - Directions-->
         <scene sceneID="frN-LR-u2u">
@@ -193,7 +242,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSc-2s-ibd">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSc-2s-ibd">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -203,6 +252,12 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mSc-2s-ibd" firstAttribute="top" secondItem="HTg-vm-2xn" secondAttribute="top" id="8mG-ym-vrD"/>
+                            <constraint firstAttribute="trailing" secondItem="mSc-2s-ibd" secondAttribute="trailing" id="9Wt-cb-xWW"/>
+                            <constraint firstItem="mSc-2s-ibd" firstAttribute="leading" secondItem="HTg-vm-2xn" secondAttribute="leading" id="S2x-2b-W9R"/>
+                            <constraint firstAttribute="bottom" secondItem="mSc-2s-ibd" secondAttribute="bottom" id="jl5-yq-Qhk"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Directions" id="GJc-tW-u1d"/>
                     <connections>
@@ -250,7 +305,13 @@
                             <outlet property="delegate" destination="pGg-6v-bdr" id="Y6K-Cp-Qkv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Beer" id="tQt-TN-PWz"/>
+                    <navigationItem key="navigationItem" title="Beer" id="tQt-TN-PWz">
+                        <barButtonItem key="rightBarButtonItem" title="Refresh" id="DbL-o6-vxw">
+                            <connections>
+                                <action selector="refresh:" destination="pGg-6v-bdr" id="Ap9-Mz-Ah7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
             </objects>
