@@ -54,6 +54,7 @@
         [self.lblcDescriptions[3] setValue:self.detailItem.beerABV forKey:@"text"];
         [self.lblcDescriptions[4] setValue:self.detailItem.beerPrice forKey:@"text"];
         [self.lblcDescriptions[5] setValue:self.detailItem.beerDescription forKey:@"text"];
+        NSLog(@"%@",[self.detailItem.beerCategory valueForKey:@"categoryName"]);
         
     }
 }

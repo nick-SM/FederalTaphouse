@@ -77,11 +77,8 @@
                 moBeer.beerSize = attributes[@"Size"];
                 moBeer.beerDescription = attributes[@"Description"];
                 moBeer.beerCategory = moCategory;
-                [appDelegate saveContext];
             }
         }
-        //[appDelegate saveContext];
-
     }
     
 
@@ -202,20 +199,31 @@
 - (IBAction)refresh:(id)sender {
     //[context deleteObject:];
     NSFetchRequest * allBeers = [[NSFetchRequest alloc] initWithEntityName:@"BEER"];
+    NSFetchRequest * allCategories = [[NSFetchRequest alloc] initWithEntityName:@"CATEGORY"];
     //[allBeers setEntity:[NSEntityDescription entityForName:@"BEER" inManagedObjectContext:self.managedObjectContext]];
     //[allBeers setIncludesPropertyValues:NO]; //only fetch the managedObjectID
     
     //NSError * error = nil;
     NSArray * beers = [self.managedObjectContext executeFetchRequest:allBeers error:nil];
+    NSArray * categories = [self.managedObjectContext executeFetchRequest:allCategories error:nil];
     //[allCars release];
     //error handling goes here
     for (NSManagedObject * beer in beers) {
         [self.managedObjectContext deleteObject:beer];
         NSError * error = nil;
 
-        [self.managedObjectContext save:&error];
+        //[self.managedObjectContext save:&error];
         //NSLog(@"%@",error);
     }
+    
+    for (NSManagedObject * category in categories) {
+        [self.managedObjectContext deleteObject:category];
+        NSError * error = nil;
+        
+        //[self.managedObjectContext save:&error];
+        //NSLog(@"%@",error);
+    }
+    
     beers = [self.managedObjectContext executeFetchRequest:allBeers error:nil];
     //NSError * error = nil;
 
