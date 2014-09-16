@@ -79,8 +79,9 @@
                 moBeer.beerCategory = moCategory;
             }
         }
+        [self.managedObjectContext save:nil];
     }
-    
+    //[self.managedObjectContext save:nil];
 
 }
 
@@ -262,6 +263,8 @@
         
         
     }
+    
+    [self.managedObjectContext save:nil];
 }
 
 - (NSFetchedResultsController *)fetchedResultsController
