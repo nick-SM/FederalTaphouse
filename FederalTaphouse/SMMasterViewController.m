@@ -7,7 +7,7 @@
 //
 
 #import "SMMasterViewController.h"
-
+#import "SMOnlineCourseWebService.h"
 #import "SMDetailViewController.h"
 #import "SMAppDelegate.h"
 #import "CATEGORY.h"
@@ -123,9 +123,19 @@
     return [sectionInfo name];
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
+    if(UIDeviceOrientationIsLandscape(deviceOrientation)){
+        [self performSegueWithIdentifier:@"toDetailLandscapeFromMaster" sender:nil];
+    }
+    else{
+        [self performSegueWithIdentifier:@"toDetailPortraitFromMaster" sender:nil];
+    }
+
+}
+
 
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-    //return [self.fetchedResultsController sectionIndexTitles];
     NSMutableArray *titles;
     titles = [NSMutableArray new];
     
@@ -168,7 +178,6 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
         [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
-        //self.fetchedResultsController obj
         NSError *error = nil;
         if (![context save:&error]) {
              // Replace this implementation with code to handle the error appropriately.
@@ -187,7 +196,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+    if ([[segue identifier] isEqualToString:@"toDetailPortraitFromMaster"] || [[segue identifier] isEqualToString:@"toDetailLandscapeFromMaster"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
         [[segue destinationViewController] setDetailItem:object];
@@ -200,42 +209,43 @@
     //[context deleteObject:];
     NSFetchRequest * allBeers = [[NSFetchRequest alloc] initWithEntityName:@"BEER"];
     NSFetchRequest * allCategories = [[NSFetchRequest alloc] initWithEntityName:@"CATEGORY"];
-    //[allBeers setEntity:[NSEntityDescription entityForName:@"BEER" inManagedObjectContext:self.managedObjectContext]];
-    //[allBeers setIncludesPropertyValues:NO]; //only fetch the managedObjectID
-    
-    //NSError * error = nil;
     NSArray * beers = [self.managedObjectContext executeFetchRequest:allBeers error:nil];
     NSArray * categories = [self.managedObjectContext executeFetchRequest:allCategories error:nil];
-    //[allCars release];
-    //error handling goes here
     for (NSManagedObject * beer in beers) {
-        [self.managedObjectContext deleteObject:beer];
-        NSError * error = nil;
-
-        //[self.managedObjectContext save:&error];
-        //NSLog(@"%@",error);
-    }
+        [self.managedObjectContext deleteObject:beer];    }
     
     for (NSManagedObject * category in categories) {
         [self.managedObjectContext deleteObject:category];
-        NSError * error = nil;
-        
-        //[self.managedObjectContext save:&error];
-        //NSLog(@"%@",error);
     }
     
-    beers = [self.managedObjectContext executeFetchRequest:allBeers error:nil];
-    //NSError * error = nil;
-
-    //BEER *testBEER;
-    //testBEER = [NSEntityDescription
-      //        insertNewObjectForEntityForName:@"BEER"
-        //      inManagedObjectContext:context];
-    //testBEER.beerName = @"Test";
-    //[context insertObject:testBEER];
-    //[appDelegate saveContext];
-    //more error handling here
+    SMOnlineCourseWebService *service = [[SMOnlineCourseWebService alloc]init];
     
+    NSMutableArray *inputElements = [[NSMutableArray alloc]init];
+    
+    NSMutableArray *elementValues = [[NSMutableArray alloc]init];
+    
+    NSDictionary *result = [service doWebService:@"getBeerList" withElements:inputElements forValues:elementValues];
+    
+    NSArray *beerNames = result[@"beer_name"];
+    NSArray *beerCategorys = result[@"beer_category_name"];
+    NSArray *beerDescriptions = result[@"beer_description"];
+    NSArray *beerABVs = result[@"beer_ABV"];
+    NSArray *beerLocations = result[@"beer_size"];
+    NSArray *beerPrices = result[@"beer_price"];
+    NSArray *beerSizes = result[@"beer_size"];
+    
+    NSMutableDictionary *catDict = [NSMutableDictionary new];
+    for(int i = 0;i< [beerCategorys count];i++){
+        if(catDict[beerCategorys[i]] != YES){
+            //[catDict setObject:<#(id)#> forKey:<#(id<NSCopying>)#>];
+        }
+    }
+    
+    for(int i = 0;i< [beerNames count];i++){
+        BEER *moBEER;
+        CATEGORY *moCATEGORY;
+        
+    }
 }
 
 - (NSFetchedResultsController *)fetchedResultsController
