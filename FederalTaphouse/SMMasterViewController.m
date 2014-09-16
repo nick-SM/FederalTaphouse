@@ -236,14 +236,30 @@
     
     NSMutableDictionary *catDict = [NSMutableDictionary new];
     for(int i = 0;i< [beerCategorys count];i++){
-        if(catDict[beerCategorys[i]] != YES){
-            //[catDict setObject:<#(id)#> forKey:<#(id<NSCopying>)#>];
+        if(![catDict[beerCategorys[i]]  isEqual: nil]){
+            CATEGORY *moCategory;
+            moCategory = [NSEntityDescription
+                          insertNewObjectForEntityForName:@"CATEGORY"
+                          inManagedObjectContext:self.managedObjectContext];
+            
+            moCategory.categoryName = beerCategorys[i];
+            [catDict setObject:moCategory forKey:beerCategorys[i]];
         }
     }
     
     for(int i = 0;i< [beerNames count];i++){
         BEER *moBEER;
-        CATEGORY *moCATEGORY;
+        moBEER = [NSEntityDescription
+                      insertNewObjectForEntityForName:@"BEER"
+                      inManagedObjectContext:self.managedObjectContext];
+        moBEER.beerName = beerNames[i];
+        moBEER.beerLocation = beerLocations[i];
+        moBEER.beerSize = beerSizes[i];
+        moBEER.beerDescription = beerDescriptions[i];
+        moBEER.beerPrice = beerPrices[i];
+        moBEER.beerABV = beerABVs[i];
+        moBEER.beerCategory = catDict[beerCategorys[i]];
+        
         
     }
 }
