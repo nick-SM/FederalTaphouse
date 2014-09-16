@@ -10,27 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432582864.23761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "-numberOfSectionsInTableView:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "-sectionIndexTitlesForTableView:"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "-sectionIndexTitlesForTableView:"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "-tableView:canEditRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432161413.929895"
+            timestampString = "432582864.23761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574067.883719"
+            timestampString = "432582864.23761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMDetailViewController.m"
-            timestampString = "432491184.487507"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "-configureView"
             landmarkType = "5">
          </BreakpointContent>
@@ -106,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMDetailViewController.m"
-            timestampString = "432491184.487507"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "-configureView"
             landmarkType = "5">
          </BreakpointContent>
@@ -122,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432161413.929895"
+            timestampString = "432582864.23761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -138,28 +122,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432161413.929895"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "264"
-            endingLineNumber = "264"
-            landmarkName = "-refresh:"
+            startingLineNumber = "284"
+            endingLineNumber = "284"
+            landmarkName = "-fetchedResultsController"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -552,12 +520,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432582864.23761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "-insertNewObject:"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "@implementation SMMasterViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432582864.23761"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "-didReceiveMemoryWarning"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -568,75 +552,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "-numberOfSectionsInTableView:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432582864.23761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "123"
             endingLineNumber = "123"
-            landmarkName = "-tableView:titleForHeaderInSection:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
             landmarkName = "-sectionIndexTitlesForTableView:"
             landmarkType = "5">
          </BreakpointContent>
@@ -648,12 +568,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432582864.23761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
-            landmarkName = "-tableView:numberOfRowsInSection:"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "-sectionIndexTitlesForTableView:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -664,11 +584,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432582864.23761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -680,59 +600,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
-            landmarkName = "-tableView:canEditRowAtIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
-            landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
-            landmarkName = "-tableView:canMoveRowAtIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
             landmarkName = "-prepareForSegue:sender:"
             landmarkType = "5">
          </BreakpointContent>
@@ -744,11 +616,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "210"
-            endingLineNumber = "210"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "@implementation SMMasterViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432583388.763207"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "214"
+            endingLineNumber = "214"
             landmarkName = "-refresh:"
             landmarkType = "5">
          </BreakpointContent>
@@ -760,12 +648,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "301"
-            endingLineNumber = "301"
-            landmarkName = "-fetchedResultsController"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
+            landmarkName = "-refresh:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -776,12 +664,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "304"
-            endingLineNumber = "304"
-            landmarkName = "-fetchedResultsController"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
+            landmarkName = "-refresh:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -792,43 +680,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "309"
-            endingLineNumber = "309"
-            landmarkName = "-controllerWillChangeContent:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "330"
-            endingLineNumber = "330"
-            landmarkName = "-controller:didChangeObject:atIndexPath:forChangeType:newIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "313"
-            endingLineNumber = "313"
+            startingLineNumber = "321"
+            endingLineNumber = "321"
             landmarkName = "-controller:didChangeSection:atIndex:forChangeType:"
             landmarkType = "5">
          </BreakpointContent>
@@ -840,12 +696,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
-            landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
+            startingLineNumber = "324"
+            endingLineNumber = "324"
+            landmarkName = "-controller:didChangeObject:atIndexPath:forChangeType:newIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -856,12 +712,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
-            landmarkName = "-tableView:canEditRowAtIndexPath:"
+            startingLineNumber = "329"
+            endingLineNumber = "329"
+            landmarkName = "-controller:didChangeObject:atIndexPath:forChangeType:newIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -872,11 +728,75 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432161413.929895"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "350"
+            endingLineNumber = "350"
+            landmarkName = "-controllerDidChangeContent:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432583388.763207"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "333"
+            endingLineNumber = "333"
+            landmarkName = "-controller:didChangeObject:atIndexPath:forChangeType:newIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432583388.763207"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
+            landmarkName = "@implementation SMMasterViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432583388.763207"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
+            landmarkName = "@implementation SMMasterViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432582864.23761"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -888,11 +808,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432161413.929895"
+            timestampString = "432582864.23761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -904,11 +824,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432161483.561138"
+            timestampString = "432582864.23761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -920,11 +840,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "211"
-            endingLineNumber = "211"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
             landmarkName = "-refresh:"
             landmarkType = "5">
          </BreakpointContent>
@@ -936,11 +856,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "237"
-            endingLineNumber = "237"
+            startingLineNumber = "257"
+            endingLineNumber = "257"
             landmarkName = "-refresh:"
             landmarkType = "5">
          </BreakpointContent>
@@ -952,11 +872,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMDetailViewController.m"
-            timestampString = "432491008.353463"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -968,11 +888,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMDetailViewController.m"
-            timestampString = "432497937.041631"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "-didRotateFromInterfaceOrientation:"
             landmarkType = "5">
          </BreakpointContent>
@@ -984,23 +904,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMDetailViewController.m"
-            timestampString = "432496660.596077"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "-didRotateFromInterfaceOrientation:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FederalTaphouse/SMDetailViewController.m"
-            timestampString = "432496689.918679"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
@@ -1015,12 +919,28 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            filePath = "FederalTaphouse/SMDetailViewController.m"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "236"
-            endingLineNumber = "236"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "-didRotateFromInterfaceOrientation:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432583388.763207"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "256"
+            endingLineNumber = "256"
             landmarkName = "-refresh:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1032,12 +952,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "251"
-            endingLineNumber = "251"
-            landmarkName = "-refresh:"
+            startingLineNumber = "271"
+            endingLineNumber = "271"
+            landmarkName = "-fetchedResultsController"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1048,11 +968,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574190.818294"
+            timestampString = "432583388.763207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "238"
-            endingLineNumber = "238"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
             landmarkName = "-refresh:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1080,12 +1000,252 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FederalTaphouse/SMMasterViewController.m"
-            timestampString = "432574069.115413"
+            timestampString = "432582864.23761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432582864.23761"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432582864.23761"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "-searchDisplayController:shouldReloadTableForSearchString:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432583388.763207"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "-prepareForSegue:sender:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432583388.763207"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "-prepareForSegue:sender:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432583388.763207"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
+            landmarkName = "-prepareForSegue:sender:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432582864.23761"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "-searchBarTextDidEndEditing:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432583388.763207"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "-tableView:canEditRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432582864.23761"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432583388.763207"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "269"
+            endingLineNumber = "269"
+            landmarkName = "-fetchedResultsController"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432583043.479481"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "-awakeFromNib"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432583057.139669"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "-awakeFromNib"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432583388.763207"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "253"
+            endingLineNumber = "253"
+            landmarkName = "-refresh:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMMasterViewController.m"
+            timestampString = "432584381.475096"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "-returnFromDetail"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMDetailViewController.m"
+            timestampString = "432584491.343558"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "-viewWillDisappear:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FederalTaphouse/SMDetailViewController.m"
+            timestampString = "432584593.333187"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "-viewWillDisappear:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -17,7 +17,10 @@
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
-@implementation SMMasterViewController
+@implementation SMMasterViewController{
+    UITableView *selectedTable;
+    BOOL rowSelected;
+}
 
 - (void)awakeFromNib
 {
@@ -28,12 +31,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    rowSelected = NO;
     SMAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     if(self.managedObjectContext == nil){
         [appDelegate initCoreData];
     }
-    //self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    //SMAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
     
     NSFetchRequest *fetchBeers = [[NSFetchRequest alloc]
@@ -81,8 +83,6 @@
         }
         [self.managedObjectContext save:nil];
     }
-    //[self.managedObjectContext save:nil];
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -91,31 +91,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)insertNewObject:(id)sender
-{
-    NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-    NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-    NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
-    
-    // If appropriate, configure the new managed object.
-    // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
-    //[newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
-    
-    // Save the context.
-    NSError *error = nil;
-    if (![context save:&error]) {
-         // Replace this implementation with code to handle the error appropriately.
-         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
-    }
-}
 
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    //NSLog(@"%i",[[self.fetchedResultsController sections] count]);
     return [[self.fetchedResultsController sections] count];
 }
 
@@ -126,7 +106,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
-    if(UIDeviceOrientationIsLandscape(deviceOrientation)){
+    selectedTable =tableView;
+    rowSelected = YES;
+    if(UIDeviceOrientationIsLandscape(deviceOrientation) || deviceOrientation == UIDeviceOrientationPortraitUpsideDown){
         [self performSegueWithIdentifier:@"toDetailLandscapeFromMaster" sender:nil];
     }
     else{
@@ -134,7 +116,6 @@
     }
 
 }
-
 
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
     NSMutableArray *titles;
@@ -163,31 +144,45 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    UITableViewCell *cell = [self.tvMainTable dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+-(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
-    // Return NO if you do not want the specified item to be editable.
+
+    [NSFetchedResultsController deleteCacheWithName:nil];
+    if(![searchString isEqualToString:@""]){
+        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"beerName contains[c] %@", searchString];
+        [self.fetchedResultsController.fetchRequest setPredicate:predicate];
+    }
+    else{
+        [self.fetchedResultsController.fetchRequest setPredicate:nil];
+    }
+    NSError *error = nil;
+    [self.fetchedResultsController performFetch:&error];
     return YES;
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-        [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar{
+    if(!rowSelected){
+        [NSFetchedResultsController deleteCacheWithName:nil];
         NSError *error = nil;
-        if (![context save:&error]) {
-             // Replace this implementation with code to handle the error appropriately.
-             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
-        }
-    }   
+        [self.fetchedResultsController.fetchRequest setPredicate:nil];
+        [self.fetchedResultsController performFetch:&error];
+    }
 }
+
+-(void) returnFromDetail{
+    rowSelected = NO;
+}
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return NO if you do not want the specified item to be editable.
+    return NO;
+}
+
 
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -198,7 +193,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"toDetailPortraitFromMaster"] || [[segue identifier] isEqualToString:@"toDetailLandscapeFromMaster"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSIndexPath *indexPath = [selectedTable indexPathForSelectedRow];
         NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
         [[segue destinationViewController] setDetailItem:object];
     }
@@ -265,6 +260,8 @@
     }
     
     [self.managedObjectContext save:nil];
+    
+    
 }
 
 - (NSFetchedResultsController *)fetchedResultsController
@@ -289,7 +286,7 @@
     
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:@"beerCategory.categoryName" cacheName:@"Master"];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:@"beerCategory.categoryName" cacheName:nil];
     aFetchedResultsController.delegate = self;
     self.fetchedResultsController = aFetchedResultsController;
     
@@ -353,16 +350,6 @@
 {
     [self.tableView endUpdates];
 }
-
-/*
-// Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed. 
- 
- - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
-    // In the simplest, most efficient, case, reload the table view.
-    [self.tableView reloadData];
-}
- */
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {

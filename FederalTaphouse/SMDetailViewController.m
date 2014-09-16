@@ -7,6 +7,7 @@
 //
 
 #import "SMDetailViewController.h"
+#import "SMMasterViewController.h"
 #import "SMAppDelegate.h"
 #import "BEER.h"
 
@@ -97,6 +98,13 @@
             
             [self.navigationController setViewControllers:controllers animated:NO];
     }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    SMMasterViewController *master = (SMMasterViewController *)self.navigationController.viewControllers[[self.navigationController.viewControllers count]-1];
+    [master returnFromDetail];
 }
 
 /*- (void)onDeviceOrientationDidChange:(NSNotification *)notification
