@@ -28,8 +28,7 @@
 
 - (void)configureView
 {
-    // Update the user interface for the detail item.
-    //self.detailDescriptionLabel.text = @"SKBNDAJ";
+
     if (self.detailItem) {
 
         
@@ -51,37 +50,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //[[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-	//[[NSNotificationCenter defaultCenter] addObserver:self
-                                             //selector:@selector(onDeviceOrientationDidChange:)
-                                               //  name:UIDeviceOrientationDidChangeNotification
-                                               //object:nil];
+ 
     [self configureView];
     
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-    //NSString *newtotal;
     
     if (self.interfaceOrientation == UIInterfaceOrientationLandscapeRight ||self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ) {
         
         NSMutableArray *controllers = [[self.navigationController viewControllers]mutableCopy];
         [controllers removeLastObject];
         
-        //[self.navigationController popViewControllerAnimated:NO];
         UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
         SMDetailViewController *controller = [main instantiateViewControllerWithIdentifier:@"detailLandscape"];
-        
         
         controller.detailItem = self.detailItem;
 
         [controllers addObject:controller];
         
         [self.navigationController setViewControllers:controllers animated:NO];
-        //[self.navigationController pushViewController:controller animated:NO];
-        //[controllers[controllers.count -2] performSegueWithIdentifier:@"toDetailLandscapeFromMaster" sender:nil];
-        
-        
         
     }
     else{
@@ -89,7 +77,6 @@
             NSMutableArray *controllers = [[self.navigationController viewControllers]mutableCopy];
             [controllers removeLastObject];
             
-            //[self.navigationController popViewControllerAnimated:NO];
             UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
             SMDetailViewController *controller = [main instantiateViewControllerWithIdentifier:@"detailPortrait"];
         
@@ -100,26 +87,7 @@
     }
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    SMMasterViewController *master = (SMMasterViewController *)self.navigationController.viewControllers[[self.navigationController.viewControllers count]-1];
-    [master returnFromDetail];
-}
 
-/*- (void)onDeviceOrientationDidChange:(NSNotification *)notification
-{
-    // A delay must be added here, otherwise the new view will be swapped in
-	// too quickly resulting in an animation glitch
-    //[self performSelector:@selector(updateLandscapeView) withObject:nil afterDelay:0];
-    UIStoryboard *board = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    UIViewController *controller;
-    
-    if(controller ==nil){
-        controller= [board instantiateViewControllerWithIdentifier:@"detailLandscape"];
-    }
-    [self.navigationController pushViewController:controller animated:NO];
-}*/
 
 - (void)didReceiveMemoryWarning
 {

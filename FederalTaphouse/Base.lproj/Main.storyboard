@@ -318,22 +318,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="searchDisplayController" destination="O76-gd-qXx" id="Zzv-Uy-yFP"/>
+                        <outlet property="sbSearchBar" destination="Tpm-Oy-RVJ" id="hrj-wP-ts0"/>
                         <outlet property="tvMainTable" destination="mLL-gJ-YKr" id="EDu-I2-MZ3"/>
                         <segue destination="Ah7-4n-0Wa" kind="push" identifier="toDetailPortraitFromMaster" id="fGY-fX-gX9"/>
                         <segue destination="Ihf-dN-acS" kind="push" identifier="toDetailLandscapeFromMaster" id="r4q-gk-Gjx"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="O76-gd-qXx">
-                    <connections>
-                        <outlet property="delegate" destination="pGg-6v-bdr" id="qAB-4Y-Mxi"/>
-                        <outlet property="searchBar" destination="Tpm-Oy-RVJ" id="9zc-mf-PJe"/>
-                        <outlet property="searchContentsController" destination="pGg-6v-bdr" id="CQw-xB-WAc"/>
-                        <outlet property="searchResultsDataSource" destination="pGg-6v-bdr" id="CtX-pz-4A0"/>
-                        <outlet property="searchResultsDelegate" destination="pGg-6v-bdr" id="bd5-bz-OfK"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="459" y="64"/>
         </scene>

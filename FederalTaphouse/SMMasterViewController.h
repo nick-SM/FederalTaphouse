@@ -13,9 +13,9 @@
 @interface SMMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 - (IBAction)refresh:(id)sender;
 @property (strong, nonatomic) IBOutlet UITableView *tvMainTable;
+@property (weak, nonatomic) IBOutlet UISearchBar *sbSearchBar;
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
--(void) returnFromDetail;
 
 @end

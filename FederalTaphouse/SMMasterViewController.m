@@ -19,7 +19,6 @@
 
 @implementation SMMasterViewController{
     UITableView *selectedTable;
-    BOOL rowSelected;
 }
 
 - (void)awakeFromNib
@@ -31,7 +30,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    rowSelected = NO;
     SMAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     if(self.managedObjectContext == nil){
         [appDelegate initCoreData];
@@ -105,10 +103,9 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
+    UIInterfaceOrientation intOrientation = [self interfaceOrientation];
     selectedTable =tableView;
-    rowSelected = YES;
-    if(UIDeviceOrientationIsLandscape(deviceOrientation) || deviceOrientation == UIDeviceOrientationPortraitUpsideDown){
+    if(UIInterfaceOrientationIsLandscape(intOrientation) || intOrientation == UIInterfaceOrientationPortraitUpsideDown){
         [self performSegueWithIdentifier:@"toDetailLandscapeFromMaster" sender:nil];
     }
     else{
@@ -118,23 +115,22 @@
 }
 
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+    if(self.searchDisplayController.active == YES){
+        return nil;
+    }
     NSMutableArray *titles;
     titles = [NSMutableArray new];
     
-    SMAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
-    NSManagedObjectContext *context = [appDelegate managedObjectContext];
-    NSFetchRequest *fetchCategories = [[NSFetchRequest alloc]
-                                       initWithEntityName:@"CATEGORY"];
-    NSArray *objects = [context executeFetchRequest:fetchCategories error:nil];
-    CATEGORY *moCategory;
+    NSArray *test =[self.fetchedResultsController sections];
     
     for (int i=0;i<[[self.fetchedResultsController sections] count];i++){
-        moCategory = objects[i];
-        [titles addObject:[moCategory.categoryName substringToIndex:2]];
+        [titles addObject:[[self.fetchedResultsController.sections[i] name] substringToIndex:2]];
     }
-    [titles sortUsingSelector:@selector(compare:)];
+
     return titles;
+    
 }
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -149,34 +145,56 @@
     return cell;
 }
 
--(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
-{
-
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar{
     [NSFetchedResultsController deleteCacheWithName:nil];
-    if(![searchString isEqualToString:@""]){
-        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"beerName contains[c] %@", searchString];
+    NSError *error = nil;
+    [self.fetchedResultsController.fetchRequest setPredicate:nil];
+    [self.fetchedResultsController performFetch:&error];
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    [NSFetchedResultsController deleteCacheWithName:nil];
+    
+    if(![searchBar.text isEqualToString:@""]){
+        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"beerName BEGINSWITH[c] %@", searchBar.text];
         [self.fetchedResultsController.fetchRequest setPredicate:predicate];
     }
     else{
+        [searchBar performSelector: @selector(resignFirstResponder)
+                        withObject: nil
+                        afterDelay: 0.1];
         [self.fetchedResultsController.fetchRequest setPredicate:nil];
     }
     NSError *error = nil;
     [self.fetchedResultsController performFetch:&error];
-    return YES;
+    [self.tableView reloadData];
 }
 
-- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar{
-    if(!rowSelected){
-        [NSFetchedResultsController deleteCacheWithName:nil];
-        NSError *error = nil;
-        [self.fetchedResultsController.fetchRequest setPredicate:nil];
-        [self.fetchedResultsController performFetch:&error];
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    [searchBar resignFirstResponder];
+    [NSFetchedResultsController deleteCacheWithName:nil];
+    
+    if(![self.sbSearchBar.text isEqualToString:@""]){
+        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"beerName BEGINSWITH[c] %@", self.sbSearchBar.text];
+        [self.fetchedResultsController.fetchRequest setPredicate:predicate];
     }
+    NSError *error = nil;
+    [self.fetchedResultsController performFetch:&error];
 }
 
--(void) returnFromDetail{
-    rowSelected = NO;
+- (void)viewWillAppear:(BOOL)animated{
+    [NSFetchedResultsController deleteCacheWithName:nil];
+    
+    if(![self.sbSearchBar.text isEqualToString:@""]){
+        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"beerName BEGINSWITH[c] %@", self.sbSearchBar.text];
+        [self.fetchedResultsController.fetchRequest setPredicate:predicate];
+    }
+    NSError *error = nil;
+    [self.fetchedResultsController performFetch:&error];
+    [self.tableView reloadData];
+
 }
+
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
@@ -286,6 +304,7 @@
     
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
+
     NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:@"beerCategory.categoryName" cacheName:nil];
     aFetchedResultsController.delegate = self;
     self.fetchedResultsController = aFetchedResultsController;
@@ -299,7 +318,7 @@
 	}
     
     return _fetchedResultsController;
-}    
+}
 
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
 {
@@ -311,11 +330,11 @@
 {
     switch(type) {
         case NSFetchedResultsChangeInsert:
-            [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+            [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationNone];
             break;
             
         case NSFetchedResultsChangeDelete:
-            [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+            [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationNone];
             break;
     }
 }
@@ -328,11 +347,11 @@
     
     switch(type) {
         case NSFetchedResultsChangeInsert:
-            [tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationNone];
             break;
             
         case NSFetchedResultsChangeDelete:
-            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
             break;
             
         case NSFetchedResultsChangeUpdate:
@@ -340,8 +359,8 @@
             break;
             
         case NSFetchedResultsChangeMove:
-            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-            [tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+            [tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationNone];
             break;
     }
 }
