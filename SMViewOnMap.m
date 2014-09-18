@@ -53,14 +53,10 @@
         region = MKCoordinateRegionMakeWithDistance(coord, 100, 100);
     }
     else{
-        //region = MKCoordinateRegionMakeWithDistance(coord, 100, 100);
-        //[self.mvMap setRegion:[self.mvMap regionThatFits:region] animated:YES];
+
         MKCoordinateSpan locationSpan;
         locationSpan.latitudeDelta =1.3*fabs(userloc.coordinate.latitude - FTlat);
         locationSpan.longitudeDelta =1.3*fabs(userloc.coordinate.longitude  -FTlong);
-        //NSLog(@"%f",userloc.coordinate.latitude);
-        //NSLog(@"%f",userloc.coordinate.latitude-FTlat);
-        //NSLog(@"%f",fabs(userloc.coordinate.latitude-FTlat));
 
         CLLocationCoordinate2D locationCenter;
         locationCenter.latitude = (FTlat + userloc.coordinate.latitude) / 2;
@@ -74,7 +70,6 @@
     
     point.coordinate = coord;
     point.title = @"Federal Taphouse";
-    //point.subtitle = @"I'm here!!!";
     
     [self.mvMap addAnnotation:point];
     

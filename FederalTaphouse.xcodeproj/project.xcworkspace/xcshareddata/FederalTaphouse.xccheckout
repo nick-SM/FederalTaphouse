@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>67D458D2-371B-419B-AE02-882375E0BAB5</string>
+	<string>AD4832A2-C8DF-4D8B-8C48-28126316F016</string>
 	<key>IDESourceControlProjectName</key>
 	<string>FederalTaphouse</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>83CC92B7-72DB-4B46-8960-F20653BC359E</key>
+		<key>48C8F1C5-60D9-4532-A9D1-9F0486DEFF38</key>
 		<string>https://github.com/nick-SM/FederalTaphouse.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>FederalTaphouse.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4C01AFAB-C41E-4B64-969B-F4F1758AEC71</key>
-		<string>../../../ETutorial Master</string>
-		<key>83CC92B7-72DB-4B46-8960-F20653BC359E</key>
+		<key>48C8F1C5-60D9-4532-A9D1-9F0486DEFF38</key>
 		<string>../..</string>
+		<key>6953DDF5-74A6-4AFD-ACF5-67C25DA6F72C</key>
+		<string>../../../ETutorial Master</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/nick-SM/FederalTaphouse.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>83CC92B7-72DB-4B46-8960-F20653BC359E</string>
+	<string>48C8F1C5-60D9-4532-A9D1-9F0486DEFF38</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4C01AFAB-C41E-4B64-969B-F4F1758AEC71</string>
+			<string>6953DDF5-74A6-4AFD-ACF5-67C25DA6F72C</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ETutorial Master</string>
 		</dict>
@@ -42,9 +42,9 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>83CC92B7-72DB-4B46-8960-F20653BC359E</string>
+			<string>48C8F1C5-60D9-4532-A9D1-9F0486DEFF38</string>
 			<key>IDESourceControlWCCName</key>
-			<string>FederalTaphouse2</string>
+			<string>FederalTaphouse</string>
 		</dict>
 	</array>
 </dict>
