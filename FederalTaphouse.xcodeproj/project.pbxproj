@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3423387F19CB641E00FCC8CF /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3423387E19CB641E00FCC8CF /* images.jpeg */; };
-		3423388119CB649900FCC8CF /* FEDERAL_TAPHOUSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 3423388019CB649900FCC8CF /* FEDERAL_TAPHOUSE.png */; };
-		3423388319CB66A900FCC8CF /* FIRE.png in Resources */ = {isa = PBXBuildFile; fileRef = 3423388219CB66A900FCC8CF /* FIRE.png */; };
+		3423388619CB79E400FCC8CF /* FIRE.png in Resources */ = {isa = PBXBuildFile; fileRef = 3423388419CB79E400FCC8CF /* FIRE.png */; };
+		3423388719CB79E400FCC8CF /* FEDERAL_TAPHOUSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 3423388519CB79E400FCC8CF /* FEDERAL_TAPHOUSE.png */; };
 		3442349D19BCCD2F00BC8398 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3442349C19BCCD2F00BC8398 /* Foundation.framework */; };
 		3442349F19BCCD2F00BC8398 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3442349E19BCCD2F00BC8398 /* CoreGraphics.framework */; };
 		344234A119BCCD2F00BC8398 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344234A019BCCD2F00BC8398 /* UIKit.framework */; };
@@ -54,8 +54,8 @@
 
 /* Begin PBXFileReference section */
 		3423387E19CB641E00FCC8CF /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = ../../../Downloads/images.jpeg; sourceTree = "<group>"; };
-		3423388019CB649900FCC8CF /* FEDERAL_TAPHOUSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FEDERAL_TAPHOUSE.png; path = ../../FEDERAL_TAPHOUSE.png; sourceTree = "<group>"; };
-		3423388219CB66A900FCC8CF /* FIRE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FIRE.png; path = ../../FIRE.png; sourceTree = "<group>"; };
+		3423388419CB79E400FCC8CF /* FIRE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FIRE.png; sourceTree = "<group>"; };
+		3423388519CB79E400FCC8CF /* FEDERAL_TAPHOUSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEDERAL_TAPHOUSE.png; sourceTree = "<group>"; };
 		3442349919BCCD2F00BC8398 /* FederalTaphouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FederalTaphouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3442349C19BCCD2F00BC8398 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3442349E19BCCD2F00BC8398 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -131,6 +131,8 @@
 		3442349019BCCD2F00BC8398 = {
 			isa = PBXGroup;
 			children = (
+				3423388419CB79E400FCC8CF /* FIRE.png */,
+				3423388519CB79E400FCC8CF /* FEDERAL_TAPHOUSE.png */,
 				344234A419BCCD2F00BC8398 /* FederalTaphouse */,
 				344234CA19BCCD2F00BC8398 /* FederalTaphouseTests */,
 				3442349B19BCCD2F00BC8398 /* Frameworks */,
@@ -167,14 +169,12 @@
 				3450A94619CA25BD0038FCC8 /* chillis-logo.jpg */,
 				3450A94B19CB3D240038FCC8 /* SMHomePageTableViewController.h */,
 				3450A94C19CB3D240038FCC8 /* SMHomePageTableViewController.m */,
-				3423388219CB66A900FCC8CF /* FIRE.png */,
 				3450A94E19CB3EF80038FCC8 /* Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg */,
 				34F5C69619BE3F4500BB9CCC /* SMViewOnMap.h */,
 				34F5C69719BE3F4500BB9CCC /* SMViewOnMap.m */,
 				344234AD19BCCD2F00BC8398 /* SMAppDelegate.h */,
 				344234AE19BCCD2F00BC8398 /* SMAppDelegate.m */,
 				344234B019BCCD2F00BC8398 /* Main.storyboard */,
-				3423388019CB649900FCC8CF /* FEDERAL_TAPHOUSE.png */,
 				3423387E19CB641E00FCC8CF /* images.jpeg */,
 				3450A94119C785170038FCC8 /* SMOnlineCourseWebService.m */,
 				3450A94219C785170038FCC8 /* SMOnlineCourseWebService.h */,
@@ -307,11 +307,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3423388319CB66A900FCC8CF /* FIRE.png in Resources */,
 				344234BD19BCCD2F00BC8398 /* Images.xcassets in Resources */,
+				3423388619CB79E400FCC8CF /* FIRE.png in Resources */,
 				344234A919BCCD2F00BC8398 /* InfoPlist.strings in Resources */,
-				3423388119CB649900FCC8CF /* FEDERAL_TAPHOUSE.png in Resources */,
 				3450A94719CA25BE0038FCC8 /* chillis-logo.jpg in Resources */,
+				3423388719CB79E400FCC8CF /* FEDERAL_TAPHOUSE.png in Resources */,
 				3423387F19CB641E00FCC8CF /* images.jpeg in Resources */,
 				344234DB19BCCF7F00BC8398 /* Beers.plist in Resources */,
 				3450A94F19CB3EF80038FCC8 /* Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg in Resources */,
