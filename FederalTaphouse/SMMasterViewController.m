@@ -244,7 +244,7 @@
     NSArray *beerCategorys = result[@"beer_category_name"];
     NSArray *beerDescriptions = result[@"beer_description"];
     NSArray *beerABVs = result[@"beer_ABV"];
-    NSArray *beerLocations = result[@"beer_size"];
+    NSArray *beerLocations = result[@"beer_location"];
     NSArray *beerPrices = result[@"beer_price"];
     NSArray *beerSizes = result[@"beer_size"];
     
