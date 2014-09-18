@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BEER.h"
 @interface SMDetailViewController : UIViewController
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *lblcImage;
 
 @property (strong, nonatomic) BEER *detailItem;
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *lblcDescriptions;

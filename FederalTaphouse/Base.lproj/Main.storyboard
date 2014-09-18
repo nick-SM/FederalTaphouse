@@ -362,7 +362,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tM-Wc-dAz">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tM-Wc-dAz">
                                         <rect key="frame" x="0.0" y="70" width="284" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -376,6 +376,7 @@
                                     <constraint firstItem="3tM-Wc-dAz" firstAttribute="leading" secondItem="MWl-2g-b7y" secondAttribute="leading" id="K0f-IA-3ch"/>
                                     <constraint firstItem="xIt-ax-uaF" firstAttribute="leading" secondItem="MWl-2g-b7y" secondAttribute="leading" id="NEE-nI-AwN"/>
                                     <constraint firstAttribute="trailing" secondItem="3tM-Wc-dAz" secondAttribute="trailing" id="X8U-vt-h52"/>
+                                    <constraint firstItem="3tM-Wc-dAz" firstAttribute="top" secondItem="MWl-2g-b7y" secondAttribute="top" constant="70" id="eHW-zR-XB0"/>
                                     <constraint firstAttribute="trailing" secondItem="xIt-ax-uaF" secondAttribute="trailing" id="qYz-pP-eXK"/>
                                     <constraint firstItem="9pT-b2-xSF" firstAttribute="leading" secondItem="MWl-2g-b7y" secondAttribute="leading" id="twu-Co-K4C"/>
                                 </constraints>
@@ -494,6 +495,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chillis-logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4Kf-DQ-Lwj">
+                                <rect key="frame" x="80" y="100" width="160" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -515,6 +520,7 @@
                         <outletCollection property="lblcDescriptions" destination="9Tu-bT-KLB" id="ukf-Zg-Edm"/>
                         <outletCollection property="lblcDescriptions" destination="5k9-9a-WYh" id="hxf-dM-Vtk"/>
                         <outletCollection property="lblcDescriptions" destination="wFQ-cL-mhc" id="lOE-QD-V8N"/>
+                        <outletCollection property="lblcImage" destination="4Kf-DQ-Lwj" id="5HZ-Ag-acl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
@@ -522,6 +528,9 @@
             <point key="canvasLocation" x="902" y="64"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chillis-logo.jpg" width="1050" height="900"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

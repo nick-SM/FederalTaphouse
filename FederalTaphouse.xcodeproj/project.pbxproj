@@ -29,6 +29,7 @@
 		344234DE19BCDD3D00BC8398 /* BEER.m in Sources */ = {isa = PBXBuildFile; fileRef = 344234DD19BCDD3D00BC8398 /* BEER.m */; };
 		344234E119BCDD3D00BC8398 /* CATEGORY.m in Sources */ = {isa = PBXBuildFile; fileRef = 344234E019BCDD3D00BC8398 /* CATEGORY.m */; };
 		3450A94319C785170038FCC8 /* SMOnlineCourseWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3450A94119C785170038FCC8 /* SMOnlineCourseWebService.m */; };
+		3450A94719CA25BE0038FCC8 /* chillis-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3450A94619CA25BD0038FCC8 /* chillis-logo.jpg */; };
 		34F5C69519BE3EB900BB9CCC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F5C69419BE3EB900BB9CCC /* MapKit.framework */; };
 		34F5C69819BE3F4500BB9CCC /* SMViewOnMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F5C69719BE3F4500BB9CCC /* SMViewOnMap.m */; };
 		34F5C69A19BE410300BB9CCC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F5C69919BE410300BB9CCC /* CoreLocation.framework */; };
@@ -77,6 +78,7 @@
 		344234E019BCDD3D00BC8398 /* CATEGORY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATEGORY.m; sourceTree = "<group>"; };
 		3450A94119C785170038FCC8 /* SMOnlineCourseWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMOnlineCourseWebService.m; sourceTree = "<group>"; };
 		3450A94219C785170038FCC8 /* SMOnlineCourseWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMOnlineCourseWebService.h; sourceTree = "<group>"; };
+		3450A94619CA25BD0038FCC8 /* chillis-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "chillis-logo.jpg"; sourceTree = "<group>"; };
 		34F5C69419BE3EB900BB9CCC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		34F5C69619BE3F4500BB9CCC /* SMViewOnMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMViewOnMap.h; path = ../SMViewOnMap.h; sourceTree = "<group>"; };
 		34F5C69719BE3F4500BB9CCC /* SMViewOnMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMViewOnMap.m; path = ../SMViewOnMap.m; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		3442349019BCCD2F00BC8398 = {
 			isa = PBXGroup;
 			children = (
+				3450A94619CA25BD0038FCC8 /* chillis-logo.jpg */,
 				344234A419BCCD2F00BC8398 /* FederalTaphouse */,
 				344234CA19BCCD2F00BC8398 /* FederalTaphouseTests */,
 				3442349B19BCCD2F00BC8398 /* Frameworks */,
@@ -289,6 +292,7 @@
 			files = (
 				344234BD19BCCD2F00BC8398 /* Images.xcassets in Resources */,
 				344234A919BCCD2F00BC8398 /* InfoPlist.strings in Resources */,
+				3450A94719CA25BE0038FCC8 /* chillis-logo.jpg in Resources */,
 				344234DB19BCCF7F00BC8398 /* Beers.plist in Resources */,
 				344234B219BCCD2F00BC8398 /* Main.storyboard in Resources */,
 			);

@@ -17,6 +17,8 @@
 	<string>FederalTaphouse.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>4C01AFAB-C41E-4B64-969B-F4F1758AEC71</key>
+		<string>../../../ETutorial Master</string>
 		<key>83CC92B7-72DB-4B46-8960-F20653BC359E</key>
 		<string>../..</string>
 	</dict>
@@ -28,6 +30,14 @@
 	<string>83CC92B7-72DB-4B46-8960-F20653BC359E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4C01AFAB-C41E-4B64-969B-F4F1758AEC71</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ETutorial Master</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
