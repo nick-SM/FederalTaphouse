@@ -32,14 +32,18 @@
 {
 
     if (self.detailItem) {
-        /*NSURL *url = [NSURL URLWithString:imageUrls[self.detailItem.beerName]];
-        NSData *data = [NSData dataWithContentsOfURL:url];
-        UIImage *img = [[UIImage alloc] initWithData:data];
-        //img.contentMode;
-        UIImageView *myImageView = self.lblcImage[0];
-        [myImageView setContentMode:UIViewContentModeScaleAspectFit];
-        [myImageView setImage:img];*/
-        //[myImageView setContentMode:UIViewContentModeScaleAspectFill];
+        NSURL *url = [NSURL URLWithString:imageUrls[self.detailItem.beerName]];
+        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        dispatch_async(queue, ^{
+
+            NSData *data = [NSData dataWithContentsOfURL:url];
+            UIImage *img = [[UIImage alloc] initWithData:data];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                UIImageView *myImageView = self.lblcImage[0];
+                [myImageView setContentMode:UIViewContentModeScaleAspectFit];
+                [myImageView setImage:img];
+            });
+        });
         
         [self.lblcDescriptions[0] setValue:self.detailItem.beerName forKey:@"text"];
         [self.lblcDescriptions[1] setValue:self.detailItem.beerLocation forKey:@"text"];
@@ -59,6 +63,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIImageView *myImageView = self.lblcImage[0];
+    [myImageView invalidateIntrinsicContentSize];
+
+    
     imageUrls = [[NSDictionary alloc]initWithObjectsAndKeys:@"http://3.bp.blogspot.com/-Ihe81DBRRRI/UR2pOklryuI/AAAAAAAAEKM/-IJpFD-sI6M/s1600/2013-02-14+20.06.47.jpg",@"Two Brothers Cane & Ebel",nil];
  
     [self configureView];
