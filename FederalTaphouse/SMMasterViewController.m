@@ -34,7 +34,7 @@
     if(self.managedObjectContext == nil){
         [appDelegate initCoreData];
     }
-    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    //NSManagedObjectContext *context = [appDelegate managedObjectContext];
     
     NSFetchRequest *fetchBeers = [[NSFetchRequest alloc]
                                    initWithEntityName:@"BEER"];
@@ -121,7 +121,6 @@
     NSMutableArray *titles;
     titles = [NSMutableArray new];
     
-    NSArray *test =[self.fetchedResultsController sections];
     
     for (int i=0;i<[[self.fetchedResultsController sections] count];i++){
         [titles addObject:[[self.fetchedResultsController.sections[i] name] substringToIndex:2]];
@@ -213,7 +212,7 @@
     if ([[segue identifier] isEqualToString:@"toDetailPortraitFromMaster"] || [[segue identifier] isEqualToString:@"toDetailLandscapeFromMaster"]) {
         NSIndexPath *indexPath = [selectedTable indexPathForSelectedRow];
         NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-        [[segue destinationViewController] setDetailItem:object];
+        [[segue destinationViewController] setDetailItem:(BEER *)object];
     }
 }
 

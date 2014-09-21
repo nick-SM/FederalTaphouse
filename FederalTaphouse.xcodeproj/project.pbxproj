@@ -10,6 +10,7 @@
 		3423387F19CB641E00FCC8CF /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3423387E19CB641E00FCC8CF /* images.jpeg */; };
 		3423388619CB79E400FCC8CF /* FIRE.png in Resources */ = {isa = PBXBuildFile; fileRef = 3423388419CB79E400FCC8CF /* FIRE.png */; };
 		3423388719CB79E400FCC8CF /* FEDERAL_TAPHOUSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 3423388519CB79E400FCC8CF /* FEDERAL_TAPHOUSE.png */; };
+		343538C319CF1C5C00E5A7C2 /* SMCategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 343538C219CF1C5C00E5A7C2 /* SMCategoryTableViewController.m */; };
 		3442349D19BCCD2F00BC8398 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3442349C19BCCD2F00BC8398 /* Foundation.framework */; };
 		3442349F19BCCD2F00BC8398 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3442349E19BCCD2F00BC8398 /* CoreGraphics.framework */; };
 		344234A119BCCD2F00BC8398 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344234A019BCCD2F00BC8398 /* UIKit.framework */; };
@@ -56,6 +57,8 @@
 		3423387E19CB641E00FCC8CF /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = ../../../Downloads/images.jpeg; sourceTree = "<group>"; };
 		3423388419CB79E400FCC8CF /* FIRE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FIRE.png; sourceTree = "<group>"; };
 		3423388519CB79E400FCC8CF /* FEDERAL_TAPHOUSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEDERAL_TAPHOUSE.png; sourceTree = "<group>"; };
+		343538C119CF1C5C00E5A7C2 /* SMCategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategoryTableViewController.h; sourceTree = "<group>"; };
+		343538C219CF1C5C00E5A7C2 /* SMCategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategoryTableViewController.m; sourceTree = "<group>"; };
 		3442349919BCCD2F00BC8398 /* FederalTaphouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FederalTaphouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3442349C19BCCD2F00BC8398 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3442349E19BCCD2F00BC8398 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -175,6 +178,8 @@
 				344234AD19BCCD2F00BC8398 /* SMAppDelegate.h */,
 				344234AE19BCCD2F00BC8398 /* SMAppDelegate.m */,
 				344234B019BCCD2F00BC8398 /* Main.storyboard */,
+				343538C119CF1C5C00E5A7C2 /* SMCategoryTableViewController.h */,
+				343538C219CF1C5C00E5A7C2 /* SMCategoryTableViewController.m */,
 				3423387E19CB641E00FCC8CF /* images.jpeg */,
 				3450A94119C785170038FCC8 /* SMOnlineCourseWebService.m */,
 				3450A94219C785170038FCC8 /* SMOnlineCourseWebService.h */,
@@ -345,6 +350,7 @@
 				34F5C69819BE3F4500BB9CCC /* SMViewOnMap.m in Sources */,
 				34F5C6E719BF9FD700BB9CCC /* SMDirectionsViewController.m in Sources */,
 				3450A94319C785170038FCC8 /* SMOnlineCourseWebService.m in Sources */,
+				343538C319CF1C5C00E5A7C2 /* SMCategoryTableViewController.m in Sources */,
 				344234DE19BCDD3D00BC8398 /* BEER.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
