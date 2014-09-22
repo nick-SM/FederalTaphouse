@@ -10,4 +10,8 @@
 
 @interface SMCategoryTableViewController : UITableViewController
 
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+
+- (IBAction)refresh:(id)sender;
 @end

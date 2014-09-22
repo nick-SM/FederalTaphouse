@@ -15,6 +15,8 @@
 
 @interface SMMasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
+- (IBAction)refresh:(id)sender;
+
 @end
 
 @implementation SMMasterViewController{
@@ -81,6 +83,10 @@
         }
         [self.managedObjectContext save:nil];
     }
+    NSLog(@"%@",self.selectedCategory.categoryName);
+    //NSPredicate *predicate =[NSPredicate predicateWithFormat:@"beerCategory.categoryName = %@", self.selectedCategory.categoryBeers];
+    //[self.fetchedResultsController.fetchRequest setPredicate:predicate];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -114,7 +120,7 @@
 
 }
 
-- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+/*- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
     if(self.searchDisplayController.active == YES){
         return nil;
     }
@@ -128,7 +134,7 @@
 
     return titles;
     
-}
+}*/
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -139,12 +145,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [self.tvMainTable dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
 
-- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar{
+/*- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar{
     [NSFetchedResultsController deleteCacheWithName:nil];
     NSError *error = nil;
     [self.fetchedResultsController.fetchRequest setPredicate:nil];
@@ -179,9 +185,9 @@
     }
     NSError *error = nil;
     [self.fetchedResultsController performFetch:&error];
-}
+}*/
 
-- (void)viewWillAppear:(BOOL)animated{
+/*- (void)viewWillAppear:(BOOL)animated{
     [NSFetchedResultsController deleteCacheWithName:nil];
     
     if(![self.sbSearchBar.text isEqualToString:@""]){
@@ -192,7 +198,7 @@
     [self.fetchedResultsController performFetch:&error];
     [self.tableView reloadData];
 
-}
+}*/
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -249,7 +255,7 @@
     
     NSMutableDictionary *catDict = [NSMutableDictionary new];
     for(int i = 0;i< [beerCategorys count];i++){
-        if(![catDict[beerCategorys[i]]  isEqual: nil]){
+        if(!catDict[beerCategorys[i]]){
             CATEGORY *moCategory;
             moCategory = [NSEntityDescription
                           insertNewObjectForEntityForName:@"CATEGORY"
@@ -295,8 +301,12 @@
     //Set the batch size to a suitable number.
     [fetchRequest setFetchBatchSize:20];
     
+    NSPredicate *predicate =[NSPredicate predicateWithFormat:@"beerCategory.categoryName = %@", self.selectedCategory.categoryName];
+    [fetchRequest setPredicate:predicate];
+
+    
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"beerCategory.categoryName" ascending:YES];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"beerName" ascending:YES];
     NSArray *sortDescriptors = @[sortDescriptor];
     
     [fetchRequest setSortDescriptors:sortDescriptors];

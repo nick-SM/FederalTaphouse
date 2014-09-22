@@ -36,6 +36,7 @@
 		3450A94719CA25BE0038FCC8 /* chillis-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3450A94619CA25BD0038FCC8 /* chillis-logo.jpg */; };
 		3450A94D19CB3D240038FCC8 /* SMHomePageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3450A94C19CB3D240038FCC8 /* SMHomePageTableViewController.m */; };
 		3450A94F19CB3EF80038FCC8 /* Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3450A94E19CB3EF80038FCC8 /* Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg */; };
+		34F3CD7A19CF70F6003A7BB2 /* SMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F3CD7919CF70F6003A7BB2 /* SMWebViewController.m */; };
 		34F5C69519BE3EB900BB9CCC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F5C69419BE3EB900BB9CCC /* MapKit.framework */; };
 		34F5C69819BE3F4500BB9CCC /* SMViewOnMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F5C69719BE3F4500BB9CCC /* SMViewOnMap.m */; };
 		34F5C69A19BE410300BB9CCC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F5C69919BE410300BB9CCC /* CoreLocation.framework */; };
@@ -93,6 +94,8 @@
 		3450A94B19CB3D240038FCC8 /* SMHomePageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMHomePageTableViewController.h; path = ../SMHomePageTableViewController.h; sourceTree = "<group>"; };
 		3450A94C19CB3D240038FCC8 /* SMHomePageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMHomePageTableViewController.m; path = ../SMHomePageTableViewController.m; sourceTree = "<group>"; };
 		3450A94E19CB3EF80038FCC8 /* Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg"; sourceTree = "<group>"; };
+		34F3CD7819CF70F6003A7BB2 /* SMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMWebViewController.h; sourceTree = "<group>"; };
+		34F3CD7919CF70F6003A7BB2 /* SMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMWebViewController.m; sourceTree = "<group>"; };
 		34F5C69419BE3EB900BB9CCC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		34F5C69619BE3F4500BB9CCC /* SMViewOnMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMViewOnMap.h; path = ../SMViewOnMap.h; sourceTree = "<group>"; };
 		34F5C69719BE3F4500BB9CCC /* SMViewOnMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMViewOnMap.m; path = ../SMViewOnMap.m; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 				344234AD19BCCD2F00BC8398 /* SMAppDelegate.h */,
 				344234AE19BCCD2F00BC8398 /* SMAppDelegate.m */,
 				344234B019BCCD2F00BC8398 /* Main.storyboard */,
+				34F3CD7819CF70F6003A7BB2 /* SMWebViewController.h */,
+				34F3CD7919CF70F6003A7BB2 /* SMWebViewController.m */,
 				343538C119CF1C5C00E5A7C2 /* SMCategoryTableViewController.h */,
 				343538C219CF1C5C00E5A7C2 /* SMCategoryTableViewController.m */,
 				3423387E19CB641E00FCC8CF /* images.jpeg */,
@@ -350,6 +355,7 @@
 				34F5C69819BE3F4500BB9CCC /* SMViewOnMap.m in Sources */,
 				34F5C6E719BF9FD700BB9CCC /* SMDirectionsViewController.m in Sources */,
 				3450A94319C785170038FCC8 /* SMOnlineCourseWebService.m in Sources */,
+				34F3CD7A19CF70F6003A7BB2 /* SMWebViewController.m in Sources */,
 				343538C319CF1C5C00E5A7C2 /* SMCategoryTableViewController.m in Sources */,
 				344234DE19BCDD3D00BC8398 /* BEER.m in Sources */,
 			);

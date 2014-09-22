@@ -7,6 +7,11 @@
 //
 
 #import "SMCategoryTableViewController.h"
+#import "SMAppDelegate.h"
+#import "CATEGORY.h"
+#import "BEER.h"
+#import "SMMasterViewController.h"
+#import "SMOnlineCourseWebService.h"
 
 @interface SMCategoryTableViewController ()
 
@@ -27,6 +32,59 @@
 {
     [super viewDidLoad];
     
+    SMAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    if(self.managedObjectContext == nil){
+        [appDelegate initCoreData];
+    }
+    //NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    
+    NSFetchRequest *fetchBeers = [[NSFetchRequest alloc]
+                                  initWithEntityName:@"BEER"];
+    
+    NSArray *objects = [self.managedObjectContext executeFetchRequest:fetchBeers error:nil];
+    
+    if([objects count]== 0){
+        
+        NSString *path = [[NSBundle mainBundle] bundlePath];
+        NSString *finalPath = [path stringByAppendingPathComponent:@"Beers.plist"];
+        NSDictionary *plistDict = [NSDictionary dictionaryWithContentsOfFile:finalPath];
+        NSArray *categories = [plistDict allKeys];
+        
+        
+        for (int i=0;i<[categories count];i++){
+            CATEGORY *moCategory;
+            
+            
+            moCategory = [NSEntityDescription
+                          insertNewObjectForEntityForName:@"CATEGORY"
+                          inManagedObjectContext:self.managedObjectContext];
+            
+            moCategory.categoryName = categories[i];
+            
+            NSDictionary *embededPlistDict = plistDict[categories[i]];
+            NSArray *beers = [embededPlistDict allKeys];
+            NSDictionary *attributes;
+            for (int j=0;j<[beers count];j++){
+                BEER *moBeer;
+                moBeer = [NSEntityDescription
+                          insertNewObjectForEntityForName:@"BEER"
+                          inManagedObjectContext:self.managedObjectContext];
+                moBeer.beerCategory = moCategory;
+                moBeer.beerName = beers[j];
+                
+                attributes = embededPlistDict[beers[j]];
+                moBeer.beerPrice = attributes[@"Price"];
+                moBeer.beerLocation = attributes[@"Location"];
+                moBeer.beerABV = attributes[@"ABV"];
+                moBeer.beerSize = attributes[@"Size"];
+                moBeer.beerDescription = attributes[@"Description"];
+                moBeer.beerCategory = moCategory;
+            }
+        }
+        [self.managedObjectContext save:nil];
+    }
+
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -45,13 +103,22 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 0;
+    return [[self.fetchedResultsController sections] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {    // Return the number of rows in the section.
-    return 0;
+    id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][section];
+    return [sectionInfo numberOfObjects];
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    [self configureCell:cell atIndexPath:indexPath];
+    return cell;
+}
+
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -112,5 +179,170 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (NSFetchedResultsController *)fetchedResultsController
+{
+    if (_fetchedResultsController != nil) {
+        return _fetchedResultsController;
+    }
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    // Edit the entity name as appropriate.
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"CATEGORY" inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    //Set the batch size to a suitable number.
+    [fetchRequest setFetchBatchSize:20];
+    
+    // Edit the sort key as appropriate.
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"categoryName" ascending:YES];
+    NSArray *sortDescriptors = @[sortDescriptor];
+    
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    
+    // Edit the section name key path and cache name if appropriate.
+    // nil for section name key path means "no sections".
+    
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    aFetchedResultsController.delegate = (id)self;
+    self.fetchedResultsController = aFetchedResultsController;
+    
+    NSError *error = nil;
+    if (![self.fetchedResultsController performFetch:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+    }
+    
+    return _fetchedResultsController;
+}
+
+- (IBAction)refresh:(id)sender {
+    NSFetchRequest * allBeers = [[NSFetchRequest alloc] initWithEntityName:@"BEER"];
+    NSFetchRequest * allCategories = [[NSFetchRequest alloc] initWithEntityName:@"CATEGORY"];
+    NSArray * beers = [self.managedObjectContext executeFetchRequest:allBeers error:nil];
+    NSArray * categories = [self.managedObjectContext executeFetchRequest:allCategories error:nil];
+    for (NSManagedObject * beer in beers) {
+        [self.managedObjectContext deleteObject:beer];    }
+    
+    for (NSManagedObject * category in categories) {
+        [self.managedObjectContext deleteObject:category];
+    }
+    
+    SMOnlineCourseWebService *service = [[SMOnlineCourseWebService alloc]init];
+    
+    NSMutableArray *inputElements = [[NSMutableArray alloc]init];
+    
+    NSMutableArray *elementValues = [[NSMutableArray alloc]init];
+    
+    NSDictionary *result = [service doWebService:@"getBeerList" withElements:inputElements forValues:elementValues];
+    
+    NSArray *beerNames = result[@"beer_name"];
+    NSArray *beerCategorys = result[@"beer_category_name"];
+    NSArray *beerDescriptions = result[@"beer_description"];
+    NSArray *beerABVs = result[@"beer_ABV"];
+    NSArray *beerLocations = result[@"beer_location"];
+    NSArray *beerPrices = result[@"beer_price"];
+    NSArray *beerSizes = result[@"beer_size"];
+    
+    NSMutableDictionary *catDict = [NSMutableDictionary new];
+    for(int i = 0;i< [beerCategorys count];i++){
+        if(!catDict[beerCategorys[i]]){
+            CATEGORY *moCategory;
+            moCategory = [NSEntityDescription
+                          insertNewObjectForEntityForName:@"CATEGORY"
+                          inManagedObjectContext:self.managedObjectContext];
+            
+            moCategory.categoryName = beerCategorys[i];
+            [catDict setObject:moCategory forKey:beerCategorys[i]];
+        }
+    }
+    
+    for(int i = 0;i< [beerNames count];i++){
+        BEER *moBEER;
+        moBEER = [NSEntityDescription
+                  insertNewObjectForEntityForName:@"BEER"
+                  inManagedObjectContext:self.managedObjectContext];
+        moBEER.beerName = beerNames[i];
+        moBEER.beerLocation = beerLocations[i];
+        moBEER.beerSize = beerSizes[i];
+        moBEER.beerDescription = beerDescriptions[i];
+        moBEER.beerPrice = beerPrices[i];
+        moBEER.beerABV = beerABVs[i];
+        moBEER.beerCategory = catDict[beerCategorys[i]];
+        
+        
+    }
+    
+    [self.managedObjectContext save:nil];
+}
+
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
+{
+    [self.tableView beginUpdates];
+}
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
+           atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type
+{
+    switch(type) {
+        case NSFetchedResultsChangeInsert:
+            [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationNone];
+            break;
+            
+        case NSFetchedResultsChangeDelete:
+            [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationNone];
+            break;
+    }
+}
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject
+       atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type
+      newIndexPath:(NSIndexPath *)newIndexPath
+{
+    UITableView *tableView = self.tableView;
+    
+    switch(type) {
+        case NSFetchedResultsChangeInsert:
+            [tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationNone];
+            break;
+            
+        case NSFetchedResultsChangeDelete:
+            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+            break;
+            
+        case NSFetchedResultsChangeUpdate:
+            [self configureCell:[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
+            break;
+            
+        case NSFetchedResultsChangeMove:
+            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+            [tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationNone];
+            break;
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"toBeerTable"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+        [[segue destinationViewController] setValue:(CATEGORY *)object forKey:@"selectedCategory"];
+    }
+}
+
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
+{
+    [self.tableView endUpdates];
+}
+
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+{
+    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    cell.textLabel.text = [object valueForKey:@"categoryName"];
+}
 
 @end

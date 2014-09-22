@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 
 #import <CoreData/CoreData.h>
+#import "CATEGORY.h"
 
 @interface SMMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 - (IBAction)refresh:(id)sender;
-@property (strong, nonatomic) IBOutlet UITableView *tvMainTable;
-@property (weak, nonatomic) IBOutlet UISearchBar *sbSearchBar;
-
+@property CATEGORY *selectedCategory;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 
 @end
