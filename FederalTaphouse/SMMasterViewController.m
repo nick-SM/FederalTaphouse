@@ -12,7 +12,7 @@
 #import "SMAppDelegate.h"
 #import "CATEGORY.h"
 #import "BEER.h"
-
+//http://pngimg.com/upload/beer_PNG2330.png
 @interface SMMasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 - (IBAction)refresh:(id)sender;
@@ -29,9 +29,19 @@
 
 }
 
+-(void)loadImageIntoTable:(UIImageView *) imageView{
+    NSURL *url = [[NSURL alloc]initWithString:@"http://pngimg.com/upload/beer_PNG2330.png"];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    UIImage *img = [[UIImage alloc] initWithData:data];
+    [imageView performSelectorOnMainThread:@selector(setImage:) withObject:img waitUntilDone:YES];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    
     SMAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     if(self.managedObjectContext == nil){
         [appDelegate initCoreData];
@@ -382,8 +392,17 @@
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    NSArray *cellviews = cell.subviews;
+    UIView *view1 = cellviews[0];
+    cellviews = [view1 subviews];
+    [cellviews[1] setValue:[object valueForKey:@"beerName"] forKey:@"text"];
     
-    cell.textLabel.text = [object valueForKey:@"beerName"];
+    NSOperationQueue *queue = [NSOperationQueue new];
+    NSInvocationOperation *operation = [[NSInvocationOperation alloc] initWithTarget:self
+                                                                            selector:@selector(loadImageIntoTable:)
+                                                                              object:cellviews[0]];
+    [queue addOperation:operation];
+
 }
 
 @end
