@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -32,15 +32,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UDs-po-OPa">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDs-po-OPa">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UDs-po-OPa" firstAttribute="bottom" secondItem="iuk-0P-fyj" secondAttribute="bottomMargin" id="BuK-kL-JOb"/>
-                            <constraint firstItem="UDs-po-OPa" firstAttribute="top" secondItem="iuk-0P-fyj" secondAttribute="topMargin" id="T5a-mt-BZM"/>
+                            <constraint firstItem="UDs-po-OPa" firstAttribute="top" secondItem="iuk-0P-fyj" secondAttribute="top" id="4vd-Kp-BOa"/>
+                            <constraint firstItem="UDs-po-OPa" firstAttribute="leading" secondItem="iuk-0P-fyj" secondAttribute="leading" id="CqD-SU-Jbh"/>
+                            <constraint firstAttribute="trailing" secondItem="UDs-po-OPa" secondAttribute="trailing" id="TLy-bt-ymg"/>
+                            <constraint firstAttribute="bottom" secondItem="UDs-po-OPa" secondAttribute="bottom" id="h3y-lG-BgD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="egO-8U-M6n"/>
