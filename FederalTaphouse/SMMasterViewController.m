@@ -12,6 +12,7 @@
 #import "SMAppDelegate.h"
 #import "CATEGORY.h"
 #import "BEER.h"
+#import "SMRefresh.h"
 //http://pngimg.com/upload/beer_PNG2330.png
 @interface SMMasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -30,8 +31,9 @@
 }
 
 -(void)loadImageIntoTable:(UIImageView *) imageView{
-    NSURL *url = [[NSURL alloc]initWithString:@"http://pngimg.com/upload/beer_PNG2330.png"];
-    NSData *data = [NSData dataWithContentsOfURL:url];
+    NSURL *url = [[NSURL alloc]initWithString:@"http://www.pokercardprotector.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/e/beer.png"];
+    NSError *err;
+    NSData *data = [NSData dataWithContentsOfURL:url options:nil error:&err];
     UIImage *img = [[UIImage alloc] initWithData:data];
     [imageView performSelectorOnMainThread:@selector(setImage:) withObject:img waitUntilDone:YES];
 }
@@ -236,7 +238,7 @@
 
 - (IBAction)refresh:(id)sender {
     //[context deleteObject:];
-    NSFetchRequest * allBeers = [[NSFetchRequest alloc] initWithEntityName:@"BEER"];
+    /*NSFetchRequest * allBeers = [[NSFetchRequest alloc] initWithEntityName:@"BEER"];
     NSFetchRequest * allCategories = [[NSFetchRequest alloc] initWithEntityName:@"CATEGORY"];
     NSArray * beers = [self.managedObjectContext executeFetchRequest:allBeers error:nil];
     NSArray * categories = [self.managedObjectContext executeFetchRequest:allCategories error:nil];
@@ -292,9 +294,28 @@
         
     }
     
-    [self.managedObjectContext save:nil];
+    [self.managedObjectContext save:nil];*/
+    [SMRefresh refresh:self.managedObjectContext];
     
     
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+    // Background color
+    view.tintColor = [UIColor colorWithRed:0.329 green:0.557 blue:0.827 alpha:1.000];
+    UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
+
+    UIFont *saveFont = header.textLabel.font;
+    //header.textLabel setFont:[UIFont fontWithName:saveFont.fontName size:18.0]];
+    
+    // Text Color & Alignment
+    [header.textLabel setTextColor:[UIColor whiteColor]];
+    //[header.textLabel setTextAlignment:NSTextAlignmentCenter];
+    // Text Font
+    // Another way to set the background color
+    // Note: does not preserve gradient effect of original heade!r
+    // header.contentView.backgroundColor = [UIColor blackColor];
 }
 
 - (NSFetchedResultsController *)fetchedResultsController
@@ -391,16 +412,19 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
+    
     NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
     NSArray *cellviews = cell.subviews;
-    UIView *view1 = cellviews[0];
-    cellviews = [view1 subviews];
-    [cellviews[1] setValue:[object valueForKey:@"beerName"] forKey:@"text"];
+    UIView *myView = cellviews[0];
+    UIView *cellImage = [myView viewWithTag:2];
+    UIView *cellLabel= [myView viewWithTag:1];
+    //cellviews = [view1 subviews];
+    [cellLabel setValue:[object valueForKey:@"beerName"] forKey:@"text"];
     
     NSOperationQueue *queue = [NSOperationQueue new];
     NSInvocationOperation *operation = [[NSInvocationOperation alloc] initWithTarget:self
                                                                             selector:@selector(loadImageIntoTable:)
-                                                                              object:cellviews[0]];
+                                                                              object:cellImage];
     [queue addOperation:operation];
 
 }

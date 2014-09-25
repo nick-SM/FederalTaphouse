@@ -28,8 +28,8 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    UIImage *image = [UIImage imageNamed:@"FIRE.png"];
-    [self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+    //UIImage *image = [UIImage imageNamed:@"FIRE.png"];
+    //[self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
     [self.tableView reloadData];
 }
 
@@ -41,8 +41,8 @@
     
     //self.navigationController.navigationBar.barTintColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"FIRE.png"]];
     
-    UIImage *image = [UIImage imageNamed:@"FIRE.png"];
-    [self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+    //UIImage *image = [UIImage imageNamed:@"FIRE.png"];
+    //[self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
 
 
     //self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -54,11 +54,11 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-/*-(CGFloat)tableView:(UITableView *)tableView
+-(CGFloat)tableView:(UITableView *)tableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 75.0;
-}*/
+}
 
 - (void)didReceiveMemoryWarning
 {

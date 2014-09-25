@@ -36,6 +36,8 @@
 		3450A94719CA25BE0038FCC8 /* chillis-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3450A94619CA25BD0038FCC8 /* chillis-logo.jpg */; };
 		3450A94D19CB3D240038FCC8 /* SMHomePageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3450A94C19CB3D240038FCC8 /* SMHomePageTableViewController.m */; };
 		3450A94F19CB3EF80038FCC8 /* Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3450A94E19CB3EF80038FCC8 /* Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg */; };
+		34C0471119D47E24006520B8 /* SMRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C0471019D47E24006520B8 /* SMRefresh.m */; };
+		34C0471319D48676006520B8 /* FIRE2.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C0471219D48676006520B8 /* FIRE2.png */; };
 		34F3CD7A19CF70F6003A7BB2 /* SMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F3CD7919CF70F6003A7BB2 /* SMWebViewController.m */; };
 		34F3CD7C19D20ABA003A7BB2 /* BeerNonCopyright.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34F3CD7B19D20ABA003A7BB2 /* BeerNonCopyright.jpg */; };
 		34F5C69519BE3EB900BB9CCC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F5C69419BE3EB900BB9CCC /* MapKit.framework */; };
@@ -95,6 +97,9 @@
 		3450A94B19CB3D240038FCC8 /* SMHomePageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMHomePageTableViewController.h; path = ../SMHomePageTableViewController.h; sourceTree = "<group>"; };
 		3450A94C19CB3D240038FCC8 /* SMHomePageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMHomePageTableViewController.m; path = ../SMHomePageTableViewController.m; sourceTree = "<group>"; };
 		3450A94E19CB3EF80038FCC8 /* Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg"; sourceTree = "<group>"; };
+		34C0470F19D47E24006520B8 /* SMRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRefresh.h; sourceTree = "<group>"; };
+		34C0471019D47E24006520B8 /* SMRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRefresh.m; sourceTree = "<group>"; };
+		34C0471219D48676006520B8 /* FIRE2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FIRE2.png; sourceTree = SOURCE_ROOT; };
 		34F3CD7819CF70F6003A7BB2 /* SMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMWebViewController.h; sourceTree = "<group>"; };
 		34F3CD7919CF70F6003A7BB2 /* SMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMWebViewController.m; sourceTree = "<group>"; };
 		34F3CD7B19D20ABA003A7BB2 /* BeerNonCopyright.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BeerNonCopyright.jpg; sourceTree = SOURCE_ROOT; };
@@ -139,6 +144,8 @@
 		3442349019BCCD2F00BC8398 = {
 			isa = PBXGroup;
 			children = (
+				34C0470F19D47E24006520B8 /* SMRefresh.h */,
+				34C0471019D47E24006520B8 /* SMRefresh.m */,
 				3423388419CB79E400FCC8CF /* FIRE.png */,
 				3423388519CB79E400FCC8CF /* FEDERAL_TAPHOUSE.png */,
 				344234A419BCCD2F00BC8398 /* FederalTaphouse */,
@@ -184,6 +191,7 @@
 				344234AE19BCCD2F00BC8398 /* SMAppDelegate.m */,
 				34F3CD7B19D20ABA003A7BB2 /* BeerNonCopyright.jpg */,
 				344234B019BCCD2F00BC8398 /* Main.storyboard */,
+				34C0471219D48676006520B8 /* FIRE2.png */,
 				34F3CD7819CF70F6003A7BB2 /* SMWebViewController.h */,
 				34F3CD7919CF70F6003A7BB2 /* SMWebViewController.m */,
 				343538C119CF1C5C00E5A7C2 /* SMCategoryTableViewController.h */,
@@ -330,6 +338,7 @@
 				344234DB19BCCF7F00BC8398 /* Beers.plist in Resources */,
 				3450A94F19CB3EF80038FCC8 /* Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg in Resources */,
 				344234B219BCCD2F00BC8398 /* Main.storyboard in Resources */,
+				34C0471319D48676006520B8 /* FIRE2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +367,7 @@
 				344234AB19BCCD2F00BC8398 /* main.m in Sources */,
 				34F5C69819BE3F4500BB9CCC /* SMViewOnMap.m in Sources */,
 				34F5C6E719BF9FD700BB9CCC /* SMDirectionsViewController.m in Sources */,
+				34C0471119D47E24006520B8 /* SMRefresh.m in Sources */,
 				3450A94319C785170038FCC8 /* SMOnlineCourseWebService.m in Sources */,
 				34F3CD7A19CF70F6003A7BB2 /* SMWebViewController.m in Sources */,
 				343538C319CF1C5C00E5A7C2 /* SMCategoryTableViewController.m in Sources */,

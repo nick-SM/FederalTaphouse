@@ -19,6 +19,7 @@
     MKUserLocation *userloc;
     BOOL directionsDrawn;
     NSArray *arrRoutes;
+    CLLocationManager *manager;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -36,6 +37,7 @@
     directionsDrawn = NO;
 
     userloc = userLocation;
+
     [self drawMap];
 
 }
@@ -95,6 +97,10 @@
             
             NSLog(@"response = %@",response);
             arrRoutes = [response routes];
+            if(self.sLocationChanged.enabled == YES){
+                [self.btnDrawRouteCollection[0] setHidden:NO];
+                [self.btnDrawRouteCollection[1] setHidden:NO];
+            }
             [arrRoutes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
                 
                 MKRoute *rout = obj;
@@ -113,6 +119,7 @@
             }];
         }];
         directionsDrawn = YES;
+
     }
 }
 
@@ -140,6 +147,15 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    manager = [[CLLocationManager alloc]init];
+    @try {
+        [manager requestWhenInUseAuthorization];
+
+    }
+    @catch (NSException *exception) {
+    }
+    @finally {
+    }
     self.mvMap.delegate = (id)self;
     directionsDrawn = NO;
     [self.btnDrawRouteCollection[0] setHidden:YES];
@@ -184,6 +200,7 @@
 
 - (IBAction)changeLocationPresser:(UISwitch *)sender {
     if(sender.isOn == NO){
+        //[manager requestWhenInUseAuthorization];
         [self clearLine];
         self.mvMap.showsUserLocation = NO;
         [self.btnDrawRouteCollection[0] setHidden:YES];
@@ -191,8 +208,8 @@
     }
     else{
         self.mvMap.showsUserLocation = YES;
-        [self.btnDrawRouteCollection[0] setHidden:NO];
-        [self.btnDrawRouteCollection[1] setHidden:NO];
+        //[self.btnDrawRouteCollection[0] setHidden:NO];
+        //[self.btnDrawRouteCollection[1] setHidden:NO];
     }
 }
 - (IBAction)getDirections:(id)sender {

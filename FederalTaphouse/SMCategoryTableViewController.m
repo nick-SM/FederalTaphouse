@@ -12,6 +12,7 @@
 #import "BEER.h"
 #import "SMMasterViewController.h"
 #import "SMOnlineCourseWebService.h"
+#import "SMRefresh.h"
 
 @interface SMCategoryTableViewController ()
 
@@ -218,64 +219,15 @@
     return _fetchedResultsController;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView
+heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44.0;
+}
+
 - (IBAction)refresh:(id)sender {
-    NSFetchRequest * allBeers = [[NSFetchRequest alloc] initWithEntityName:@"BEER"];
-    NSFetchRequest * allCategories = [[NSFetchRequest alloc] initWithEntityName:@"CATEGORY"];
-    NSArray * beers = [self.managedObjectContext executeFetchRequest:allBeers error:nil];
-    NSArray * categories = [self.managedObjectContext executeFetchRequest:allCategories error:nil];
-    for (NSManagedObject * beer in beers) {
-        [self.managedObjectContext deleteObject:beer];    }
-    
-    for (NSManagedObject * category in categories) {
-        [self.managedObjectContext deleteObject:category];
-    }
-    
-    SMOnlineCourseWebService *service = [[SMOnlineCourseWebService alloc]init];
-    
-    NSMutableArray *inputElements = [[NSMutableArray alloc]init];
-    
-    NSMutableArray *elementValues = [[NSMutableArray alloc]init];
-    
-    NSDictionary *result = [service doWebService:@"getBeerList" withElements:inputElements forValues:elementValues];
-    
-    NSArray *beerNames = result[@"beer_name"];
-    NSArray *beerCategorys = result[@"beer_category_name"];
-    NSArray *beerDescriptions = result[@"beer_description"];
-    NSArray *beerABVs = result[@"beer_ABV"];
-    NSArray *beerLocations = result[@"beer_location"];
-    NSArray *beerPrices = result[@"beer_price"];
-    NSArray *beerSizes = result[@"beer_size"];
-    
-    NSMutableDictionary *catDict = [NSMutableDictionary new];
-    for(int i = 0;i< [beerCategorys count];i++){
-        if(!catDict[beerCategorys[i]]){
-            CATEGORY *moCategory;
-            moCategory = [NSEntityDescription
-                          insertNewObjectForEntityForName:@"CATEGORY"
-                          inManagedObjectContext:self.managedObjectContext];
-            
-            moCategory.categoryName = beerCategorys[i];
-            [catDict setObject:moCategory forKey:beerCategorys[i]];
-        }
-    }
-    
-    for(int i = 0;i< [beerNames count];i++){
-        BEER *moBEER;
-        moBEER = [NSEntityDescription
-                  insertNewObjectForEntityForName:@"BEER"
-                  inManagedObjectContext:self.managedObjectContext];
-        moBEER.beerName = beerNames[i];
-        moBEER.beerLocation = beerLocations[i];
-        moBEER.beerSize = beerSizes[i];
-        moBEER.beerDescription = beerDescriptions[i];
-        moBEER.beerPrice = beerPrices[i];
-        moBEER.beerABV = beerABVs[i];
-        moBEER.beerCategory = catDict[beerCategorys[i]];
-        
-        
-    }
-    
     [self.managedObjectContext save:nil];
+    [SMRefresh refresh:self.managedObjectContext];
 }
 
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
@@ -343,6 +295,8 @@
     NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     cell.textLabel.text = [object valueForKey:@"categoryName"];
+    cell.textLabel.font = [UIFont fontWithName:@"Copperplate" size:18.0];
+    [cell.textLabel setTextColor:[UIColor orangeColor]];
 }
 
 @end

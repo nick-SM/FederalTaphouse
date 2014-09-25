@@ -9,6 +9,7 @@
 #import "SMAppDelegate.h"
 
 #import "SMMasterViewController.h"
+#import "SMRefresh.h"
 
 @implementation SMAppDelegate
 
@@ -22,8 +23,21 @@
     /*UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     SMMasterViewController *controller = (SMMasterViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;*/
-    
-    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    //UIApplication *application = [UIApplication sharedApplication];
+    if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeSound|UIRemoteNotificationTypeAlert) categories:nil];
+        [application registerUserNotificationSettings:settings];
+    } else {
+        UIRemoteNotificationType myTypes = UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound;
+        [application registerForRemoteNotificationTypes:myTypes];
+    }
+    if (application.applicationIconBadgeNumber > 0){
+        //UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"abc" message:@"Efg" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        //[alert show];
+        application.applicationIconBadgeNumber = 0;
+        [SMRefresh refresh:self.managedObjectContext];
+    }
+    //[[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
     
     return YES;
 }
