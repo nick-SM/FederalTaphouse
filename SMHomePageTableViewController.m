@@ -38,8 +38,20 @@
     [super viewDidLoad];
     self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg"]];
 
+    //navController.navigationBar.barTintColor = [UIColor navigationColor];
     
-    //self.navigationController.navigationBar.barTintColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"FIRE.png"]];
+    //self.navigationController.navigationBar.barTintColor = [UIColor orangeColor];
+    /*NSDictionary *navbarTitleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                               [UIColor whiteColor],UITextAttributeTextColor,
+                                               [UIColor blackColor], UITextAttributeTextShadowColor,
+                                               [NSValue valueWithUIOffset:UIOffsetMake(-1, 0)], UITextAttributeTextShadowOffset, nil];*/
+    //self.navigationController.navigationBar.titleTextAttributes=navbarTitleTextAttributes;
+    /*[self.navigationController.navigationBar setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor redColor], NSForegroundColorAttributeName,
+                                                           shadow, NSShadowAttributeName,
+                                                           [UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:21.0], NSFontAttributeName, nil]];*/
+
+    //self.navigationController.navigationBar.barTintColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"metal.jpg"]];
     
     //UIImage *image = [UIImage imageNamed:@"FIRE.png"];
     //[self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
@@ -57,7 +69,7 @@
 -(CGFloat)tableView:(UITableView *)tableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 75.0;
+    return 100.0;
 }
 
 - (void)didReceiveMemoryWarning

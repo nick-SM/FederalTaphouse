@@ -38,6 +38,17 @@
 		3450A94F19CB3EF80038FCC8 /* Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3450A94E19CB3EF80038FCC8 /* Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg */; };
 		34C0471119D47E24006520B8 /* SMRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C0471019D47E24006520B8 /* SMRefresh.m */; };
 		34C0471319D48676006520B8 /* FIRE2.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C0471219D48676006520B8 /* FIRE2.png */; };
+		34C0471C19D4A39E006520B8 /* artisan pizza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34C0471419D4A39E006520B8 /* artisan pizza.jpg */; };
+		34C0471D19D4A39E006520B8 /* burger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34C0471519D4A39E006520B8 /* burger.jpg */; };
+		34C0471E19D4A39E006520B8 /* coal fired.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34C0471619D4A39E006520B8 /* coal fired.jpg */; };
+		34C0471F19D4A39E006520B8 /* desert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34C0471719D4A39E006520B8 /* desert.jpg */; };
+		34C0472019D4A39E006520B8 /* fed Fries.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34C0471819D4A39E006520B8 /* fed Fries.jpg */; };
+		34C0472119D4A39E006520B8 /* pretzel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34C0471919D4A39E006520B8 /* pretzel.jpg */; };
+		34C0472219D4A39E006520B8 /* salad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34C0471A19D4A39E006520B8 /* salad.jpg */; };
+		34C0472319D4A39E006520B8 /* salmon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34C0471B19D4A39E006520B8 /* salmon.jpg */; };
+		34C0472619D4A76C006520B8 /* SMRewardsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C0472519D4A76C006520B8 /* SMRewardsTableViewController.m */; };
+		34C0472819D4AFCA006520B8 /* wood-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34C0472719D4AFCA006520B8 /* wood-background.jpg */; };
+		34C0472A19D4B063006520B8 /* metal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34C0472919D4B063006520B8 /* metal.jpg */; };
 		34F3CD7A19CF70F6003A7BB2 /* SMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F3CD7919CF70F6003A7BB2 /* SMWebViewController.m */; };
 		34F3CD7C19D20ABA003A7BB2 /* BeerNonCopyright.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34F3CD7B19D20ABA003A7BB2 /* BeerNonCopyright.jpg */; };
 		34F5C69519BE3EB900BB9CCC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F5C69419BE3EB900BB9CCC /* MapKit.framework */; };
@@ -100,6 +111,18 @@
 		34C0470F19D47E24006520B8 /* SMRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRefresh.h; sourceTree = "<group>"; };
 		34C0471019D47E24006520B8 /* SMRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRefresh.m; sourceTree = "<group>"; };
 		34C0471219D48676006520B8 /* FIRE2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FIRE2.png; sourceTree = SOURCE_ROOT; };
+		34C0471419D4A39E006520B8 /* artisan pizza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "artisan pizza.jpg"; sourceTree = SOURCE_ROOT; };
+		34C0471519D4A39E006520B8 /* burger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = burger.jpg; sourceTree = SOURCE_ROOT; };
+		34C0471619D4A39E006520B8 /* coal fired.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "coal fired.jpg"; sourceTree = SOURCE_ROOT; };
+		34C0471719D4A39E006520B8 /* desert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = desert.jpg; sourceTree = SOURCE_ROOT; };
+		34C0471819D4A39E006520B8 /* fed Fries.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fed Fries.jpg"; sourceTree = SOURCE_ROOT; };
+		34C0471919D4A39E006520B8 /* pretzel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pretzel.jpg; sourceTree = SOURCE_ROOT; };
+		34C0471A19D4A39E006520B8 /* salad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salad.jpg; sourceTree = SOURCE_ROOT; };
+		34C0471B19D4A39E006520B8 /* salmon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salmon.jpg; sourceTree = SOURCE_ROOT; };
+		34C0472419D4A76C006520B8 /* SMRewardsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRewardsTableViewController.h; sourceTree = "<group>"; };
+		34C0472519D4A76C006520B8 /* SMRewardsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRewardsTableViewController.m; sourceTree = "<group>"; };
+		34C0472719D4AFCA006520B8 /* wood-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-background.jpg"; sourceTree = SOURCE_ROOT; };
+		34C0472919D4B063006520B8 /* metal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = metal.jpg; sourceTree = SOURCE_ROOT; };
 		34F3CD7819CF70F6003A7BB2 /* SMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMWebViewController.h; sourceTree = "<group>"; };
 		34F3CD7919CF70F6003A7BB2 /* SMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMWebViewController.m; sourceTree = "<group>"; };
 		34F3CD7B19D20ABA003A7BB2 /* BeerNonCopyright.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BeerNonCopyright.jpg; sourceTree = SOURCE_ROOT; };
@@ -184,6 +207,8 @@
 				3450A94619CA25BD0038FCC8 /* chillis-logo.jpg */,
 				3450A94B19CB3D240038FCC8 /* SMHomePageTableViewController.h */,
 				3450A94C19CB3D240038FCC8 /* SMHomePageTableViewController.m */,
+				34C0472919D4B063006520B8 /* metal.jpg */,
+				34C0472719D4AFCA006520B8 /* wood-background.jpg */,
 				3450A94E19CB3EF80038FCC8 /* Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg */,
 				34F5C69619BE3F4500BB9CCC /* SMViewOnMap.h */,
 				34F5C69719BE3F4500BB9CCC /* SMViewOnMap.m */,
@@ -191,6 +216,14 @@
 				344234AE19BCCD2F00BC8398 /* SMAppDelegate.m */,
 				34F3CD7B19D20ABA003A7BB2 /* BeerNonCopyright.jpg */,
 				344234B019BCCD2F00BC8398 /* Main.storyboard */,
+				34C0471419D4A39E006520B8 /* artisan pizza.jpg */,
+				34C0471519D4A39E006520B8 /* burger.jpg */,
+				34C0471619D4A39E006520B8 /* coal fired.jpg */,
+				34C0471719D4A39E006520B8 /* desert.jpg */,
+				34C0471819D4A39E006520B8 /* fed Fries.jpg */,
+				34C0471919D4A39E006520B8 /* pretzel.jpg */,
+				34C0471A19D4A39E006520B8 /* salad.jpg */,
+				34C0471B19D4A39E006520B8 /* salmon.jpg */,
 				34C0471219D48676006520B8 /* FIRE2.png */,
 				34F3CD7819CF70F6003A7BB2 /* SMWebViewController.h */,
 				34F3CD7919CF70F6003A7BB2 /* SMWebViewController.m */,
@@ -205,6 +238,8 @@
 				34F5C6E619BF9FD700BB9CCC /* SMDirectionsViewController.m */,
 				344234B619BCCD2F00BC8398 /* SMMasterViewController.h */,
 				344234B719BCCD2F00BC8398 /* SMMasterViewController.m */,
+				34C0472419D4A76C006520B8 /* SMRewardsTableViewController.h */,
+				34C0472519D4A76C006520B8 /* SMRewardsTableViewController.m */,
 				344234B919BCCD2F00BC8398 /* SMDetailViewController.h */,
 				344234BA19BCCD2F00BC8398 /* SMDetailViewController.m */,
 				344234BC19BCCD2F00BC8398 /* Images.xcassets */,
@@ -328,17 +363,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34C0472A19D4B063006520B8 /* metal.jpg in Resources */,
+				34C0471E19D4A39E006520B8 /* coal fired.jpg in Resources */,
 				344234BD19BCCD2F00BC8398 /* Images.xcassets in Resources */,
+				34C0471F19D4A39E006520B8 /* desert.jpg in Resources */,
 				3423388619CB79E400FCC8CF /* FIRE.png in Resources */,
+				34C0472019D4A39E006520B8 /* fed Fries.jpg in Resources */,
 				344234A919BCCD2F00BC8398 /* InfoPlist.strings in Resources */,
+				34C0471D19D4A39E006520B8 /* burger.jpg in Resources */,
+				34C0472319D4A39E006520B8 /* salmon.jpg in Resources */,
 				3450A94719CA25BE0038FCC8 /* chillis-logo.jpg in Resources */,
 				3423388719CB79E400FCC8CF /* FEDERAL_TAPHOUSE.png in Resources */,
 				34F3CD7C19D20ABA003A7BB2 /* BeerNonCopyright.jpg in Resources */,
 				3423387F19CB641E00FCC8CF /* images.jpeg in Resources */,
+				34C0472119D4A39E006520B8 /* pretzel.jpg in Resources */,
 				344234DB19BCCF7F00BC8398 /* Beers.plist in Resources */,
+				34C0471C19D4A39E006520B8 /* artisan pizza.jpg in Resources */,
 				3450A94F19CB3EF80038FCC8 /* Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg in Resources */,
+				34C0472819D4AFCA006520B8 /* wood-background.jpg in Resources */,
 				344234B219BCCD2F00BC8398 /* Main.storyboard in Resources */,
 				34C0471319D48676006520B8 /* FIRE2.png in Resources */,
+				34C0472219D4A39E006520B8 /* salad.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +410,7 @@
 				344234E119BCDD3D00BC8398 /* CATEGORY.m in Sources */,
 				344234BB19BCCD2F00BC8398 /* SMDetailViewController.m in Sources */,
 				344234AB19BCCD2F00BC8398 /* main.m in Sources */,
+				34C0472619D4A76C006520B8 /* SMRewardsTableViewController.m in Sources */,
 				34F5C69819BE3F4500BB9CCC /* SMViewOnMap.m in Sources */,
 				34F5C6E719BF9FD700BB9CCC /* SMDirectionsViewController.m in Sources */,
 				34C0471119D47E24006520B8 /* SMRefresh.m in Sources */,

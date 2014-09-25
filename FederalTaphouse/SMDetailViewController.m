@@ -32,7 +32,8 @@
 {
 
     if (self.detailItem) {
-        NSURL *url = [NSURL URLWithString:imageUrls[self.detailItem.beerName]];
+        //NSURL *url = [NSURL URLWithString:imageUrls[self.detailItem.beerName]];
+        NSURL *url = [[NSURL alloc]initWithString:@"http://www.pokercardprotector.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/e/beer.png"];
         dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
         dispatch_async(queue, ^{
 
@@ -49,7 +50,19 @@
         [self.lblcDescriptions[1] setValue:self.detailItem.beerLocation forKey:@"text"];
         [self.lblcDescriptions[2] setValue:self.detailItem.beerSize forKey:@"text"];
         [self.lblcDescriptions[3] setValue:self.detailItem.beerABV forKey:@"text"];
+        
         [self.lblcDescriptions[4] setValue:self.detailItem.beerPrice forKey:@"text"];
+        //NSString *temp =self.detailItem.beerPrice;
+        double price = [self.detailItem.beerPrice floatValue];
+        if(price != 0.0){
+            NSNumber *priceWrap = [[NSNumber alloc]initWithDouble:price];
+            NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+            [numberFormatter setNumberStyle: NSNumberFormatterCurrencyStyle];
+            NSString *numberAsString = [numberFormatter stringFromNumber:priceWrap];
+            [self.lblcDescriptions[4] setValue:numberAsString forKey:@"text"];
+        }
+
+
         
         UILabel *descLabel =self.lblcDescriptions[5];
         [self.lblcDescriptions[5] setValue:self.detailItem.beerDescription forKey:@"text"];
