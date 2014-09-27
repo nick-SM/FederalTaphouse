@@ -32,8 +32,7 @@
 
 -(void)loadImageIntoTable:(UIImageView *) imageView{
     NSURL *url = [[NSURL alloc]initWithString:@"http://www.pokercardprotector.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/e/beer.png"];
-    NSError *err;
-    NSData *data = [NSData dataWithContentsOfURL:url options:nil error:&err];
+    NSData *data = [NSData dataWithContentsOfURL:url];
     UIImage *img = [[UIImage alloc] initWithData:data];
     [imageView performSelectorOnMainThread:@selector(setImage:) withObject:img waitUntilDone:YES];
 }
@@ -306,7 +305,7 @@
     view.tintColor = [UIColor colorWithRed:0.329 green:0.557 blue:0.827 alpha:1.000];
     UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
 
-    UIFont *saveFont = header.textLabel.font;
+    //UIFont *saveFont = header.textLabel.font;
     //header.textLabel setFont:[UIFont fontWithName:saveFont.fontName size:18.0]];
     
     // Text Color & Alignment

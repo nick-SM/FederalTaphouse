@@ -27,13 +27,14 @@
     if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
         UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeSound|UIRemoteNotificationTypeAlert) categories:nil];
         [application registerUserNotificationSettings:settings];
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+
     } else {
         UIRemoteNotificationType myTypes = UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound;
         [application registerForRemoteNotificationTypes:myTypes];
     }
     if (application.applicationIconBadgeNumber > 0){
-        //UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"abc" message:@"Efg" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-        //[alert show];
+
         application.applicationIconBadgeNumber = 0;
         [SMRefresh refresh:self.managedObjectContext];
     }
@@ -62,6 +63,11 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
+    if (application.applicationIconBadgeNumber > 0){
+        
+        application.applicationIconBadgeNumber = 0;
+        [SMRefresh refresh:self.managedObjectContext];
+    }
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 - (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken

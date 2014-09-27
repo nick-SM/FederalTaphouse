@@ -236,7 +236,7 @@
                         <sections>
                             <tableViewSection id="gdd-30-qtZ">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" id="Egn-Y3-sLz">
+                                    <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" id="Egn-Y3-sLz">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" tableViewCell="Egn-Y3-sLz" id="4Rx-ir-qCY">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -261,7 +261,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" id="qul-zF-Qce">
+                                    <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" id="qul-zF-Qce">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" tableViewCell="qul-zF-Qce" id="sTp-7h-Ch5">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -286,7 +286,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" id="HUB-Cd-ZEb">
+                                    <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" id="HUB-Cd-ZEb">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" tableViewCell="HUB-Cd-ZEb" id="GJH-d7-jxh">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -311,7 +311,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" id="OxO-tU-5Nk">
+                                    <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" id="OxO-tU-5Nk">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" tableViewCell="OxO-tU-5Nk" id="sFn-RR-Egf">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -336,7 +336,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" id="FBC-x4-L2s">
+                                    <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" id="FBC-x4-L2s">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" tableViewCell="FBC-x4-L2s" id="RaA-nR-NDB">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -361,7 +361,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" id="n33-ej-jy4">
+                                    <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" id="n33-ej-jy4">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" tableViewCell="n33-ej-jy4" id="k9G-ZI-g8L">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -386,7 +386,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" id="D6R-aE-at6">
+                                    <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" id="D6R-aE-at6">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" tableViewCell="D6R-aE-at6" id="PZa-4J-0AN">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -411,7 +411,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" id="fpG-db-9HA">
+                                    <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" selectionStyle="default" indentationWidth="10" id="fpG-db-9HA">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" tableViewCell="fpG-db-9HA" id="K90-Gy-XYa">
                                             <autoresizingMask key="autoresizingMask"/>

@@ -41,16 +41,16 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     
     UIInterfaceOrientation intOrientation = [self interfaceOrientation];
     if(UIInterfaceOrientationIsLandscape(intOrientation) || intOrientation == UIInterfaceOrientationPortraitUpsideDown){
-        return screenHeight * (29.0/80.0);    }
-    else{
-        return screenWidth * (29.0/80.0);
+        if(screenHeight<screenWidth)
+            return screenWidth * (29.0/80.0);
+        return screenHeight * (29.0/80.0);
     }
     
     return screenWidth * (29.0/80.0);
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-    //[self.tableView reloadData];
+    [self.tableView reloadData];
 }
 
 /*- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

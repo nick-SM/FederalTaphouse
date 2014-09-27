@@ -49,6 +49,12 @@
 		34C0472619D4A76C006520B8 /* SMRewardsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C0472519D4A76C006520B8 /* SMRewardsTableViewController.m */; };
 		34C0472819D4AFCA006520B8 /* wood-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34C0472719D4AFCA006520B8 /* wood-background.jpg */; };
 		34C0472A19D4B063006520B8 /* metal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34C0472919D4B063006520B8 /* metal.jpg */; };
+		34C0476319D70A45006520B8 /* taphouseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C0476219D70A45006520B8 /* taphouseIcon.png */; };
+		34C0476519D70AEC006520B8 /* taphouseIcon58.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C0476419D70AEC006520B8 /* taphouseIcon58.png */; };
+		34C0476719D70B80006520B8 /* taphouseIcon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C0476619D70B80006520B8 /* taphouseIcon80.png */; };
+		34C0476919D70D7E006520B8 /* taphouseIcon60.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C0476819D70D7E006520B8 /* taphouseIcon60.png */; };
+		34C0476C19D70DD9006520B8 /* taphouseIcon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C0476A19D70DD9006520B8 /* taphouseIcon120.png */; };
+		34C0476D19D70DD9006520B8 /* taphouseIcon180.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C0476B19D70DD9006520B8 /* taphouseIcon180.png */; };
 		34F3CD7A19CF70F6003A7BB2 /* SMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F3CD7919CF70F6003A7BB2 /* SMWebViewController.m */; };
 		34F3CD7C19D20ABA003A7BB2 /* BeerNonCopyright.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34F3CD7B19D20ABA003A7BB2 /* BeerNonCopyright.jpg */; };
 		34F5C69519BE3EB900BB9CCC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F5C69419BE3EB900BB9CCC /* MapKit.framework */; };
@@ -123,6 +129,12 @@
 		34C0472519D4A76C006520B8 /* SMRewardsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRewardsTableViewController.m; sourceTree = "<group>"; };
 		34C0472719D4AFCA006520B8 /* wood-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-background.jpg"; sourceTree = SOURCE_ROOT; };
 		34C0472919D4B063006520B8 /* metal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = metal.jpg; sourceTree = SOURCE_ROOT; };
+		34C0476219D70A45006520B8 /* taphouseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taphouseIcon.png; sourceTree = SOURCE_ROOT; };
+		34C0476419D70AEC006520B8 /* taphouseIcon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taphouseIcon58.png; sourceTree = SOURCE_ROOT; };
+		34C0476619D70B80006520B8 /* taphouseIcon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taphouseIcon80.png; sourceTree = SOURCE_ROOT; };
+		34C0476819D70D7E006520B8 /* taphouseIcon60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taphouseIcon60.png; sourceTree = SOURCE_ROOT; };
+		34C0476A19D70DD9006520B8 /* taphouseIcon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taphouseIcon120.png; sourceTree = SOURCE_ROOT; };
+		34C0476B19D70DD9006520B8 /* taphouseIcon180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taphouseIcon180.png; sourceTree = SOURCE_ROOT; };
 		34F3CD7819CF70F6003A7BB2 /* SMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMWebViewController.h; sourceTree = "<group>"; };
 		34F3CD7919CF70F6003A7BB2 /* SMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMWebViewController.m; sourceTree = "<group>"; };
 		34F3CD7B19D20ABA003A7BB2 /* BeerNonCopyright.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BeerNonCopyright.jpg; sourceTree = SOURCE_ROOT; };
@@ -243,6 +255,12 @@
 				344234B919BCCD2F00BC8398 /* SMDetailViewController.h */,
 				344234BA19BCCD2F00BC8398 /* SMDetailViewController.m */,
 				344234BC19BCCD2F00BC8398 /* Images.xcassets */,
+				34C0476A19D70DD9006520B8 /* taphouseIcon120.png */,
+				34C0476B19D70DD9006520B8 /* taphouseIcon180.png */,
+				34C0476819D70D7E006520B8 /* taphouseIcon60.png */,
+				34C0476619D70B80006520B8 /* taphouseIcon80.png */,
+				34C0476419D70AEC006520B8 /* taphouseIcon58.png */,
+				34C0476219D70A45006520B8 /* taphouseIcon.png */,
 				344234B319BCCD2F00BC8398 /* FederalTaphouse.xcdatamodeld */,
 				344234DF19BCDD3D00BC8398 /* CATEGORY.h */,
 				344234E019BCDD3D00BC8398 /* CATEGORY.m */,
@@ -367,11 +385,13 @@
 				34C0471E19D4A39E006520B8 /* coal fired.jpg in Resources */,
 				344234BD19BCCD2F00BC8398 /* Images.xcassets in Resources */,
 				34C0471F19D4A39E006520B8 /* desert.jpg in Resources */,
+				34C0476D19D70DD9006520B8 /* taphouseIcon180.png in Resources */,
 				3423388619CB79E400FCC8CF /* FIRE.png in Resources */,
 				34C0472019D4A39E006520B8 /* fed Fries.jpg in Resources */,
 				344234A919BCCD2F00BC8398 /* InfoPlist.strings in Resources */,
 				34C0471D19D4A39E006520B8 /* burger.jpg in Resources */,
 				34C0472319D4A39E006520B8 /* salmon.jpg in Resources */,
+				34C0476919D70D7E006520B8 /* taphouseIcon60.png in Resources */,
 				3450A94719CA25BE0038FCC8 /* chillis-logo.jpg in Resources */,
 				3423388719CB79E400FCC8CF /* FEDERAL_TAPHOUSE.png in Resources */,
 				34F3CD7C19D20ABA003A7BB2 /* BeerNonCopyright.jpg in Resources */,
@@ -379,11 +399,15 @@
 				34C0472119D4A39E006520B8 /* pretzel.jpg in Resources */,
 				344234DB19BCCF7F00BC8398 /* Beers.plist in Resources */,
 				34C0471C19D4A39E006520B8 /* artisan pizza.jpg in Resources */,
+				34C0476C19D70DD9006520B8 /* taphouseIcon120.png in Resources */,
 				3450A94F19CB3EF80038FCC8 /* Black-Background-Metal-1080P-hd-wallpapers-hd-wallpaper-1680x1050-4-507f9771b11af-5283.jpg in Resources */,
+				34C0476319D70A45006520B8 /* taphouseIcon.png in Resources */,
+				34C0476519D70AEC006520B8 /* taphouseIcon58.png in Resources */,
 				34C0472819D4AFCA006520B8 /* wood-background.jpg in Resources */,
 				344234B219BCCD2F00BC8398 /* Main.storyboard in Resources */,
 				34C0471319D48676006520B8 /* FIRE2.png in Resources */,
 				34C0472219D4A39E006520B8 /* salad.jpg in Resources */,
+				34C0476719D70B80006520B8 /* taphouseIcon80.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
