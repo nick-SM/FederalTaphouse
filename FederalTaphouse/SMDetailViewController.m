@@ -38,8 +38,8 @@
         dispatch_async(queue, ^{
 
             NSData *data = [NSData dataWithContentsOfURL:url];
-            UIImage *img = [[UIImage alloc] initWithData:data];
             dispatch_async(dispatch_get_main_queue(), ^{
+                UIImage *img = [[UIImage alloc] initWithData:data];
                 UIImageView *myImageView = self.lblcImage[0];
                 [myImageView setContentMode:UIViewContentModeScaleAspectFit];
                 [myImageView setImage:img];
