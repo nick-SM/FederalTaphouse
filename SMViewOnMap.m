@@ -12,6 +12,7 @@
 #import "SMViewOnMap.h"
 
 @interface SMViewOnMap ()
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *btnDirections;
 
 @end
 
@@ -97,10 +98,11 @@
             
             NSLog(@"response = %@",response);
             arrRoutes = [response routes];
-            if(self.sLocationChanged.enabled == YES){
-                [self.btnDrawRouteCollection[0] setHidden:NO];
-                [self.btnDrawRouteCollection[1] setHidden:NO];
-            }
+            //if(self.sLocationChanged.enabled == YES){
+            [self.btnDrawRouteCollection[0] setHidden:NO];
+            [self.btnDrawRouteCollection[1] setHidden:NO];
+            self.btnDirections.enabled = true;
+            //}
             [arrRoutes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
                 
                 MKRoute *rout = obj;
@@ -148,6 +150,7 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     manager = [[CLLocationManager alloc]init];
+    
     @try {
         [manager requestWhenInUseAuthorization];
 
@@ -156,6 +159,8 @@
     }
     @finally {
     }
+    self.btnDirections.enabled = false;
+    //self.mvMap.showsUserLocation = YES;
     self.mvMap.delegate = (id)self;
     directionsDrawn = NO;
     [self.btnDrawRouteCollection[0] setHidden:YES];
@@ -198,7 +203,7 @@
     // Pass the selected object to the new view controller.
 }
 
-- (IBAction)changeLocationPresser:(UISwitch *)sender {
+/*- (IBAction)changeLocationPresser:(UISwitch *)sender {
     if(sender.isOn == NO){
         //[manager requestWhenInUseAuthorization];
         [self clearLine];
@@ -211,7 +216,7 @@
         //[self.btnDrawRouteCollection[0] setHidden:NO];
         //[self.btnDrawRouteCollection[1] setHidden:NO];
     }
-}
+}*/
 - (IBAction)getDirections:(id)sender {
     if(arrRoutes!=nil){
         [self performSegueWithIdentifier:@"toDirections" sender:nil];
@@ -229,7 +234,7 @@
         [self.mvMap addOverlay:line];
     }
     else{
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Location not Found" message:@"Please enable location services and press 'Display User Location' switch to draw route" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Location not Found" message:@"Please enable location services and wait for the location to update" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
     }
 }

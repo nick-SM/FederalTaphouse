@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -464,20 +465,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uIr-9q-d8X">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                            </mapView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kHd-aG-LXL">
-                                <rect key="frame" x="48" y="429" width="51" height="31"/>
-                                <connections>
-                                    <action selector="changeLocationPresser:" destination="Qlg-3Q-15X" eventType="valueChanged" id="iDg-uZ-w82"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display User Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9e-we-20J">
-                                <rect key="frame" x="105" y="434" width="168" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1w-i7-qMJ">
+                                <rect key="frame" x="27" y="258" width="266" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="vbb-yQ-swy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uIr-9q-d8X">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izx-oj-Oau">
                                 <rect key="frame" x="20" y="69" width="81" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -498,29 +497,16 @@
                                     <action selector="clearRoute:" destination="Qlg-3Q-15X" eventType="touchUpInside" id="rRd-44-Dbl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1w-i7-qMJ">
-                                <rect key="frame" x="27" y="258" width="266" height="53"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="vbb-yQ-swy"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gfT-S1-JcR" firstAttribute="top" secondItem="v98-Ge-ocq" secondAttribute="bottom" constant="5" id="AEC-rU-V3y"/>
                             <constraint firstAttribute="trailing" secondItem="gfT-S1-JcR" secondAttribute="trailing" constant="20" id="CFa-3U-Yca"/>
-                            <constraint firstAttribute="centerX" secondItem="d9e-we-20J" secondAttribute="centerX" constant="-29" id="Hh0-96-Rbw"/>
                             <constraint firstAttribute="centerX" secondItem="e1w-i7-qMJ" secondAttribute="centerX" id="Hsn-Ke-pNR"/>
                             <constraint firstItem="uIr-9q-d8X" firstAttribute="leading" secondItem="09V-LJ-UPM" secondAttribute="leading" id="KjI-Jo-84Y"/>
-                            <constraint firstItem="KV7-T8-Huw" firstAttribute="top" secondItem="kHd-aG-LXL" secondAttribute="bottom" constant="20" id="L6d-S1-I6F"/>
-                            <constraint firstItem="d9e-we-20J" firstAttribute="leading" secondItem="kHd-aG-LXL" secondAttribute="trailing" constant="8" id="RBC-bO-Itr"/>
                             <constraint firstAttribute="trailing" secondItem="uIr-9q-d8X" secondAttribute="trailing" id="Uxz-od-iA7"/>
                             <constraint firstItem="KV7-T8-Huw" firstAttribute="top" secondItem="e1w-i7-qMJ" secondAttribute="bottom" constant="169" id="V1h-Mj-p0T"/>
                             <constraint firstItem="izx-oj-Oau" firstAttribute="leading" secondItem="09V-LJ-UPM" secondAttribute="leading" constant="20" symbolic="YES" id="Vmx-Fb-K4S"/>
-                            <constraint firstAttribute="bottom" secondItem="d9e-we-20J" secondAttribute="bottom" constant="25" id="hD8-oP-q8D"/>
                             <constraint firstAttribute="bottom" secondItem="uIr-9q-d8X" secondAttribute="bottom" id="hU0-vD-unM"/>
                             <constraint firstItem="uIr-9q-d8X" firstAttribute="top" secondItem="09V-LJ-UPM" secondAttribute="top" id="kg8-cO-jEi"/>
                             <constraint firstAttribute="trailing" secondItem="e1w-i7-qMJ" secondAttribute="trailing" constant="27" id="ouD-cP-p9n"/>
@@ -535,8 +521,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="btnDirections" destination="Omf-AZ-Vp6" id="K1e-1t-mK0"/>
                         <outlet property="mvMap" destination="uIr-9q-d8X" id="utY-Tr-VrY"/>
-                        <outlet property="sLocationChanged" destination="kHd-aG-LXL" id="MwB-tb-hd2"/>
                         <outletCollection property="btnDrawRouteCollection" destination="gfT-S1-JcR" id="6uR-fX-qZ2"/>
                         <outletCollection property="btnDrawRouteCollection" destination="izx-oj-Oau" id="Zi0-AG-FOh"/>
                         <segue destination="YKU-F5-leg" kind="push" identifier="toDirections" id="SeD-AD-Lll"/>
