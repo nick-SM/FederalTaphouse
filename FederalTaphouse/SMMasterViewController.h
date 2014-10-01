@@ -18,5 +18,5 @@
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 -(void)loadImageIntoTable:(UIImageView *) imageView;
-
+-(NSString *)findIfNew:(NSString *)date;
 @end

@@ -417,6 +417,11 @@
     UIView *myView = cellviews[0];
     UIView *cellImage = [myView viewWithTag:2];
     UIView *cellLabel= [myView viewWithTag:1];
+    UILabel *lblNew= (UILabel *)[myView viewWithTag:3];
+    
+    
+    lblNew.text = [self findIfNew:[object valueForKey:@"beerDateAdded"]];
+    [lblNew sizeToFit];
     //cellviews = [view1 subviews];
     [cellLabel setValue:[object valueForKey:@"beerName"] forKey:@"text"];
     
@@ -427,5 +432,26 @@
     [queue addOperation:operation];
 
 }
+
+
+-(NSString *)findIfNew:(NSString *)date{
+    NSDate *today = [NSDate date];
+    NSDateFormatter *myDateFormetter = [[NSDateFormatter alloc]init];
+    [myDateFormetter setDateFormat:@"MM/dd/yyyy HH:mm:ss a"];
+    NSDate *beerDate;
+    beerDate = [myDateFormetter dateFromString:date];
+    NSLog(@"%@",today);
+    NSLog(@"%@",beerDate);
+    
+    NSCalendar *c = [NSCalendar currentCalendar];
+
+    NSDateComponents *components = [c components:NSDayCalendarUnit fromDate:beerDate toDate:today options:0];
+    NSInteger diff = components.day;
+    if (diff<=7)
+        return @"NEW!";
+    return @"";
+}
+
+
 
 @end

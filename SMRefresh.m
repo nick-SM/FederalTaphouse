@@ -39,7 +39,7 @@
     NSArray *beerLocations = result[@"beer_location"];
     NSArray *beerPrices = result[@"beer_price"];
     NSArray *beerSizes = result[@"beer_size"];
-    
+    NSArray *beerDateAdded = result[@"beer_date_added"];
     NSMutableDictionary *catDict = [NSMutableDictionary new];
     for(int i = 0;i< [beerCategorys count];i++){
         if(!catDict[beerCategorys[i]]){
@@ -65,6 +65,7 @@
         moBEER.beerPrice = beerPrices[i];
         moBEER.beerABV = beerABVs[i];
         moBEER.beerCategory = catDict[beerCategorys[i]];
+        moBEER.beerDateAdded = beerDateAdded[i];
         
         
     }

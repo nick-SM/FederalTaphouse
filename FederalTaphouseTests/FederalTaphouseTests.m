@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "SMMasterViewController.h"
 
 @interface FederalTaphouseTests : XCTestCase
 
@@ -26,9 +27,16 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+-(void)testNewIndicator{
+    SMMasterViewController *m = [[SMMasterViewController alloc]init];
+    ;
+    XCTAssertEqualObjects([m findIfNew:@"9/27/2014 12:12:12 PM"],@"NEW!",@"new date not detected");
+    XCTAssertEqualObjects([m findIfNew:@"9/20/2014 12:12:12 PM"],@"",@"old date not detected");
 }
+
+/*- (void)testExample
+{
+    //XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+}*/
 
 @end

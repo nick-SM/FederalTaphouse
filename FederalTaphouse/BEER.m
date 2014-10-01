@@ -18,5 +18,6 @@
 @dynamic beerSize;
 @dynamic beerLocation;
 @dynamic beerCategory;
+@dynamic beerDateAdded;
 
 @end

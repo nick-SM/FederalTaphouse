@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -656,7 +655,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqn-TE-5a7">
-                                            <rect key="frame" x="56" y="0.0" width="214" height="44"/>
+                                            <rect key="frame" x="56" y="0.0" width="193" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="43.5" id="Irr-Yk-Abb"/>
                                             </constraints>
@@ -664,23 +663,26 @@
                                             <color key="textColor" red="1" green="0.58039218187332153" blue="0.0039215688593685627" alpha="1" colorSpace="deviceRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FIRE2.png" translatesAutoresizingMaskIntoConstraints="NO" id="3pD-a4-Dhm">
-                                            <rect key="frame" x="270" y="5" width="26" height="33"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bs-zO-jbZ">
+                                            <rect key="frame" x="249" y="11" width="38" height="21"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="33" id="ivG-A5-yhk"/>
-                                                <constraint firstAttribute="width" constant="26" id="qq2-M8-rVJ"/>
+                                                <constraint firstAttribute="width" constant="38" id="jtZ-Kx-ElW"/>
                                             </constraints>
-                                        </imageView>
+                                            <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="13"/>
+                                            <color key="textColor" red="0.97647064920000004" green="0.066666670139999995" blue="0.019607843829999999" alpha="1" colorSpace="deviceRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="3pD-a4-Dhm" firstAttribute="leading" secondItem="Tqn-TE-5a7" secondAttribute="trailing" id="5t0-SS-1lj"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="4bs-zO-jbZ" secondAttribute="trailing" constant="-8" id="3cu-aA-lRk"/>
+                                        <constraint firstItem="4bs-zO-jbZ" firstAttribute="leading" secondItem="Tqn-TE-5a7" secondAttribute="trailing" id="5ms-P3-IZa"/>
+                                        <constraint firstItem="4bs-zO-jbZ" firstAttribute="top" secondItem="d3P-M7-ByW" secondAttribute="topMargin" constant="3" id="LRK-ha-thC"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="GDZ-Wk-YTT" secondAttribute="bottom" constant="-8" id="LcV-EU-bQs"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Tqn-TE-5a7" secondAttribute="bottom" constant="-8" id="PA2-nI-xP2"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="3pD-a4-Dhm" secondAttribute="trailing" constant="-17" id="RPq-Te-PKO"/>
                                         <constraint firstItem="GDZ-Wk-YTT" firstAttribute="top" secondItem="d3P-M7-ByW" secondAttribute="topMargin" constant="-8" id="ULP-dL-iEx"/>
                                         <constraint firstItem="GDZ-Wk-YTT" firstAttribute="leading" secondItem="d3P-M7-ByW" secondAttribute="leadingMargin" constant="-8" id="el5-91-Yyw"/>
                                         <constraint firstItem="Tqn-TE-5a7" firstAttribute="leading" secondItem="GDZ-Wk-YTT" secondAttribute="trailing" id="ga4-HK-Zd2"/>
-                                        <constraint firstItem="3pD-a4-Dhm" firstAttribute="centerY" secondItem="d3P-M7-ByW" secondAttribute="centerY" id="wuM-oW-Isi"/>
+                                        <constraint firstItem="4bs-zO-jbZ" firstAttribute="centerY" secondItem="d3P-M7-ByW" secondAttribute="centerY" id="uS0-y4-pcr"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -965,7 +967,6 @@
     </scenes>
     <resources>
         <image name="FEDERAL_TAPHOUSE.png" width="589" height="105"/>
-        <image name="FIRE2.png" width="126" height="277"/>
         <image name="artisan pizza.jpg" width="448" height="255"/>
         <image name="burger.jpg" width="448" height="255"/>
         <image name="coal fired.jpg" width="448" height="255"/>

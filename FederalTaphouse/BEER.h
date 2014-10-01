@@ -18,6 +18,8 @@
 @property (nonatomic, retain) NSString * beerPrice;
 @property (nonatomic, retain) NSString * beerLocation;
 @property (nonatomic, retain) NSString * beerSize;
+@property (nonatomic, retain) NSString * beerDateAdded;
+
 @property (nonatomic, retain) NSManagedObject *beerCategory;
 
 @end
