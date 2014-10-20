@@ -62,6 +62,12 @@
 		34F5C69A19BE410300BB9CCC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F5C69919BE410300BB9CCC /* CoreLocation.framework */; };
 		34F5C6E719BF9FD700BB9CCC /* SMDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F5C6E619BF9FD700BB9CCC /* SMDirectionsViewController.m */; };
 		34F5C6EA19C0E4CD00BB9CCC /* SMFindTransportation.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F5C6E919C0E4CD00BB9CCC /* SMFindTransportation.m */; };
+		34FC5B6719F58DB200AB62B3 /* SMQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC5B6619F58DB200AB62B3 /* SMQRCode.m */; };
+		34FC5B6919F58E8900AB62B3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FC5B6819F58E8900AB62B3 /* AVFoundation.framework */; };
+		34FC5B6C19F5969B00AB62B3 /* UINavigationController+SMDisableAutorotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC5B6B19F5969B00AB62B3 /* UINavigationController+SMDisableAutorotate.m */; };
+		34FC5B7019F5A1FA00AB62B3 /* event a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34FC5B6D19F5A1FA00AB62B3 /* event a.jpg */; };
+		34FC5B7119F5A1FA00AB62B3 /* Event B.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FC5B6E19F5A1FA00AB62B3 /* Event B.png */; };
+		34FC5B7219F5A1FA00AB62B3 /* Event C.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34FC5B6F19F5A1FA00AB62B3 /* Event C.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +152,14 @@
 		34F5C6E619BF9FD700BB9CCC /* SMDirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMDirectionsViewController.m; sourceTree = "<group>"; };
 		34F5C6E819C0E4CD00BB9CCC /* SMFindTransportation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFindTransportation.h; sourceTree = "<group>"; };
 		34F5C6E919C0E4CD00BB9CCC /* SMFindTransportation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMFindTransportation.m; sourceTree = "<group>"; };
+		34FC5B6519F58DB200AB62B3 /* SMQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMQRCode.h; sourceTree = "<group>"; };
+		34FC5B6619F58DB200AB62B3 /* SMQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMQRCode.m; sourceTree = "<group>"; };
+		34FC5B6819F58E8900AB62B3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		34FC5B6A19F5969B00AB62B3 /* UINavigationController+SMDisableAutorotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SMDisableAutorotate.h"; sourceTree = "<group>"; };
+		34FC5B6B19F5969B00AB62B3 /* UINavigationController+SMDisableAutorotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SMDisableAutorotate.m"; sourceTree = "<group>"; };
+		34FC5B6D19F5A1FA00AB62B3 /* event a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "event a.jpg"; sourceTree = SOURCE_ROOT; };
+		34FC5B6E19F5A1FA00AB62B3 /* Event B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Event B.png"; sourceTree = SOURCE_ROOT; };
+		34FC5B6F19F5A1FA00AB62B3 /* Event C.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Event C.jpg"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FC5B6919F58E8900AB62B3 /* AVFoundation.framework in Frameworks */,
 				34F5C69A19BE410300BB9CCC /* CoreLocation.framework in Frameworks */,
 				34F5C69519BE3EB900BB9CCC /* MapKit.framework in Frameworks */,
 				3442349F19BCCD2F00BC8398 /* CoreGraphics.framework in Frameworks */,
@@ -202,6 +217,7 @@
 		3442349B19BCCD2F00BC8398 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34FC5B6819F58E8900AB62B3 /* AVFoundation.framework */,
 				34F5C69919BE410300BB9CCC /* CoreLocation.framework */,
 				34F5C69419BE3EB900BB9CCC /* MapKit.framework */,
 				3442349C19BCCD2F00BC8398 /* Foundation.framework */,
@@ -228,6 +244,13 @@
 				344234AE19BCCD2F00BC8398 /* SMAppDelegate.m */,
 				34F3CD7B19D20ABA003A7BB2 /* BeerNonCopyright.jpg */,
 				344234B019BCCD2F00BC8398 /* Main.storyboard */,
+				34FC5B6D19F5A1FA00AB62B3 /* event a.jpg */,
+				34FC5B6E19F5A1FA00AB62B3 /* Event B.png */,
+				34FC5B6F19F5A1FA00AB62B3 /* Event C.jpg */,
+				34FC5B6519F58DB200AB62B3 /* SMQRCode.h */,
+				34FC5B6619F58DB200AB62B3 /* SMQRCode.m */,
+				34FC5B6A19F5969B00AB62B3 /* UINavigationController+SMDisableAutorotate.h */,
+				34FC5B6B19F5969B00AB62B3 /* UINavigationController+SMDisableAutorotate.m */,
 				34C0471419D4A39E006520B8 /* artisan pizza.jpg */,
 				34C0471519D4A39E006520B8 /* burger.jpg */,
 				34C0471619D4A39E006520B8 /* coal fired.jpg */,
@@ -382,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34C0472A19D4B063006520B8 /* metal.jpg in Resources */,
+				34FC5B7019F5A1FA00AB62B3 /* event a.jpg in Resources */,
 				34C0471E19D4A39E006520B8 /* coal fired.jpg in Resources */,
 				344234BD19BCCD2F00BC8398 /* Images.xcassets in Resources */,
 				34C0471F19D4A39E006520B8 /* desert.jpg in Resources */,
@@ -393,10 +417,12 @@
 				34C0472319D4A39E006520B8 /* salmon.jpg in Resources */,
 				34C0476919D70D7E006520B8 /* taphouseIcon60.png in Resources */,
 				3450A94719CA25BE0038FCC8 /* chillis-logo.jpg in Resources */,
+				34FC5B7219F5A1FA00AB62B3 /* Event C.jpg in Resources */,
 				3423388719CB79E400FCC8CF /* FEDERAL_TAPHOUSE.png in Resources */,
 				34F3CD7C19D20ABA003A7BB2 /* BeerNonCopyright.jpg in Resources */,
 				3423387F19CB641E00FCC8CF /* images.jpeg in Resources */,
 				34C0472119D4A39E006520B8 /* pretzel.jpg in Resources */,
+				34FC5B7119F5A1FA00AB62B3 /* Event B.png in Resources */,
 				344234DB19BCCF7F00BC8398 /* Beers.plist in Resources */,
 				34C0471C19D4A39E006520B8 /* artisan pizza.jpg in Resources */,
 				34C0476C19D70DD9006520B8 /* taphouseIcon120.png in Resources */,
@@ -436,12 +462,14 @@
 				344234AB19BCCD2F00BC8398 /* main.m in Sources */,
 				34C0472619D4A76C006520B8 /* SMRewardsTableViewController.m in Sources */,
 				34F5C69819BE3F4500BB9CCC /* SMViewOnMap.m in Sources */,
+				34FC5B6C19F5969B00AB62B3 /* UINavigationController+SMDisableAutorotate.m in Sources */,
 				34F5C6E719BF9FD700BB9CCC /* SMDirectionsViewController.m in Sources */,
 				34C0471119D47E24006520B8 /* SMRefresh.m in Sources */,
 				3450A94319C785170038FCC8 /* SMOnlineCourseWebService.m in Sources */,
 				34F3CD7A19CF70F6003A7BB2 /* SMWebViewController.m in Sources */,
 				343538C319CF1C5C00E5A7C2 /* SMCategoryTableViewController.m in Sources */,
 				344234DE19BCDD3D00BC8398 /* BEER.m in Sources */,
+				34FC5B6719F58DB200AB62B3 /* SMQRCode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
