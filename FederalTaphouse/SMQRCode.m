@@ -84,24 +84,9 @@ clickedButtonAtIndex:(NSInteger)buttonIndex{
         // Get the metadata object.
         AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex:0];
         if ([[metadataObj type] isEqualToString:AVMetadataObjectTypeQRCode]) {
-            // If the found metadata is equal to the QR code metadata then update the status label's text,
-            // stop reading and change the bar button item's title and the flag's value.
-            // Everything is done on the main thread.
-            //[_lblStatus performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj stringValue] waitUntilDone:NO];
             UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"QR CODE FOUND" message:@"Congratularions! You have obtained 100 points!" delegate:self  cancelButtonTitle:@"ok" otherButtonTitles:nil];
             
             [alert performSelectorOnMainThread:@selector(show) withObject:nil waitUntilDone:NO];
-            
-            [captureSession stopRunning];
-            //[self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
-            //[//_bbitemStart performSelectorOnMainThread:@selector(setTitle:) withObject:@"Start!" waitUntilDone:NO];
-            
-            //_isReading = NO;
-            
-            // If the audio player is not nil, then play the sound effect.
-            //if (_audioPlayer) {
-              //  [_audioPlayer play];
-            //}
         }
     }
     

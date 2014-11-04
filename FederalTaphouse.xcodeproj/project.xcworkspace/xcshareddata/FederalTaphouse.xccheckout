@@ -14,7 +14,7 @@
 		<string>https://github.com/nick-SM/FederalTaphouse.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FederalTaphouse.xcodeproj/project.xcworkspace</string>
+	<string>FederalTaphouse.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>054D2819B57B968AD918BB67626BCCEB0DC280A4</key>

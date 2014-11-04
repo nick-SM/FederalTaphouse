@@ -161,55 +161,6 @@
     return cell;
 }
 
-/*- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar{
-    [NSFetchedResultsController deleteCacheWithName:nil];
-    NSError *error = nil;
-    [self.fetchedResultsController.fetchRequest setPredicate:nil];
-    [self.fetchedResultsController performFetch:&error];
-}
-
-- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
-    [NSFetchedResultsController deleteCacheWithName:nil];
-    
-    if(![searchBar.text isEqualToString:@""]){
-        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"beerName BEGINSWITH[c] %@", searchBar.text];
-        [self.fetchedResultsController.fetchRequest setPredicate:predicate];
-    }
-    else{
-        [searchBar performSelector: @selector(resignFirstResponder)
-                        withObject: nil
-                        afterDelay: 0.1];
-        [self.fetchedResultsController.fetchRequest setPredicate:nil];
-    }
-    NSError *error = nil;
-    [self.fetchedResultsController performFetch:&error];
-    [self.tableView reloadData];
-}
-
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
-    [searchBar resignFirstResponder];
-    [NSFetchedResultsController deleteCacheWithName:nil];
-    
-    if(![self.sbSearchBar.text isEqualToString:@""]){
-        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"beerName BEGINSWITH[c] %@", self.sbSearchBar.text];
-        [self.fetchedResultsController.fetchRequest setPredicate:predicate];
-    }
-    NSError *error = nil;
-    [self.fetchedResultsController performFetch:&error];
-}*/
-
-/*- (void)viewWillAppear:(BOOL)animated{
-    [NSFetchedResultsController deleteCacheWithName:nil];
-    
-    if(![self.sbSearchBar.text isEqualToString:@""]){
-        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"beerName BEGINSWITH[c] %@", self.sbSearchBar.text];
-        [self.fetchedResultsController.fetchRequest setPredicate:predicate];
-    }
-    NSError *error = nil;
-    [self.fetchedResultsController performFetch:&error];
-    [self.tableView reloadData];
-
-}*/
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -236,64 +187,7 @@
 #pragma mark - Fetched results controller
 
 - (IBAction)refresh:(id)sender {
-    //[context deleteObject:];
-    /*NSFetchRequest * allBeers = [[NSFetchRequest alloc] initWithEntityName:@"BEER"];
-    NSFetchRequest * allCategories = [[NSFetchRequest alloc] initWithEntityName:@"CATEGORY"];
-    NSArray * beers = [self.managedObjectContext executeFetchRequest:allBeers error:nil];
-    NSArray * categories = [self.managedObjectContext executeFetchRequest:allCategories error:nil];
-    for (NSManagedObject * beer in beers) {
-        [self.managedObjectContext deleteObject:beer];    }
-    
-    for (NSManagedObject * category in categories) {
-        [self.managedObjectContext deleteObject:category];
-    }
-    
-    SMOnlineCourseWebService *service = [[SMOnlineCourseWebService alloc]init];
-    
-    NSMutableArray *inputElements = [[NSMutableArray alloc]init];
-    
-    NSMutableArray *elementValues = [[NSMutableArray alloc]init];
-    
-    NSDictionary *result = [service doWebService:@"getBeerList" withElements:inputElements forValues:elementValues];
-    
-    NSArray *beerNames = result[@"beer_name"];
-    NSArray *beerCategorys = result[@"beer_category_name"];
-    NSArray *beerDescriptions = result[@"beer_description"];
-    NSArray *beerABVs = result[@"beer_ABV"];
-    NSArray *beerLocations = result[@"beer_location"];
-    NSArray *beerPrices = result[@"beer_price"];
-    NSArray *beerSizes = result[@"beer_size"];
-    
-    NSMutableDictionary *catDict = [NSMutableDictionary new];
-    for(int i = 0;i< [beerCategorys count];i++){
-        if(!catDict[beerCategorys[i]]){
-            CATEGORY *moCategory;
-            moCategory = [NSEntityDescription
-                          insertNewObjectForEntityForName:@"CATEGORY"
-                          inManagedObjectContext:self.managedObjectContext];
-            
-            moCategory.categoryName = beerCategorys[i];
-            [catDict setObject:moCategory forKey:beerCategorys[i]];
-        }
-    }
-    
-    for(int i = 0;i< [beerNames count];i++){
-        BEER *moBEER;
-        moBEER = [NSEntityDescription
-                      insertNewObjectForEntityForName:@"BEER"
-                      inManagedObjectContext:self.managedObjectContext];
-        moBEER.beerName = beerNames[i];
-        moBEER.beerLocation = beerLocations[i];
-        moBEER.beerSize = beerSizes[i];
-        moBEER.beerDescription = beerDescriptions[i];
-        moBEER.beerPrice = beerPrices[i];
-        moBEER.beerABV = beerABVs[i];
-        moBEER.beerCategory = catDict[beerCategorys[i]];
-        
-        
-    }
-    
-    [self.managedObjectContext save:nil];*/
+
     [SMRefresh refresh:self.managedObjectContext];
     
     
@@ -304,17 +198,8 @@
     // Background color
     view.tintColor = [UIColor colorWithRed:0.329 green:0.557 blue:0.827 alpha:1.000];
     UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
-
-    //UIFont *saveFont = header.textLabel.font;
-    //header.textLabel setFont:[UIFont fontWithName:saveFont.fontName size:18.0]];
-    
-    // Text Color & Alignment
     [header.textLabel setTextColor:[UIColor whiteColor]];
-    //[header.textLabel setTextAlignment:NSTextAlignmentCenter];
-    // Text Font
-    // Another way to set the background color
-    // Note: does not preserve gradient effect of original heade!r
-    // header.contentView.backgroundColor = [UIColor blackColor];
+
 }
 
 - (NSFetchedResultsController *)fetchedResultsController
